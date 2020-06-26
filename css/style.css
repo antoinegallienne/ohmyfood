@@ -1,0 +1,47 @@
+.btn {
+  width: 30%;
+  background: #64A082;
+  color: #EED071;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.2rem 1.5rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.btn:hover {
+  transform: scale(1.15);
+}
+
+header {
+  color: #EED071;
+  text-align: center;
+  background: #64A082;
+  height: 100%;
+  margin: auto;
+}
+
+.menu {
+  background: #fff;
+  width: 100%;
+  margin: auto;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu ul li {
+  width: 80%;
+  border-radius: 0.5rem;
+  border: solid #AAA;
+  list-style-type: none;
+}
+
+footer {
+  background: #64A082;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

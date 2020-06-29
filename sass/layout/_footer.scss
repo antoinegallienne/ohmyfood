@@ -1,4 +1,14 @@
 footer {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0.1rem;
+  color: $ohmyfood;
+  font-size: 1.5rem;
   background: $vert;
   height: 100%;
+  a{
+    text-decoration: none;
+    color: $ohmyfood;
+  }
 }

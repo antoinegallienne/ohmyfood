@@ -31,8 +31,8 @@ main img {
   transition-property: transform;
   transition-duration: 400ms;
   &:hover {
-    transform: scale(1.15);
     border-radius: 0.5rem;
+    transform: scale(1.15);
     border: solid $contour;
   }
 }

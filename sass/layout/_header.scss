@@ -3,9 +3,10 @@ header {
   color: $ohmyfood;
   text-align: center;
   background: $vert;
-  font-size: 1.5rem;
-  width: 100%;/*
-  padding:0;
-  margin: 0 auto;*/
+  width: 100%;
+  img{
+    width: 15rem;
+    padding: 4vh;
+  }
 }
 

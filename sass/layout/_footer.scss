@@ -6,9 +6,14 @@ footer {
   color: $ohmyfood;
   font-size: 1.5rem;
   background: $vert;
-  height: 100%;
-  a{
-    text-decoration: none;
-    color: $ohmyfood;
+  height: 10vh;
+
+  p {
+    padding-bottom : 0vh;
+
+    a {
+      text-decoration: none;
+      color: $ohmyfood;
+    }
   }
 }

@@ -4,35 +4,142 @@
   background: $blanc;
   width: 100%;
   margin: auto;
+
   ul {
     display: flex;
     flex-direction:column;
     align-items: center;
-    li{
-      width: 100%;
-    /*  border-radius: 10%;*/
-      padding: 0;
-      margin: 2vh;
-     /* border: solid $contour;*/
-      list-style-type: none;
-      text-align: center;
-      img{
+
+    li {
+        font-size: 1.2rem;
+        background: $lanote;
+        margin: 3vh auto;
+        width: 30vw;
+        height: 20vh;
+        padding: 22vh 5vw;
+        list-style-type: none;
+        text-align: center;
         border-radius: 0.5rem;
         border: solid $contour;
-      }
+
     }
   }
 }
 
+.recherche{
+  background: $recherche;
+  margin: 0 auto;
+  padding: 2vh 0 2vh 5vw;
+}
 
-main img {
-  cursor: pointer;
+/*  --------------- animation ---------
+---------------------------------------*/
+
+.lanote {
+
+  color: $fonte;
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 400ms;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
   &:hover {
-    border-radius: 0.5rem;
-    transform: scale(1.15);
-    border: solid $contour;
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+}
+
+
+.lechic {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.4;
+
+  }
+}
+
+.ledelice {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.4;
+
+  }
+}
+
+.lapalette {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.4;
+
+  }
+}
+
+
+/* -----            media query              ----
+---------------------------------------------- */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-min(768px) {
+    width: 80%;
+    margin: 0 auto;
+
+      .menu-ohmyfood ul{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+          li {
+            width: 20vw;
+            height: 20vh;
+            padding: 22vh 5vw;
+            margin: 2vh 2vw;
+          }
+      }
+  }
+  @include media-min(1024px) {
+    width: 80%;
+    margin: 0 auto;
+
+    .menu-ohmyfood ul{
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        width: 16vw;
+        height: 25vh;
+        padding: 22vh 5vw;
+        margin: 2vh 3vw;
+      }
+    }
   }
 }

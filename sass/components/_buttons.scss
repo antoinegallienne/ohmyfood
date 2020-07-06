@@ -9,34 +9,16 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
+ transition-property: transform;
+  transition-duration: 600ms;
+  &::after{
+    content: '';
+  }
 
-  transition: transform 450ms, background-color 1000ms; 
   &:hover {
-      transform: scale(1.13);
-      background-color: $cd-btn-end;
-    border: solid $ohmyfood;
+
+    &::after {
+      content: ' ! ! !';
+    }
   }
 }
-/*
-.btn {
-  background-color: $cd-btn-start;
-  border: 4px solid $cd-btn;
-  border-radius: 10rem;
-  cursor: pointer;
-  font-size: 3rem;
-  padding: 1.85rem 3rem;
-  &:hover {
-
-  }
-}
-
-
-
-.btn{
-transform: scale(1);
-transition-property: transform;
-transition-duration: 400ms;
-  &:hover {
-    transform: scale(1.15);
-  }
-}*/

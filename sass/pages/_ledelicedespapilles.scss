@@ -1,0 +1,155 @@
+
+.menu-ledelice {
+  background: $blanc;
+  width: 100%;
+  text-align: center;
+
+  .page {
+    background: $ledelice;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    padding: 1vh 8vw;
+    margin: auto;
+    flex-direction: column;
+
+    img[src*='ledelice1.png'] {
+      display: inline;
+      position: relative;
+      top: 8vh;
+      width: 25vw;
+    }
+    img[src*='ledelice2.png'] {
+      position: relative;
+      bottom: 8vh;
+      left: 60vw;
+      width: 25vw;
+    }
+    img[src*='ledelice3.png'] {
+      display: inline;
+      position: relative;
+      top: 8vh;
+      width: 25vw;
+    }
+    img[src*='ledelice4.png'] {
+      position: relative;
+      bottom: 8vh;
+      left: 60vw;
+      width: 25vw;
+    }
+    img[src*='ledelice5.png'] {
+      display: inline;
+      position: relative;
+      top: 8vh;
+      width: 25vw;
+    }
+    img[src*='ledelice6.png'] {
+      position: relative;
+      bottom: 8vh;
+      left: 60vw;
+      width: 25vw;
+    }
+  }
+}
+
+main h3 {
+  font-size: 2.5rem;
+  padding:2vh 2vw 5vh 0;
+  background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* --------------- media query -----------------
+------------------------------------------------ */
+
+
+body {
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-min(768px) {
+    width: 100%;
+    margin: auto;
+
+    .menu-ledelice {
+      .page {
+        width: 70%;
+        /*margin: 5vh 5vw 10vh 5vh ;*/
+        margin: auto;
+
+        img[src*='ledelice1.png'] {
+          top: 7vh;
+          width: 18vw;
+        }
+        img[src*='ledelice2.png'] {
+          bottom: 7vh;
+          left: 50vw;
+          width: 18vw;
+        }
+        img[src*='ledelice3.png'] {
+          top: 7vh;
+          width: 18vw;
+        }
+        img[src*='ledelice4.png'] {
+          bottom: 7vh;
+          left: 50vw;
+          width: 18vw;
+        }
+        img[src*='ledelice5.png'] {
+          top: 7vh;
+          width: 18vw;
+        }
+        img[src*='ledelice6.png'] {
+          bottom: 7vh;
+          left: 50vw;
+          width: 18vw;
+        }
+      }
+    }
+  }
+
+  @include media-min(1024px) {
+    width: 70%;
+    margin: 0 auto;
+
+    .menu-ledelice {
+      .page {
+        width: 70%;
+        font-size: 1.3rem;
+        margin: auto;
+
+        img[src*='ledelice1.png'] {
+          top: 9.5vh;
+          width: 16vw;
+        }
+        img[src*='ledelice2.png'] {
+          bottom: 9.5vh;
+          left: 32.5vw;
+          width: 16vw;
+        }
+        img[src*='ledelice3.png'] {
+          top: 9.5vh;
+          width: 16vw;
+        }
+        img[src*='ledelice4.png'] {
+          bottom: 9.5vh;
+          left: 32.5vw;
+          width: 16vw;
+        }
+        img[src*='ledelice5.png'] {
+          top: 9.5vh;
+          width: 16vw;
+        }
+        img[src*='ledelice6.png'] {
+          bottom: 9.5vh;
+          left: 32.5vw;
+          width: 16vw;
+        }
+      }
+    }
+  }
+
+}

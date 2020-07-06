@@ -1,4 +1,5 @@
 /* ----------------------*/
+<<<<<<< Updated upstream
 /* -----       media query          ----
 --------------------------------------- */
 /* ----           Table des menus           ---
@@ -43,6 +44,46 @@ table th:nth-child(2) {
   font-weight: normal;
   font-style: normal;
 }
+=======
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 668px;
+  }
+  body .menu-ohmyfood {
+    background: #fff;
+    width: 100%;
+    margin: auto;
+  }
+  body .menu-ohmyfood ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body .menu-ohmyfood ul li {
+    width: 100%;
+    /*  border-radius: 10%;*/
+    padding: 0;
+    margin: 2vh;
+    /* border: solid $contour;*/
+    list-style-type: none;
+    text-align: center;
+  }
+  body .menu-ohmyfood ul li img {
+    border-radius: 0.5rem;
+    border: solid #BAA;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 1024px;
+  }
+}
+
+>>>>>>> Stashed changes
 .btn-prochainement {
   width: 30%;
   background: #64A082;
@@ -53,6 +94,7 @@ table th:nth-child(2) {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
+<<<<<<< Updated upstream
   transition-property: transform;
   transition-duration: 600ms;
 }
@@ -63,15 +105,56 @@ table th:nth-child(2) {
   content: " ! ! !";
 }
 
+=======
+  transition: transform 450ms, background-color 1000ms;
+}
+.btn-prochainement:hover {
+  transform: scale(1.13);
+  background-color: rgba(1, 28, 55, 0);
+  border: solid #EED071;
+}
+
+/*
+.btn {
+  background-color: $cd-btn-start;
+  border: 4px solid $cd-btn;
+  border-radius: 10rem;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1.85rem 3rem;
+  &:hover {
+
+  }
+}
+
+
+
+.btn{
+transform: scale(1);
+transition-property: transform;
+transition-duration: 400ms;
+  &:hover {
+    transform: scale(1.15);
+  }
+}*/
+>>>>>>> Stashed changes
 header {
   color: #EED071;
   text-align: center;
   background: #64A082;
+<<<<<<< Updated upstream
   width: 100%;
 }
 header img {
   width: 15rem;
   padding: 4vh;
+=======
+  font-size: 1.5rem;
+  width: 100%;
+  /*
+  padding:0;
+  margin: 0 auto;*/
+>>>>>>> Stashed changes
 }
 
 footer {
@@ -82,12 +165,18 @@ footer {
   color: #EED071;
   font-size: 1.5rem;
   background: #64A082;
+<<<<<<< Updated upstream
   height: 10vh;
 }
 footer p {
   padding-bottom: 0vh;
 }
 footer p a {
+=======
+  height: 100%;
+}
+footer a {
+>>>>>>> Stashed changes
   text-decoration: none;
   color: #EED071;
 }
@@ -103,6 +192,7 @@ footer p a {
   align-items: center;
 }
 .menu-ohmyfood ul li {
+<<<<<<< Updated upstream
   font-size: 1.2rem;
   background: #FDE0DC;
   margin: 3vh auto;
@@ -111,10 +201,22 @@ footer p a {
   padding: 22vh 5vw;
   list-style-type: none;
   text-align: center;
+=======
+  width: 100%;
+  /*  border-radius: 10%;*/
+  padding: 0;
+  margin: 2vh;
+  /* border: solid $contour;*/
+  list-style-type: none;
+  text-align: center;
+}
+.menu-ohmyfood ul li img {
+>>>>>>> Stashed changes
   border-radius: 0.5rem;
   border: solid #BAA;
 }
 
+<<<<<<< Updated upstream
 .recherche {
   background: #EDEDED;
   margin: 0 auto;
@@ -734,6 +836,18 @@ body {
     left: 32.5vw;
     width: 16vw;
   }
+=======
+main img {
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+main img:hover {
+  border-radius: 0.5rem;
+  transform: scale(1.15);
+  border: solid #BAA;
+>>>>>>> Stashed changes
 }
 
 /*# sourceMappingURL=style.css.map */

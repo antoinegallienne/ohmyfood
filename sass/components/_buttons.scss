@@ -9,13 +9,16 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
-}
-/*
-.btn{
-transform: scale(1);
-transition-property: transform;
-transition-duration: 400ms;
-  &:hover {
-    transform: scale(1.15);
+ transition-property: transform;
+  transition-duration: 600ms;
+  &::after{
+    content: '';
   }
-}*/
+
+  &:hover {
+
+    &::after {
+      content: ' ! ! !';
+    }
+  }
+}

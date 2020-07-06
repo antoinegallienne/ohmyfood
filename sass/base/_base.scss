@@ -1,0 +1,40 @@
+
+/* ----           Table des menus           ---
+-----------------------------------------------*/
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+     th:nth-child(1) {
+      width: 90%;
+    }
+    th:nth-child(2) {
+      width: 10%;
+    }
+  }
+
+/* ----    animation trait soulignement menu ---
+-----------------------------------------------*/
+
+.page h4{
+  border-bottom: solid rgba(0, 0, 0, 0 );
+  &::after {
+    content: '';
+
+    cursor: pointer;
+  }
+  &:hover {
+    &::after {
+
+    }
+    border-bottom: solid black;
+    transition: transform 330ms ease-in-out;
+  }
+}
+
+
+/* ----           Table des menus           ---
+-----------------------------------------------*/
+

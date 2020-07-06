@@ -1,0 +1,123 @@
+
+.menu-lapalette {
+  background: $blanc;
+  width: 100%;
+  text-align: center;
+
+  .page {
+    background: $lapalette;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 1vh 8vw;
+    margin: auto;
+    flex-direction: column;
+
+    img[src*='lapalette1.png'] {
+      display: inline;
+      position: relative;
+      top: 5.5vh;
+      width: 25vw;
+    }
+    img[src*='lapalette2.png'] {
+      position: relative;
+      bottom: 5.5vh;
+      left: 60vw;
+      width: 25vw;
+    }
+  }
+}
+
+
+
+main h3 {
+  font-size: 2.5rem;
+  padding:2vh 2vw 5vh 0;
+  background: -webkit-linear-gradient(0deg , #3f9338, #c0ff7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*   --------- annimation -----------------------
+
+.page h3{
+  text-decoration: none;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: 50% 50%;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255,255,255,0.8);
+      transition: transform 250ms;
+    }
+
+      &:hover {
+
+        &::after {
+          transform: translateX(-50%) scaleX(1);
+        }
+
+      }
+
+}*/
+/*  ---------------------------------*/
+
+
+.page h4{
+  border-bottom: solid rgba(0, 0, 0, 0 );
+  &::after {
+    content: '';
+
+    cursor: pointer;
+  }
+  &:hover {
+    &::after {
+
+    }
+    border-bottom: solid black;
+    transition: transform 330ms ease-in-out;
+  }
+}
+
+
+
+/* --------------- media query -----------------
+------------------------------------------------ */
+
+
+body {
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-min(768px) {
+    width: 80%;
+    margin: auto;
+    .menu-lapalette {
+      .page {
+        width: 70%;
+        /*margin: 5vh 5vw 10vh 5vh ;*/
+        margin: auto;
+
+        img[src*='lapalette1.png'] {
+          top: 6vh;
+          width: 18vw;
+        }
+        img[src*='lapalette2.png'] {
+          bottom: 6vh;
+          left: 45vw;
+          width: 18vw;
+        }
+
+      }
+    }
+  }
+
+  @include media-min(1024px) {
+    width: 65%;
+    margin: 0 auto;
+  }
+}

@@ -142,7 +142,6 @@ footer p a {
 }
 .menu-ohmyfood ul li {
   font-size: 1.2rem;
-  background: #FDE0DC;
   margin: 3vh auto;
   width: 30vw;
   height: 20vh;
@@ -157,6 +156,22 @@ footer p a {
   background: #EDEDED;
   margin: 0 auto;
   padding: 2vh 0 2vh 5vw;
+}
+
+.menu-ohmyfood li[class*=li-lanote] {
+  background-color: #FDE0DC;
+}
+
+.menu-ohmyfood li[class*=li-lechic] {
+  background-color: #FFF5FE;
+}
+
+.menu-ohmyfood li[class*=li-ledelice] {
+  background-color: #F9F9F9;
+}
+
+.menu-ohmyfood li[class*=li-lapalette] {
+  background-color: #FDFFFD;
 }
 
 /*  --------------- animation ---------
@@ -278,7 +293,7 @@ body {
   margin: auto;
   flex-direction: column;
 }
-.menu-lanote .page img[src*="lanote1.png"] {
+.menu-lanote .page img[class*="lanote1.png"] {
   display: inline;
   position: relative;
   top: 5.5vh;
@@ -414,32 +429,7 @@ main h3 {
 }
 
 /*   --------- annimation -----------------------
-
-.page h3{
-  text-decoration: none;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: 50% 50%;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(255,255,255,0.8);
-      transition: transform 250ms;
-    }
-
-      &:hover {
-
-        &::after {
-          transform: translateX(-50%) scaleX(1);
-        }
-
-      }
-
-}*/
-/*  ---------------------------------*/
+-------------------------------------------------*/
 .page h4 {
   border-bottom: solid rgba(0, 0, 0, 0);
 }

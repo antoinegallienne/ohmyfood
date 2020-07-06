@@ -4,7 +4,7 @@
   "description": "projet ohmyfood openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/style/style.css"
   },
   "author": "Antoine Gallienne",
   "license": "ISC"

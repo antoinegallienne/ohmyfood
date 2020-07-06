@@ -11,8 +11,9 @@
     align-items: center;
 
     li {
+
+
         font-size: 1.2rem;
-        background: $lanote;
         margin: 3vh auto;
         width: 30vw;
         height: 20vh;
@@ -30,6 +31,23 @@
   background: $recherche;
   margin: 0 auto;
   padding: 2vh 0 2vh 5vw;
+}
+
+
+.menu-ohmyfood li[class*='li-lanote'] {
+  background-color: $lanote;
+}
+
+.menu-ohmyfood li[class*='li-lechic'] {
+  background-color: $lechic;
+}
+
+.menu-ohmyfood li[class*='li-ledelice'] {
+  background-color: $ledelice;
+}
+
+.menu-ohmyfood li[class*='li-lapalette'] {
+  background-color: $lapalette;
 }
 
 /*  --------------- animation ---------

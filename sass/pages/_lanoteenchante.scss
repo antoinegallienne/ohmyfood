@@ -13,7 +13,7 @@
     margin: auto;
     flex-direction: column;
 
-    img[src*='lanote1.png'] {
+    img[class*='lanote1.png'] {
       display: inline;
       position: relative;
       top: 5.5vh;

@@ -1,0 +1,64 @@
+
+
+
+/* ----    animation trait soulignement menu ---
+-----------------------------------------------*/
+
+h4 {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  background: linear-gradient(to top,
+          $col--site 0%,
+          $col--site 15%,
+          transparent 10.01%)
+  no-repeat left bottom / 0 100%;
+  transition: background-size 2s;
+}
+
+h4:hover {
+  background-size: 100% 100%;
+}
+
+
+
+
+/* -- bouton mention et contact  --
+---------------------------------*/
+
+
+@keyframes buttonfooter {
+  0% {
+    transform: translate( 2px , 2px );
+  }
+  10% {
+    transform: translate( -2px , -2px );
+  }
+  20% {
+    transform: translate( 2px , 2px );
+  }
+  30% {
+    transform: translate( -2px , -2px );
+  }
+  40% {
+    transform: translate( 2px , 2px );
+  }
+  50% {
+    transform: translate( -2px , -2px );
+  }
+  60% {
+    transform: translate( 2px , 2px );
+  }
+  70% {
+    transform: translate( -2px , -2px );
+  }
+  80% {
+    transform: translate( 2px , 2px );
+  }
+  90% {
+    transform: translate( -2px , -2px );
+  }
+  100% {
+    transform: translate( 2px , 2px );
+  }
+}

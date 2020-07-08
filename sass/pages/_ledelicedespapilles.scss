@@ -1,5 +1,6 @@
 
 .menu-ledelice {
+  font-family: 'DMSerifText-Regular';
   background: $blanc;
   width: 100%;
   text-align: center;
@@ -14,8 +15,8 @@
     flex-direction: column;
 
     img[src*='ledelice1.png'] {
-      display: inline;
-      position: relative;
+     /* display: inline;
+      position: relative;*/
       top: 8vh;
       width: 25vw;
     }
@@ -26,7 +27,7 @@
       width: 25vw;
     }
     img[src*='ledelice3.png'] {
-      display: inline;
+     /* display: inline;*/
       position: relative;
       top: 8vh;
       width: 25vw;
@@ -38,7 +39,7 @@
       width: 25vw;
     }
     img[src*='ledelice5.png'] {
-      display: inline;
+      /*display: inline;*/
       position: relative;
       top: 8vh;
       width: 25vw;
@@ -52,14 +53,19 @@
   }
 }
 
-main h3 {
+.menu-ledelice h3 {
+  font-family: 'DancingScript-VariableFont_wght';
   font-size: 2.5rem;
   padding:2vh 2vw 5vh 0;
   background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
 
+}
+h1 {
+  font-family: 'Montserrat-Regular';
+  font-size: 1.5rem;
+}
 
 
 /* --------------- media query -----------------

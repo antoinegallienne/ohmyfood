@@ -4,16 +4,9 @@ footer {
   position: sticky;
   bottom: 0.1rem;
   color: $ohmyfood;
+  font-family: 'Montserrat-SemiBold';
   font-size: 1.5rem;
-  background: $vert;
+  background: $col--site;
   height: 10vh;
-
-  p {
-    padding-bottom : 0vh;
-
-    a {
-      text-decoration: none;
-      color: $ohmyfood;
-    }
-  }
 }
+

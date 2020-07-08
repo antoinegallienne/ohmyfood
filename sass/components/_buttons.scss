@@ -1,24 +1,65 @@
 
-.btn-prochainement {
-  width: 30%;
-  background: $vert;
+/* ---- bouton prochainement + animation ------
+----------------------------------------------*/
+
+button[class='pro']  {
+  text-transform: capitalize;
+  width: 35%;
+  background: $col--site;
   color: $ohmyfood;
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
   border-radius: 0.5rem;
+  border: solid $col--site;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
- transition-property: transform;
-  transition-duration: 600ms;
+
   &::after{
+    color: rvba( 0,0,0,1 ) ;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    transition-duration: 600ms;
     content: '';
-  }
-
+    opacity: 0;
+      }
   &:hover {
-
     &::after {
-      content: ' ! ! !';
+      content: ' prochainement ! ! !';
+      opacity: 1;
+
     }
+  }
+}
+
+
+/* ---- bouton  mention et contact ------
+----------------------------------------*/
+
+
+button[class='footer'] {
+  width: 23%;
+  background: $col--site;
+  color: $ohmyfood;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid $col--site;
+  padding: 0.5rem 1rem;
+  margin:  auto;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+  &:hover {
+    animation: buttonfooter 0.8s infinite;
+  }
+  a {
+    text-decoration: none;
+    color: $ohmyfood;
   }
 }

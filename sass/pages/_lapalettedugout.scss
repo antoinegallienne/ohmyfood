@@ -1,12 +1,12 @@
 
-.menu-lapalette {
+body {
   background: $blanc;
-  width: 100%;
+  width: 90%;
   text-align: center;
 
-  .page {
+  .page-lapalette {
     background: $lapalette;
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: flex;
     padding: 1vh 8vw;
@@ -14,16 +14,15 @@
     flex-direction: column;
 
     img[src*='lapalette1.png'] {
-      /*display: inline;
-      position: relative;*/
-      top: 5.5vh;
-      width: 25vw;
+      position: relative;
+      top: 2vh;
+      width: 27vw;
     }
     img[src*='lapalette2.png'] {
       position: relative;
-      bottom: 5.5vh;
-      left: 60vw;
-      width: 25vw;
+      bottom: 2vh;
+      left: 51vw;
+      width: 27vw;
     }
   }
 }
@@ -31,8 +30,7 @@
 
 .menu-lapalette h3 {
   font-family: 'KaushanScript-Regular';
-  font-size: 2.5rem;
-  padding:2vh 2vw 5vh 0;
+  font-size: 3rem;
   background: -webkit-linear-gradient(0deg , #3f9338, #c0ff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,28 +51,41 @@ body {
   @include media-min(768px) {
     width: 80%;
     margin: auto;
-    .menu-lapalette {
-      .page {
-        width: 70%;
-        /*margin: 5vh 5vw 10vh 5vh ;*/
-        margin: auto;
 
-        img[src*='lapalette1.png'] {
-          top: 6vh;
-          width: 18vw;
-        }
-        img[src*='lapalette2.png'] {
-          bottom: 6vh;
-          left: 45vw;
-          width: 18vw;
-        }
+    .page-lapalette {
+      width: 70%;
+      margin: auto;
 
+      img[src*='lapalette1.png'] {
+        top: 2vh;
+        width: 22vw;
+      }
+      img[src*='lapalette2.png'] {
+        bottom: 2vh;
+        left: 46vw;
+        width: 22vw;
       }
     }
   }
 
+
   @include media-min(1024px) {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
+
+    .page-lapalette {
+      width: 80%;
+      margin: auto;
+
+      img[src*='lapalette1.png'] {
+        top: 3vh;
+        width: 20vw;
+      }
+      img[src*='lapalette2.png'] {
+        bottom: 3vh;
+        left: 43vw;
+        width: 20vw;
+      }
+    }
   }
 }

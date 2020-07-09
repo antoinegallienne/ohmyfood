@@ -5,9 +5,9 @@
 -----------------------------------------------*/
 
 h4 {
-  position: relative;
+  margin: auto;
   text-decoration: none;
-  width: 100%;
+  width: 30%;
   background: linear-gradient(to top,
           $col--site 0%,
           $col--site 15%,
@@ -23,7 +23,7 @@ h4:hover {
 
 
 
-/* -- bouton mention et contact  --
+/* -- boutons mention et contact  --
 ---------------------------------*/
 
 
@@ -60,5 +60,124 @@ h4:hover {
   }
   100% {
     transform: translate( 2px , 2px );
+  }
+}
+
+
+/*  --------- animation page d'index ---------
+---------------------------------------------*/
+
+.lanote {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.5;
+  }
+}
+
+
+.lechic {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.5;
+
+  }
+}
+
+.ledelice {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.5;
+
+  }
+}
+
+.lapalette {
+  color: $fonte;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  a {
+    text-decoration: none;
+    color: $fonte;
+  }
+  &:hover {
+    transform: scale(1.4);
+    opacity: 0.5;
+
+  }
+}
+
+
+/* --- boutons prochainement    ---
+---------------------------------*/
+
+@keyframes buttonprochainement {
+  0% {
+    opacity: 0;
+    content: '  ! ! !';
+  }
+  10% {
+    opacity: .1;
+    content: '  ! ! !';
+  }
+  20% {
+    opacity: .2;
+    content: '  ! ! !';
+  }
+  30% {
+    opacity: .3;
+    content: '  ! ! !';
+  }
+  40% {
+    opacity: .4;
+    content: '  ! ! !';
+  }
+  50% {
+    opacity: .5;
+    content: '  ! ! !';
+  }
+  60% {
+    opacity: .5;
+    content: '  ! ! !';
+  }
+  70% {
+    opacity: .7;
+    content: '  ! ! !';
+  }
+  80% {
+    opacity: 8;
+    content: '  ! ! !';
+  }
+  90% {
+    opacity: .9;
+    content: '  ! ! !';
+  }
+  100% {
+    opacity: 1;
+    content: '  ! ! !';
   }
 }

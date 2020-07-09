@@ -22,6 +22,7 @@
     }
   }
 }
+
 /*  ----- barre de recherche ---------
 ---------------------------------------*/
 aside{
@@ -33,8 +34,8 @@ aside{
   }
 }
 
-/*  -----background des cartes ---------
----------------------------------------*/
+/* ---Titre et background des cartes  ---
+----------------------------------------*/
 
 .menu-ohmyfood li[class*='li-lanote'] {
   section i{
@@ -49,6 +50,7 @@ aside{
   }
   background-color: $lanote;
 }
+
 .menu-ohmyfood li[class*='li-lechic'] {
   section h2 {
     font-family: 'CroissantOne-Regular';
@@ -59,6 +61,7 @@ aside{
   }
   background-color: $lechic;
 }
+
 .menu-ohmyfood li[class*='li-ledelice'] {
   section h2 {
     font-family: 'DancingScript-VariableFont_wght';
@@ -67,9 +70,9 @@ aside{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   background-color: $ledelice;
 }
+
 .menu-ohmyfood li[class*='li-lapalette'] {
   section h2 {
     font-family: 'KaushanScript-Regular';
@@ -81,79 +84,11 @@ aside{
   background-color: $lapalette;
 }
 
-/*  --------------- animation ---------
----------------------------------------*/
-
-.lanote {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
-  }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.5;
-  }
-}
-
-
-.lechic {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
-  }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.5;
-
-  }
-}
-
-.ledelice {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
-  }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.5;
-
-  }
-}
-
-.lapalette {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
-  }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.5;
-
-  }
-}
-
 
 /* -----            media query             ----
 ---------------------------------------------- */
 
 body {
-
   margin: 0 auto;
   main{
     text-align: center;
@@ -191,7 +126,6 @@ body {
           height: 25vh;
           padding: 22vh 5vw;
           margin: 2vh 3vw;
-
       }
     }
   }

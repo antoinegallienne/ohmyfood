@@ -1,13 +1,14 @@
 
-.menu-lechic {
+body {
   font-family: 'DMSerifText-Regular';
   background: $blanc;
-  width: 100%;
+  width: 90%;
   text-align: center;
+  margin: auto;
 
-  .page {
+  .page-lechic {
     background: $lechic;
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: flex;
     padding: 1vh 8vw;
@@ -25,51 +26,49 @@
     }
 
     img[src*='lechic1.png'] {
-      /*display: inline;*/
       position: relative;
-      top: 5.5vh;
+      top: 2vh;
       width: 25vw;
     }
     img[src*='lechic2.png'] {
       position: relative;
-      bottom: 5.5vh;
-      left: 60vw;
+      bottom: 2vh;
+      left: 52vw;
       width: 25vw;
     }
 
     img[src*='lechic3.png'] {
-     /* display: inline;*/
       position: relative;
-      top: 5.5vh;
-      width: 25vw;
+      top: 2vh;
+      width: 22vw;
     }
     img[src*='lechic4.png'] {
       position: relative;
-      bottom: 5.5vh;
-      left: 60vw;
-      width: 25vw;
+      bottom: 2vh;
+      left: 58vw;
+      width: 22vw;
     }
 
     img[src*='lechic5.png'] {
-      /*display: inline;*/
       position: relative;
-      top: 5.5vh;
-      width: 25vw;
+      top: 2vh;
+      width: 22vw;
     }
     img[src*='lechic6.png'] {
       position: relative;
-      bottom: 5.5vh;
-      left: 60vw;
-      width: 25vw;
+      bottom: 2vh;
+      left: 58vw;
+      width: 22vw;
     }
   }
 }
-
+article {
+  font-size: 0.6rem;
+}
 
 .menu-lechic h3 {
   font-family: 'CroissantOne-Regular';
-  font-size: 2.5rem;
-  padding:2vh 2vw 5vh 0;
+  font-size: 1.5rem;
   background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,40 +90,49 @@ body {
   @include media-min(768px) {
     width: 80%;
     margin: auto;
+
+    article {
+      font-size: 1rem;
+    }
+    .menu-lechic h3 {
+      font-family: 'CroissantOne-Regular';
+      font-size: 2.3rem;
+      background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     .menu-lechic {
-      .page {
+      .page-lechic {
         width: 70%;
-        /*margin: 5vh 5vw 10vh 5vh ;*/
         margin: auto;
 
         img[src*='lechic1.png'] {
-          top: 6vh;
-          width: 18vw;
+          top: 3vh;
+          width: 22vw;
         }
         img[src*='lechic2.png'] {
-          bottom: 6vh;
-          left: 45vw;
+          bottom: 3vh;
+          left: 47vw;
           width: 18vw;
         }
         img[src*='lechic3.png'] {
-          top: 6vh;
-          width: 18vw;
+          top: 3vh;
+          width: 22vw;
         }
         img[src*='lechic4.png'] {
-          bottom: 6vh;
-          left: 45vw;
+          bottom: 3vh;
+          left: 47vw;
           width: 18vw;
         }
         img[src*='lechic5.png'] {
-          top: 6vh;
-          width: 18vw;
+          top: 3vh;
+          width: 22vw;
         }
         img[src*='lechic6.png'] {
-          bottom: 6vh;
-          left: 45vw;
+          bottom: 3vh;
+          left: 47vw;
           width: 18vw;
         }
-
       }
     }
   }
@@ -132,5 +140,51 @@ body {
   @include media-min(1024px) {
     width: 65%;
     margin: 0 auto;
+
+    article {
+      font-size: 1.2rem;
+    }
+
+    .menu-lechic h3 {
+      font-family: 'CroissantOne-Regular';
+      font-size: 3rem;
+      background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .menu-lechic {
+      .page-lechic {
+        width: 70%;
+        margin: auto;
+
+        img[src*='lechic1.png'] {
+          top: 3vh;
+          width: 18vw;
+        }
+        img[src*='lechic2.png'] {
+          bottom: 3vh;
+          left: 37vw;
+          width: 18vw;
+        }
+        img[src*='lechic3.png'] {
+          top: 3vh;
+          width: 18vw;
+        }
+        img[src*='lechic4.png'] {
+          bottom: 3vh;
+          left: 37vw;
+          width: 18vw;
+        }
+        img[src*='lechic5.png'] {
+          top: 3vh;
+          width: 18vw;
+        }
+        img[src*='lechic6.png'] {
+          bottom: 3vh;
+          left: 37vw;
+          width: 18vw;
+        }
+      }
+    }
   }
 }

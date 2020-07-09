@@ -1,62 +1,86 @@
 @charset "UTF-8";
-/* ----------------------*/
+/* --------- variable couleur  ----------
+---------------------------------------*/
 /* -----       media query          ----
 --------------------------------------- */
-body {
-  width: 100%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    width: 668px;
-  }
-  body .menu-ohmyfood {
-    background: #fff;
-    width: 100%;
-    margin: auto;
-  }
-  body .menu-ohmyfood ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  body .menu-ohmyfood ul li {
-    width: 100%;
-    /*  border-radius: 10%;*/
-    padding: 0;
-    margin: 2vh;
-    /* border: solid $contour;*/
-    list-style-type: none;
-    text-align: center;
-  }
-  body .menu-ohmyfood ul li img {
-    border-radius: 0.5rem;
-    border: solid #DCC;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    width: 1024px;
-  }
-}
-
-/* ----           Table des menus           ---
+/* ----    Table du menu La note         -----
 -----------------------------------------------*/
-main {
+.menu-lanote {
   margin: auto;
   text-align: center;
 }
-main table {
+.menu-lanote table {
+  padding-left: 0;
   table-layout: fixed;
-  width: 80%;
+  width: 100%;
   vertical-align: middle;
   text-align: left;
 }
-main table th:nth-child(1) {
-  width: 87%;
+.menu-lanote table th:nth-child(1) {
+  width: 90%;
 }
-main table th:nth-child(2) {
-  width: 12%;
+.menu-lanote table th:nth-child(2) {
+  width: 5%;
+}
+
+/* -Table du menu Le chic        ---
+-----------------------------------------------*/
+.menu-lechic {
+  margin: auto;
+  text-align: center;
+}
+.menu-lechic table {
+  padding-left: 5vw;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.menu-lechic table th:nth-child(1) {
+  width: 100%;
+}
+.menu-lechic table th:nth-child(2) {
+  width: 15%;
+}
+
+/* -Table du menu Le délice         ---
+-----------------------------------------------*/
+.menu-ledelice {
+  margin: auto;
+  text-align: center;
+}
+.menu-ledelice table {
+  padding-left: 5vw;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.menu-ledelice table th:nth-child(1) {
+  width: 100%;
+}
+.menu-ledelice table th:nth-child(2) {
+  width: 15%;
+}
+
+/* -Table du menu  la palette         ---
+-----------------------------------------------*/
+.menu-lapalette {
+  margin: auto;
+  text-align: center;
+}
+.menu-lapalette table {
+  padding-left: 5vw;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.menu-lapalette table th:nth-child(1) {
+  width: 100%;
+}
+.menu-lapalette table th:nth-child(2) {
+  width: 15%;
 }
 
 /* -------------       h1         ---------------
@@ -104,8 +128,8 @@ main table th:nth-child(2) {
   font-style: normal;
 }
 @font-face {
-  font-family: "DMSerifText-Regular";
-  src: url("../../public/font/NanumPenScript-Regular.ttf") format("truetype"), url("../../public/font/NanumPenScript-Regular.ttf") format("truetype");
+  font-family: "Caveat-Regular";
+  src: url("../../public/font/Caveat-Regular.ttf") format("truetype"), url("../../public/font/Caveat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -126,9 +150,9 @@ main table th:nth-child(2) {
 /* ----    animation trait soulignement menu ---
 -----------------------------------------------*/
 h4 {
-  position: relative;
+  margin: auto;
   text-decoration: none;
-  width: 100%;
+  width: 30%;
   background: linear-gradient(to top, #64A082 0%, #64A082 15%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size 2s;
 }
@@ -137,7 +161,7 @@ h4:hover {
   background-size: 100% 100%;
 }
 
-/* -- bouton mention et contact  --
+/* -- boutons mention et contact  --
 ---------------------------------*/
 @keyframes buttonfooter {
   0% {
@@ -174,169 +198,8 @@ h4:hover {
     transform: translate(2px, 2px);
   }
 }
-/* ---- bouton prochainement + animation ------
-----------------------------------------------*/
-button[class=pro] {
-  text-transform: capitalize;
-  width: 35%;
-  background: #64A082;
-  color: #EED071;
-  font-size: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  border: solid #64A082;
-  padding: 0.5rem 1rem;
-  margin: 5vh auto;
-}
-button[class=pro]::after {
-  color: rvba(0, 0, 0, 1);
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  transition-duration: 600ms;
-  content: "";
-  opacity: 0;
-}
-button[class=pro]:hover::after {
-  content: " prochainement ! ! !";
-  opacity: 1;
-}
-
-/* ---- bouton  mention et contact ------
-----------------------------------------*/
-button[class=footer] {
-  width: 23%;
-  background: #64A082;
-  color: #EED071;
-  font-size: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  border: solid #64A082;
-  padding: 0.5rem 1rem;
-  margin: auto;
-}
-button[class=footer]::first-letter {
-  text-transform: capitalize;
-}
-button[class=footer]:hover {
-  animation: buttonfooter 0.8s infinite;
-}
-button[class=footer] a {
-  text-decoration: none;
-  color: #EED071;
-}
-
-header {
-  color: #EED071;
-  text-align: center;
-  background: #64A082;
-  /*width: 100%;*/
-}
-header img {
-  width: 15rem;
-  padding: 4vh;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  bottom: 0.1rem;
-  color: #EED071;
-  font-family: "Montserrat-SemiBold";
-  font-size: 1.5rem;
-  background: #64A082;
-  height: 10vh;
-}
-
-.menu-ohmyfood {
-  background: #fff;
-  width: 100%;
-  margin: auto;
-}
-.menu-ohmyfood ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.menu-ohmyfood ul li {
-  font-size: 1.2rem;
-  margin: 3vh auto;
-  width: 30vw;
-  height: 20vh;
-  padding: 22vh 5vw;
-  list-style-type: none;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: solid #DCC;
-}
-
-/*  ----- barre de recherche ---------
----------------------------------------*/
-aside {
-  background: #EDEDED;
-  margin: auto;
-  padding: 2vh 0 2vh 5vw;
-}
-aside input {
-  width: 90%;
-}
-
-/*  -----background des cartes ---------
----------------------------------------*/
-.menu-ohmyfood li[class*=li-lanote] {
-  background-color: #FDE0DC;
-}
-.menu-ohmyfood li[class*=li-lanote] section i {
-  font-size: 3rem;
-  background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu-ohmyfood li[class*=li-lanote] section i a {
-  font-family: "Devonshire-Regular";
-  font-size: 3rem;
-}
-
-.menu-ohmyfood li[class*=li-lechic] {
-  background-color: #FFF5FE;
-}
-.menu-ohmyfood li[class*=li-lechic] section h2 {
-  font-family: "CroissantOne-Regular";
-  font-size: 1.5rem;
-  background: -webkit-linear-gradient(0deg, #c7750c, #6e4bce);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu-ohmyfood li[class*=li-ledelice] {
-  background-color: #F9F9F9;
-}
-.menu-ohmyfood li[class*=li-ledelice] section h2 {
-  font-family: "DancingScript-VariableFont_wght";
-  font-size: 1.5rem;
-  background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu-ohmyfood li[class*=li-lapalette] {
-  background-color: #FDFFFD;
-}
-.menu-ohmyfood li[class*=li-lapalette] section h2 {
-  font-family: "KaushanScript-Regular";
-  font-size: 1.5rem;
-  background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/*  --------------- animation ---------
----------------------------------------*/
+/*  --------- animation page d'index ---------
+---------------------------------------------*/
 .lanote {
   color: #000;
   transform: scale(1);
@@ -397,6 +260,212 @@ aside input {
   opacity: 0.5;
 }
 
+/* --- boutons prochainement    ---
+---------------------------------*/
+@keyframes buttonprochainement {
+  0% {
+    opacity: 0;
+    content: "  ! ! !";
+  }
+  10% {
+    opacity: 0.1;
+    content: "  ! ! !";
+  }
+  20% {
+    opacity: 0.2;
+    content: "  ! ! !";
+  }
+  30% {
+    opacity: 0.3;
+    content: "  ! ! !";
+  }
+  40% {
+    opacity: 0.4;
+    content: "  ! ! !";
+  }
+  50% {
+    opacity: 0.5;
+    content: "  ! ! !";
+  }
+  60% {
+    opacity: 0.5;
+    content: "  ! ! !";
+  }
+  70% {
+    opacity: 0.7;
+    content: "  ! ! !";
+  }
+  80% {
+    opacity: 8;
+    content: "  ! ! !";
+  }
+  90% {
+    opacity: 0.9;
+    content: "  ! ! !";
+  }
+  100% {
+    opacity: 1;
+    content: "  ! ! !";
+  }
+}
+/* ----      bouton prochainement        ------
+----------------------------------------------*/
+button[class=pro] {
+  text-transform: capitalize;
+  width: 35%;
+  background: #64A082;
+  color: #EED071;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid #64A082;
+  padding: 0.5rem 1rem;
+  margin: 5vh auto;
+}
+button[class=pro]::after {
+  /*transition-property: transform;*/
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  transition-duration: 800ms;
+  content: "";
+  opacity: 0;
+}
+button[class=pro]:hover::after {
+  animation: buttonprochainement 0.8s;
+}
+
+/* ---- bouton  mention et contact ------
+----------------------------------------*/
+button[class=footer] {
+  width: 23%;
+  background: #64A082;
+  color: #EED071;
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid #64A082;
+  padding: 0.5rem 1rem;
+  margin: auto;
+}
+button[class=footer]::first-letter {
+  text-transform: capitalize;
+}
+button[class=footer]:hover {
+  animation: buttonfooter 0.8s infinite;
+}
+button[class=footer] a {
+  text-decoration: none;
+  color: #EED071;
+}
+
+header {
+  color: #EED071;
+  text-align: center;
+  background: #64A082;
+  /*width: 100%;*/
+}
+header img {
+  width: 15rem;
+  padding: 4vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0.1rem;
+  background: #64A082;
+  height: 12vh;
+}
+
+.menu-ohmyfood {
+  background: #fff;
+  width: 100%;
+  margin: auto;
+}
+.menu-ohmyfood ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-ohmyfood ul li {
+  font-size: 1.2rem;
+  margin: 3vh auto;
+  width: 30vw;
+  height: 20vh;
+  padding: 22vh 5vw;
+  list-style-type: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: solid #DCC;
+}
+
+/*  ----- barre de recherche ---------
+---------------------------------------*/
+aside {
+  background: #EDEDED;
+  margin: auto;
+  padding: 2vh 0 2vh 5vw;
+}
+aside input {
+  width: 90%;
+}
+
+/* ---Titre et background des cartes  ---
+----------------------------------------*/
+.menu-ohmyfood li[class*=li-lanote] {
+  background-color: #FDE0DC;
+}
+.menu-ohmyfood li[class*=li-lanote] section i {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-ohmyfood li[class*=li-lanote] section i a {
+  font-family: "Devonshire-Regular";
+  font-size: 3rem;
+}
+
+.menu-ohmyfood li[class*=li-lechic] {
+  background-color: #FFF5FE;
+}
+.menu-ohmyfood li[class*=li-lechic] section h2 {
+  font-family: "CroissantOne-Regular";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg, #c7750c, #6e4bce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-ohmyfood li[class*=li-ledelice] {
+  background-color: #F9F9F9;
+}
+.menu-ohmyfood li[class*=li-ledelice] section h2 {
+  font-family: "DancingScript-VariableFont_wght";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-ohmyfood li[class*=li-lapalette] {
+  background-color: #FDFFFD;
+}
+.menu-ohmyfood li[class*=li-lapalette] section h2 {
+  font-family: "KaushanScript-Regular";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* -----            media query             ----
 ---------------------------------------------- */
 body {
@@ -440,31 +509,30 @@ body main {
   }
 }
 
-.menu-lanote {
+body {
   font-family: "Itim-Regular";
   background: #fff;
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
-.menu-lanote .page {
+body .page-lanote {
   background: #FDE0DC;
-  width: 100%;
+  width: 80%;
   text-align: center;
   display: flex;
   padding: 1vh 8vw;
   margin: auto;
   flex-direction: column;
 }
-.menu-lanote .page img[class*="lanote1.png"] {
-  /*display: inline;
-  position: relative;*/
-  top: 5.5vh;
+body .page-lanote img[src*="lanote1.png"] {
+  position: relative;
+  top: 2vh;
   width: 25vw;
 }
-.menu-lanote .page img[src*="lanote2.png"] {
+body .page-lanote img[src*="lanote2.png"] {
   position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
+  bottom: 2vh;
+  left: 52vw;
   width: 25vw;
 }
 
@@ -487,7 +555,6 @@ span i {
 .menu-lanote h3 {
   font-family: "Devonshire-Regular";
   font-size: 2.5rem;
-  padding: 0 2vw 5vh 0;
 }
 
 h1 {
@@ -501,6 +568,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+body .menu-lanote h3 {
+  font-family: "Devonshire-Regular";
+  font-size: 2.5rem;
+  padding: 0 2vw 5vh 0;
+}
 @media screen and (min-width: 768px) {
   body {
     width: 80%;
@@ -508,57 +580,70 @@ body {
   }
   body .menu-lanote .page {
     width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
-    margin: auto;
   }
   body .menu-lanote .page img[src*="lanote1.png"] {
-    top: 6vh;
+    top: 2vh;
     width: 18vw;
   }
   body .menu-lanote .page img[src*="lanote2.png"] {
-    bottom: 6vh;
-    left: 45vw;
+    bottom: 2vh;
+    left: 50vw;
     width: 18vw;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
     width: 65%;
-    margin: 0 auto;
+  }
+  body .menu-lanote h3 {
+    font-family: "Devonshire-Regular";
+    font-size: 4rem;
+  }
+  body .menu-lanote .page-lanote {
+    font-size: 1.1rem;
+    width: 60%;
+    margin: auto;
+  }
+  body .menu-lanote .page-lanote img[src*="lanote1.png"] {
+    top: 3vh;
+    width: 16vw;
+  }
+  body .menu-lanote .page-lanote img[src*="lanote2.png"] {
+    bottom: 3vh;
+    left: 31vw;
+    width: 16vw;
   }
 }
 
-.menu-lapalette {
+body {
   background: #fff;
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
-.menu-lapalette .page {
+body .page-lapalette {
   background: #FDFFFD;
-  width: 100%;
+  width: 80%;
   text-align: center;
   display: flex;
   padding: 1vh 8vw;
   margin: auto;
   flex-direction: column;
 }
-.menu-lapalette .page img[src*="lapalette1.png"] {
-  /*display: inline;
-  position: relative;*/
-  top: 5.5vh;
-  width: 25vw;
-}
-.menu-lapalette .page img[src*="lapalette2.png"] {
+body .page-lapalette img[src*="lapalette1.png"] {
   position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
+  top: 2vh;
+  width: 27vw;
+}
+body .page-lapalette img[src*="lapalette2.png"] {
+  position: relative;
+  bottom: 2vh;
+  left: 51vw;
+  width: 27vw;
 }
 
 .menu-lapalette h3 {
   font-family: "KaushanScript-Regular";
-  font-size: 2.5rem;
-  padding: 2vh 2vw 5vh 0;
+  font-size: 3rem;
   background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -580,93 +665,106 @@ body {
     width: 80%;
     margin: auto;
   }
-  body .menu-lapalette .page {
+  body .page-lapalette {
     width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
     margin: auto;
   }
-  body .menu-lapalette .page img[src*="lapalette1.png"] {
-    top: 6vh;
-    width: 18vw;
+  body .page-lapalette img[src*="lapalette1.png"] {
+    top: 2vh;
+    width: 22vw;
   }
-  body .menu-lapalette .page img[src*="lapalette2.png"] {
-    bottom: 6vh;
-    left: 45vw;
-    width: 18vw;
+  body .page-lapalette img[src*="lapalette2.png"] {
+    bottom: 2vh;
+    left: 46vw;
+    width: 22vw;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
+  }
+  body .page-lapalette {
+    width: 80%;
+    margin: auto;
+  }
+  body .page-lapalette img[src*="lapalette1.png"] {
+    top: 3vh;
+    width: 20vw;
+  }
+  body .page-lapalette img[src*="lapalette2.png"] {
+    bottom: 3vh;
+    left: 43vw;
+    width: 20vw;
   }
 }
 
-.menu-lechic {
+body {
   font-family: "DMSerifText-Regular";
   background: #fff;
-  width: 100%;
+  width: 90%;
   text-align: center;
+  margin: auto;
 }
-.menu-lechic .page {
+body .page-lechic {
   background: #FFF5FE;
-  width: 100%;
+  width: 80%;
   text-align: center;
   display: flex;
   padding: 1vh 8vw;
   margin: auto;
   flex-direction: column;
 }
-.menu-lechic .page table[class*=prelude] {
+body .page-lechic table[class*=prelude] {
   color: #c7750c;
 }
-.menu-lechic .page table[class*=plaisir] {
+body .page-lechic table[class*=plaisir] {
   color: #a6679a;
 }
-.menu-lechic .page table[class*=gourmandise] {
+body .page-lechic table[class*=gourmandise] {
   color: #6d4acc;
 }
-.menu-lechic .page img[src*="lechic1.png"] {
-  /*display: inline;*/
+body .page-lechic img[src*="lechic1.png"] {
   position: relative;
-  top: 5.5vh;
+  top: 2vh;
   width: 25vw;
 }
-.menu-lechic .page img[src*="lechic2.png"] {
+body .page-lechic img[src*="lechic2.png"] {
   position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
+  bottom: 2vh;
+  left: 52vw;
   width: 25vw;
 }
-.menu-lechic .page img[src*="lechic3.png"] {
-  /* display: inline;*/
+body .page-lechic img[src*="lechic3.png"] {
   position: relative;
-  top: 5.5vh;
-  width: 25vw;
+  top: 2vh;
+  width: 22vw;
 }
-.menu-lechic .page img[src*="lechic4.png"] {
+body .page-lechic img[src*="lechic4.png"] {
   position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
+  bottom: 2vh;
+  left: 58vw;
+  width: 22vw;
 }
-.menu-lechic .page img[src*="lechic5.png"] {
-  /*display: inline;*/
+body .page-lechic img[src*="lechic5.png"] {
   position: relative;
-  top: 5.5vh;
-  width: 25vw;
+  top: 2vh;
+  width: 22vw;
 }
-.menu-lechic .page img[src*="lechic6.png"] {
+body .page-lechic img[src*="lechic6.png"] {
   position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
+  bottom: 2vh;
+  left: 58vw;
+  width: 22vw;
+}
+
+article {
+  font-size: 0.6rem;
 }
 
 .menu-lechic h3 {
   font-family: "CroissantOne-Regular";
-  font-size: 2.5rem;
-  padding: 2vh 2vw 5vh 0;
+  font-size: 1.5rem;
   background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -688,36 +786,45 @@ body {
     width: 80%;
     margin: auto;
   }
-  body .menu-lechic .page {
+  body article {
+    font-size: 1rem;
+  }
+  body .menu-lechic h3 {
+    font-family: "CroissantOne-Regular";
+    font-size: 2.3rem;
+    background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  body .menu-lechic .page-lechic {
     width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
     margin: auto;
   }
-  body .menu-lechic .page img[src*="lechic1.png"] {
-    top: 6vh;
+  body .menu-lechic .page-lechic img[src*="lechic1.png"] {
+    top: 3vh;
+    width: 22vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic2.png"] {
+    bottom: 3vh;
+    left: 47vw;
     width: 18vw;
   }
-  body .menu-lechic .page img[src*="lechic2.png"] {
-    bottom: 6vh;
-    left: 45vw;
+  body .menu-lechic .page-lechic img[src*="lechic3.png"] {
+    top: 3vh;
+    width: 22vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic4.png"] {
+    bottom: 3vh;
+    left: 47vw;
     width: 18vw;
   }
-  body .menu-lechic .page img[src*="lechic3.png"] {
-    top: 6vh;
-    width: 18vw;
+  body .menu-lechic .page-lechic img[src*="lechic5.png"] {
+    top: 3vh;
+    width: 22vw;
   }
-  body .menu-lechic .page img[src*="lechic4.png"] {
-    bottom: 6vh;
-    left: 45vw;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic5.png"] {
-    top: 6vh;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic6.png"] {
-    bottom: 6vh;
-    left: 45vw;
+  body .menu-lechic .page-lechic img[src*="lechic6.png"] {
+    bottom: 3vh;
+    left: 47vw;
     width: 18vw;
   }
 }
@@ -726,72 +833,118 @@ body {
     width: 65%;
     margin: 0 auto;
   }
+  body article {
+    font-size: 1.2rem;
+  }
+  body .menu-lechic h3 {
+    font-family: "CroissantOne-Regular";
+    font-size: 3rem;
+    background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  body .menu-lechic .page-lechic {
+    width: 70%;
+    margin: auto;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic1.png"] {
+    top: 3vh;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic2.png"] {
+    bottom: 3vh;
+    left: 37vw;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic3.png"] {
+    top: 3vh;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic4.png"] {
+    bottom: 3vh;
+    left: 37vw;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic5.png"] {
+    top: 3vh;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic6.png"] {
+    bottom: 3vh;
+    left: 37vw;
+    width: 18vw;
+  }
 }
 
-.menu-ledelice {
-  font-family: "DMSerifText-Regular";
+body {
+  font-family: "Caveat-Regular";
   background: #fff;
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
-.menu-ledelice .page {
+body .page-ledelice {
   background: #F9F9F9;
-  width: 90%;
+  width: 80%;
   text-align: center;
   display: flex;
   padding: 1vh 8vw;
   margin: auto;
   flex-direction: column;
 }
-.menu-ledelice .page img[src*="ledelice1.png"] {
-  /* display: inline;
-   position: relative;*/
-  top: 8vh;
+body .page-ledelice img[src*="ledelice1.png"] {
+  position: relative;
+  top: 3.8vh;
   width: 25vw;
 }
-.menu-ledelice .page img[src*="ledelice2.png"] {
+body .page-ledelice img[src*="ledelice2.png"] {
   position: relative;
-  bottom: 8vh;
-  left: 60vw;
+  bottom: 3.8vh;
+  left: 53vw;
   width: 25vw;
 }
-.menu-ledelice .page img[src*="ledelice3.png"] {
-  /* display: inline;*/
+body .page-ledelice img[src*="ledelice3.png"] {
   position: relative;
-  top: 8vh;
+  top: 3vh;
   width: 25vw;
 }
-.menu-ledelice .page img[src*="ledelice4.png"] {
+body .page-ledelice img[src*="ledelice4.png"] {
   position: relative;
-  bottom: 8vh;
-  left: 60vw;
+  bottom: 3vh;
+  left: 53vw;
   width: 25vw;
 }
-.menu-ledelice .page img[src*="ledelice5.png"] {
-  /*display: inline;*/
+body .page-ledelice img[src*="ledelice5.png"] {
   position: relative;
-  top: 8vh;
+  top: 3vh;
   width: 25vw;
 }
-.menu-ledelice .page img[src*="ledelice6.png"] {
+body .page-ledelice img[src*="ledelice6.png"] {
   position: relative;
-  bottom: 8vh;
-  left: 60vw;
+  bottom: 3vh;
+  left: 53vw;
   width: 25vw;
 }
 
-.menu-ledelice h3 {
-  font-family: "DancingScript-VariableFont_wght";
-  font-size: 2.5rem;
-  padding: 2vh 2vw 5vh 0;
-  background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+article {
+  font-size: 0.8rem;
 }
 
 h1 {
   font-family: "Montserrat-Regular";
   font-size: 1.5rem;
+}
+
+.menu-ledelice h3 {
+  font-family: "DancingScript-VariableFont_wght";
+  font-size: 2.3rem;
+  background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-ledelice h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 /* --------------- media query -----------------
@@ -805,75 +958,92 @@ body {
     width: 100%;
     margin: auto;
   }
-  body .menu-ledelice .page {
+  body article {
+    font-size: 1.2rem;
+  }
+  body .menu-ledelice h3 {
+    font-family: "DancingScript-VariableFont_wght";
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  body .page-ledelice {
     width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
     margin: auto;
   }
-  body .menu-ledelice .page img[src*="ledelice1.png"] {
-    top: 7vh;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice1.png"] {
+    top: 5vh;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice2.png"] {
-    bottom: 7vh;
-    left: 50vw;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice2.png"] {
+    bottom: 5vh;
+    left: 46vw;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice3.png"] {
-    top: 7vh;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice3.png"] {
+    top: 5vh;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice4.png"] {
-    bottom: 7vh;
-    left: 50vw;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice4.png"] {
+    bottom: 5vh;
+    left: 46vw;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice5.png"] {
-    top: 7vh;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice5.png"] {
+    top: 5vh;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice6.png"] {
-    bottom: 7vh;
-    left: 50vw;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice6.png"] {
+    bottom: 5vh;
+    left: 46vw;
+    width: 23vw;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
-  body .menu-ledelice .page {
+  body .menu-ledelice h3 {
+    font-family: "DancingScript-VariableFont_wght";
+    font-size: 4rem;
+    /*padding:2vh 2vw 5vh 0;*/
+    background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  body .page-ledelice {
     width: 70%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: auto;
   }
-  body .menu-ledelice .page img[src*="ledelice1.png"] {
-    top: 9.5vh;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice1.png"] {
+    top: 7vh;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice2.png"] {
-    bottom: 9.5vh;
-    left: 32.5vw;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice2.png"] {
+    bottom: 7vh;
+    left: 35vw;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice3.png"] {
-    top: 9.5vh;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice3.png"] {
+    top: 7vh;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice4.png"] {
-    bottom: 9.5vh;
-    left: 32.5vw;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice4.png"] {
+    bottom: 7vh;
+    left: 35vw;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice5.png"] {
-    top: 9.5vh;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice5.png"] {
+    top: 7vh;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice6.png"] {
-    bottom: 9.5vh;
-    left: 32.5vw;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice6.png"] {
+    bottom: 7vh;
+    left: 35vw;
+    width: 20vw;
   }
 }
 

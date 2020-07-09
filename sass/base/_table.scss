@@ -1,0 +1,89 @@
+
+
+/* ----    Table du menu La note         -----
+-----------------------------------------------*/
+.menu-lanote {
+  margin: auto;
+  text-align: center;
+
+  table {
+    padding-left: 0;
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+
+    th:nth-child(1) {
+      width: 90%;
+    }
+    th:nth-child(2) {
+      width: 5%;
+    }
+  }
+}
+
+/* -Table du menu Le chic        ---
+-----------------------------------------------*/
+.menu-lechic {
+  margin: auto;
+  text-align: center;
+
+  table {
+    padding-left: 5vw;
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+
+    th:nth-child(1) {
+      width: 100%;
+    }
+    th:nth-child(2) {
+      width: 15%;
+    }
+  }
+}
+
+/* -Table du menu Le délice         ---
+-----------------------------------------------*/
+.menu-ledelice {
+  margin: auto;
+  text-align: center;
+
+  table {
+    padding-left: 5vw;
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+
+    th:nth-child(1) {
+      width: 100%;
+    }
+    th:nth-child(2) {
+      width: 15%;
+    }
+  }
+}
+
+/* -Table du menu  la palette         ---
+-----------------------------------------------*/
+.menu-lapalette {
+  margin: auto;
+  text-align: center;
+
+  table {
+    padding-left: 5vw;
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+
+    th:nth-child(1) {
+      width: 100%;
+    }
+    th:nth-child(2) {
+      width: 15%;
+    }
+  }
+}

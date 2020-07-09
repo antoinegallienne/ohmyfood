@@ -1,29 +1,28 @@
 
-.menu-lanote {
+body{
   font-family: 'Itim-Regular';
   background: $blanc;
-  width: 100%;
+  width: 90%;
   text-align: center;
 
-  .page {
+  .page-lanote {
     background: $lanote;
-    width: 100%;
+    width: 80%;
     text-align: center;
     display: flex;
     padding: 1vh 8vw;
     margin: auto;
     flex-direction: column;
 
-    img[class*='lanote1.png'] {
-      /*display: inline;
-      position: relative;*/
-      top: 5.5vh;
+    img[src*='lanote1.png'] {
+      position: relative;
+      top: 2vh;
       width: 25vw;
     }
     img[src*='lanote2.png'] {
       position: relative;
-      bottom: 5.5vh;
-      left: 60vw;
+      bottom: 2vh;
+      left: 52vw;
       width: 25vw;
     }
   }
@@ -50,7 +49,6 @@ span i{
 .menu-lanote h3 {
   font-family: 'Devonshire-Regular';
   font-size: 2.5rem;
-  padding:0 2vw 5vh 0;
 }
 h1 {
   font-family: 'Montserrat-Regular';
@@ -65,31 +63,58 @@ body {
   width: 100%;
   margin: 0 auto;
 
+  .menu-lanote h3 {
+    font-family: 'Devonshire-Regular';
+    font-size: 2.5rem;
+    padding:0 2vw 5vh 0;
+  }
+
   @include media-min(768px) {
     width: 80%;
     margin: auto;
+
     .menu-lanote {
       .page {
         width: 70%;
-        /*margin: 5vh 5vw 10vh 5vh ;*/
-        margin: auto;
 
         img[src*='lanote1.png'] {
-          top: 6vh;
+          top: 2vh;
           width: 18vw;
         }
+
         img[src*='lanote2.png'] {
-          bottom: 6vh;
-          left: 45vw;
+          bottom: 2vh;
+          left: 50vw;
           width: 18vw;
         }
 
       }
     }
-}
+  }
 
   @include media-min(1024px) {
     width: 65%;
-    margin: 0 auto;
+    .menu-lanote h3 {
+      font-family: 'Devonshire-Regular';
+      font-size: 4rem;
+    }
+    .menu-lanote {
+      .page-lanote {
+        font-size: 1.1rem;
+        width: 60%;
+        margin: auto;
+
+        img[src*='lanote1.png'] {
+          top: 3vh;
+          width: 16vw;
+        }
+
+        img[src*='lanote2.png'] {
+          bottom: 3vh;
+          left: 31vw;
+          width: 16vw;
+        }
+      }
+    }
   }
 }

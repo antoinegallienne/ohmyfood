@@ -1,13 +1,13 @@
 
-.menu-ledelice {
-  font-family: 'DMSerifText-Regular';
+body {
+  font-family: 'Caveat-Regular';
   background: $blanc;
-  width: 100%;
+  width: 90%;
   text-align: center;
 
-  .page {
+  .page-ledelice {
     background: $ledelice;
-    width: 90%;
+    width: 80%;
     text-align: center;
     display: flex;
     padding: 1vh 8vw;
@@ -15,56 +15,60 @@
     flex-direction: column;
 
     img[src*='ledelice1.png'] {
-     /* display: inline;
-      position: relative;*/
-      top: 8vh;
+      position: relative;
+      top: 3.8vh;
       width: 25vw;
     }
     img[src*='ledelice2.png'] {
       position: relative;
-      bottom: 8vh;
-      left: 60vw;
+      bottom: 3.8vh;
+      left: 53vw;
       width: 25vw;
     }
     img[src*='ledelice3.png'] {
-     /* display: inline;*/
       position: relative;
-      top: 8vh;
+      top: 3vh;
       width: 25vw;
     }
     img[src*='ledelice4.png'] {
       position: relative;
-      bottom: 8vh;
-      left: 60vw;
+      bottom: 3vh;
+      left: 53vw;
       width: 25vw;
     }
     img[src*='ledelice5.png'] {
-      /*display: inline;*/
       position: relative;
-      top: 8vh;
+      top: 3vh;
       width: 25vw;
     }
     img[src*='ledelice6.png'] {
       position: relative;
-      bottom: 8vh;
-      left: 60vw;
+      bottom: 3vh;
+      left: 53vw;
       width: 25vw;
     }
   }
 }
+article {
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-family: 'Montserrat-Regular';
+  font-size: 1.5rem;
+}
 
 .menu-ledelice h3 {
   font-family: 'DancingScript-VariableFont_wght';
-  font-size: 2.5rem;
-  padding:2vh 2vw 5vh 0;
+  font-size: 2.3rem;
   background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
-h1 {
-  font-family: 'Montserrat-Regular';
-  font-size: 1.5rem;
+.page-ledelice h4{
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 
@@ -80,82 +84,102 @@ body {
     width: 100%;
     margin: auto;
 
-    .menu-ledelice {
-      .page {
-        width: 70%;
-        /*margin: 5vh 5vw 10vh 5vh ;*/
-        margin: auto;
+    article {
+      font-size: 1.2rem;
+    }
 
-        img[src*='ledelice1.png'] {
-          top: 7vh;
-          width: 18vw;
+    .menu-ledelice h3 {
+      font-family: 'DancingScript-VariableFont_wght';
+      font-size: 3.5rem;
+      background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .page-ledelice {
+      width: 70%;
+      margin: auto;
+
+      img[src*='ledelice1.png'] {
+        top: 5vh;
+        width: 23vw;
         }
-        img[src*='ledelice2.png'] {
-          bottom: 7vh;
-          left: 50vw;
-          width: 18vw;
-        }
-        img[src*='ledelice3.png'] {
-          top: 7vh;
-          width: 18vw;
-        }
-        img[src*='ledelice4.png'] {
-          bottom: 7vh;
-          left: 50vw;
-          width: 18vw;
-        }
-        img[src*='ledelice5.png'] {
-          top: 7vh;
-          width: 18vw;
-        }
-        img[src*='ledelice6.png'] {
-          bottom: 7vh;
-          left: 50vw;
-          width: 18vw;
-        }
+      img[src*='ledelice2.png'] {
+        bottom: 5vh;
+        left: 46vw;
+        width: 23vw;
+      }
+      img[src*='ledelice3.png'] {
+        top: 5vh;
+        width: 23vw;
+      }
+      img[src*='ledelice4.png'] {
+        bottom: 5vh;
+        left: 46vw;
+        width: 23vw;
+      }
+      img[src*='ledelice5.png'] {
+        top: 5vh;
+        width: 23vw;
+      }
+      img[src*='ledelice6.png'] {
+        bottom: 5vh;
+        left: 46vw;
+        width: 23vw;
       }
     }
   }
+
 
   @include media-min(1024px) {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 
-    .menu-ledelice {
-      .page {
-        width: 70%;
-        font-size: 1.3rem;
-        margin: auto;
+    article {
 
-        img[src*='ledelice1.png'] {
-          top: 9.5vh;
-          width: 16vw;
-        }
-        img[src*='ledelice2.png'] {
-          bottom: 9.5vh;
-          left: 32.5vw;
-          width: 16vw;
-        }
-        img[src*='ledelice3.png'] {
-          top: 9.5vh;
-          width: 16vw;
-        }
-        img[src*='ledelice4.png'] {
-          bottom: 9.5vh;
-          left: 32.5vw;
-          width: 16vw;
-        }
-        img[src*='ledelice5.png'] {
-          top: 9.5vh;
-          width: 16vw;
-        }
-        img[src*='ledelice6.png'] {
-          bottom: 9.5vh;
-          left: 32.5vw;
-          width: 16vw;
-        }
+    }
+
+    .menu-ledelice h3 {
+      font-family: 'DancingScript-VariableFont_wght';
+      font-size: 4rem;
+      /*padding:2vh 2vw 5vh 0;*/
+      background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .page-ledelice {
+      width: 70%;
+      font-size: 1.2rem;
+      margin: auto;
+
+      img[src*='ledelice1.png'] {
+        top: 7vh;
+        width: 20vw;
+      }
+      img[src*='ledelice2.png'] {
+        bottom: 7vh;
+        left: 35vw;
+        width: 20vw;
+      }
+      img[src*='ledelice3.png'] {
+        top: 7vh;
+        width: 20vw;
+      }
+      img[src*='ledelice4.png'] {
+        bottom: 7vh;
+        left: 35vw;
+        width: 20vw;
+      }
+      img[src*='ledelice5.png'] {
+        top: 7vh;
+        width: 20vw;
+      }
+      img[src*='ledelice6.png'] {
+        bottom: 7vh;
+        left: 35vw;
+        width: 20vw;
       }
     }
   }
-
 }

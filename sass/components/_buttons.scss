@@ -1,5 +1,5 @@
 
-/* ---- bouton prochainement + animation ------
+/* ----      bouton prochainement        ------
 ----------------------------------------------*/
 
 button[class='pro']  {
@@ -16,21 +16,20 @@ button[class='pro']  {
   margin: 5vh auto;
 
   &::after{
-    color: rvba( 0,0,0,1 ) ;
+    /*transition-property: transform;*/
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
+
     transition: opacity 1s ease-in-out;
-    transition-duration: 600ms;
+    transition-duration: 800ms;
     content: '';
     opacity: 0;
       }
   &:hover {
     &::after {
-      content: ' prochainement ! ! !';
-      opacity: 1;
-
+      animation: buttonprochainement 0.8s;
     }
   }
 }
@@ -44,7 +43,8 @@ button[class='footer'] {
   width: 23%;
   background: $col--site;
   color: $ohmyfood;
-  font-size: 1.2rem;
+  font-family: 'Montserrat-SemiBold';
+  font-size: 1.4rem;
   text-align: center;
   cursor: pointer;
   border-radius: 0.5rem;

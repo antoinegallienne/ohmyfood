@@ -5,13 +5,17 @@ body {
   text-align: center;
 
   .page-lapalette {
+    display: flex;
+    flex-direction: column;
     background: $lapalette;
     width: 80%;
-    text-align: center;
-    display: flex;
     padding: 1vh 8vw;
     margin: auto;
-    flex-direction: column;
+
+    h4 {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
 
     img[src*='lapalette1.png'] {
       position: relative;
@@ -27,22 +31,8 @@ body {
   }
 }
 
-
-.menu-lapalette h3 {
-  font-family: 'KaushanScript-Regular';
-  font-size: 3rem;
-  background: -webkit-linear-gradient(0deg , #3f9338, #c0ff7d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h1 {
-  font-family: 'Montserrat-Regular';
-  font-size: 1.5rem;
-}
-
 /* --------------- media query -----------------
 ------------------------------------------------ */
-
 
 body {
   width: 100%;
@@ -76,7 +66,9 @@ body {
     .page-lapalette {
       width: 80%;
       margin: auto;
-
+      h4 {
+        font-size: 1.5rem;
+      }
       img[src*='lapalette1.png'] {
         top: 3vh;
         width: 20vw;

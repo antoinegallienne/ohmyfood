@@ -16,20 +16,18 @@ button[class='pro']  {
   margin: 5vh auto;
 
   &::after{
-    /*transition-property: transform;*/
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1.5s linear;
+    -moz-transition: opacity 1.5s linear;
+    -o-transition: opacity 1.5s linear;
 
-    transition: opacity 1s ease-in-out;
-    transition-duration: 800ms;
+    transition: opacity 1.5s linear;
+
     content: '';
     opacity: 0;
       }
   &:hover {
     &::after {
-      animation: buttonprochainement 0.8s;
+      animation: buttonprochainement 1s;
     }
   }
 }

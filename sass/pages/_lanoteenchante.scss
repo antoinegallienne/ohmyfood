@@ -2,17 +2,28 @@
 body{
   font-family: 'Itim-Regular';
   background: $blanc;
-  width: 90%;
+  width: 100%;
   text-align: center;
 
+  .menu-lanote h3 {
+    font-family: 'Devonshire-Regular';
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
   .page-lanote {
+    display: flex;
+    flex-direction: column;
     background: $lanote;
     width: 80%;
-    text-align: center;
-    display: flex;
+    font-size: 1.2rem;
     padding: 1vh 8vw;
     margin: auto;
-    flex-direction: column;
+
+    h4 {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
 
     img[src*='lanote1.png'] {
       position: relative;
@@ -46,27 +57,22 @@ span i{
 }
 
 
-.menu-lanote h3 {
-  font-family: 'Devonshire-Regular';
-  font-size: 2.5rem;
-}
-h1 {
-  font-family: 'Montserrat-Regular';
-  font-size: 1.5rem;
-}
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
-
 
 body {
   width: 100%;
   margin: 0 auto;
 
   .menu-lanote h3 {
-    font-family: 'Devonshire-Regular';
     font-size: 2.5rem;
-    padding:0 2vw 5vh 0;
+    padding: 0 2vw 5vh 0;
+  }
+
+  .page-lanote h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
   }
 
   @include media-min(768px) {
@@ -78,26 +84,26 @@ body {
         width: 70%;
 
         img[src*='lanote1.png'] {
-          top: 2vh;
+          top: 6vh;
           width: 18vw;
         }
 
         img[src*='lanote2.png'] {
-          bottom: 2vh;
+          bottom: 6vh;
           left: 50vw;
           width: 18vw;
         }
-
       }
     }
   }
 
   @include media-min(1024px) {
     width: 65%;
+
     .menu-lanote h3 {
-      font-family: 'Devonshire-Regular';
       font-size: 4rem;
     }
+
     .menu-lanote {
       .page-lanote {
         font-size: 1.1rem;

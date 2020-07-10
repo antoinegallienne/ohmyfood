@@ -8,11 +8,8 @@ h4 {
   margin: auto;
   text-decoration: none;
   width: 30%;
-  background: linear-gradient(to top,
-          $col--site 0%,
-          $col--site 15%,
-          transparent 10.01%)
-  no-repeat left bottom / 0 100%;
+  cursor: pointer;
+  background: linear-gradient(to top, $col--site 0%, $col--site 15%, transparent 10%) no-repeat left bottom / 0 100%;
   transition: background-size 2s;
 }
 
@@ -140,44 +137,44 @@ h4:hover {
     opacity: 0;
     content: '  ! ! !';
   }
-  10% {
-    opacity: .1;
-    content: '  ! ! !';
-  }
   20% {
     opacity: .2;
-    content: '  ! ! !';
-  }
-  30% {
-    opacity: .3;
     content: '  ! ! !';
   }
   40% {
     opacity: .4;
     content: '  ! ! !';
   }
-  50% {
-    opacity: .5;
-    content: '  ! ! !';
-  }
   60% {
-    opacity: .5;
-    content: '  ! ! !';
-  }
-  70% {
-    opacity: .7;
+    opacity: .6;
     content: '  ! ! !';
   }
   80% {
-    opacity: 8;
-    content: '  ! ! !';
-  }
-  90% {
-    opacity: .9;
+    opacity: .8;
     content: '  ! ! !';
   }
   100% {
     opacity: 1;
+    content: '  ! ! !';
+  }
+  80% {
+    opacity: .8;
+    content: '  ! ! !';
+  }
+ 60% {
+    opacity: .6;
+    content: '  ! ! !';
+  }
+ 40% {
+    opacity: .4;
+    content: '  ! ! !';
+  }
+  20% {
+    opacity: .2;
+    content: '  ! ! !';
+  }
+  10% {
+    opacity: 0;
     content: '  ! ! !';
   }
 }

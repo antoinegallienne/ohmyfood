@@ -38,16 +38,18 @@ aside{
 ----------------------------------------*/
 
 .menu-ohmyfood li[class*='li-lanote'] {
-  section i{
+  section i {
     font-size: 3rem;
-    background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+    background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    & a{
-      font-family: 'Devonshire-Regular';
-      font-size: 3rem;
-    }
   }
+    h2{
+      font-family: 'Devonshire-Regular';
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
   background-color: $lanote;
 }
 
@@ -82,6 +84,11 @@ aside{
     -webkit-text-fill-color: transparent;
   }
   background-color: $lapalette;
+}
+
+h1 {
+  font-family: 'Montserrat-Regular';
+  font-size: 1.5rem;
 }
 
 

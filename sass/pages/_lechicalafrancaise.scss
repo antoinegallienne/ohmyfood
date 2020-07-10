@@ -6,14 +6,26 @@ body {
   text-align: center;
   margin: auto;
 
+  .menu-lechic h3 {
+    font-family: 'CroissantOne-Regular';
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .page-lechic {
+    display: flex;
+    flex-direction: column;
     background: $lechic;
     width: 80%;
-    text-align: center;
-    display: flex;
     padding: 1vh 8vw;
     margin: auto;
-    flex-direction: column;
+
+    h4 {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
 
     table[class*='prelude'] {
       color: #c7750c;
@@ -62,26 +74,10 @@ body {
     }
   }
 }
-article {
-  font-size: 0.6rem;
-}
-
-.menu-lechic h3 {
-  font-family: 'CroissantOne-Regular';
-  font-size: 1.5rem;
-  background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h1 {
-  font-family: 'Montserrat-Regular';
-  font-size: 1.5rem;
-}
 
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
-
 
 body {
   width: 100%;
@@ -91,19 +87,13 @@ body {
     width: 80%;
     margin: auto;
 
-    article {
-      font-size: 1rem;
-    }
-    .menu-lechic h3 {
-      font-family: 'CroissantOne-Regular';
-      font-size: 2.3rem;
-      background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     .menu-lechic {
+      h3 {
+        font-size: 2.3rem;
+      }
       .page-lechic {
         width: 70%;
+        font-size: 1rem;
         margin: auto;
 
         img[src*='lechic1.png'] {
@@ -141,21 +131,18 @@ body {
     width: 65%;
     margin: 0 auto;
 
-    article {
-      font-size: 1.2rem;
-    }
-
-    .menu-lechic h3 {
-      font-family: 'CroissantOne-Regular';
-      font-size: 3rem;
-      background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     .menu-lechic {
+      h3 {
+        font-size: 3rem;
+      }
       .page-lechic {
         width: 70%;
+        font-size: 1.2rem;
         margin: auto;
+
+        h4 {
+        font-size: 1.3rem;
+      }
 
         img[src*='lechic1.png'] {
           top: 3vh;

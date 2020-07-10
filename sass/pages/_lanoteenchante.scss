@@ -1,28 +1,39 @@
 
-.menu-lanote {
+body{
+  font-family: 'Itim-Regular';
   background: $blanc;
   width: 100%;
   text-align: center;
 
-  .page {
-    background: $lanote;
-    width: 100%;
-    text-align: center;
+  .menu-lanote h3 {
+    font-family: 'Devonshire-Regular';
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  .page-lanote {
     display: flex;
+    flex-direction: column;
+    background: $lanote;
+    width: 80%;
+    font-size: 1.2rem;
     padding: 1vh 8vw;
     margin: auto;
-    flex-direction: column;
+
+    h4 {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
 
     img[src*='lanote1.png'] {
-      display: inline;
       position: relative;
-      top: 5.5vh;
+      top: 2vh;
       width: 25vw;
     }
     img[src*='lanote2.png'] {
       position: relative;
-      bottom: 5.5vh;
-      left: 60vw;
+      bottom: 2vh;
+      left: 52vw;
       width: 25vw;
     }
   }
@@ -30,11 +41,11 @@
 
 
 article i{
-        font-size: 2.4rem;
-        padding-top:5vh ;
-        background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  padding-top:5vh ;
+  background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
       }
 
 span i{
@@ -45,86 +56,71 @@ span i{
   -webkit-text-fill-color: transparent;
 }
 
-/*   --------- annimation -----------------------
-
-.page h3{
-  text-decoration: none;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: 50% 50%;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(255,255,255,0.8);
-      transition: transform 250ms;
-    }
-
-      &:hover {
-
-        &::after {
-          transform: translateX(-50%) scaleX(1);
-        }
-
-      }
-
-}*/
-/*  ---------------------------------*/
-
-
-.page h4{
-  border-bottom: solid rgba(0, 0, 0, 0 );
-  &::after {
-    content: '';
-
-    cursor: pointer;
-  }
-  &:hover {
-    &::after {
-
-    }
-    border-bottom: solid black;
-    transition: transform 330ms ease-in-out;
-  }
-}
-
 
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
 
-
 body {
   width: 100%;
   margin: 0 auto;
 
+  .menu-lanote h3 {
+    font-size: 2.5rem;
+    padding: 0 2vw 5vh 0;
+  }
+
+  .page-lanote h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
   @include media-min(768px) {
     width: 80%;
     margin: auto;
+
     .menu-lanote {
       .page {
         width: 70%;
-        /*margin: 5vh 5vw 10vh 5vh ;*/
-        margin: auto;
 
         img[src*='lanote1.png'] {
           top: 6vh;
           width: 18vw;
         }
+
         img[src*='lanote2.png'] {
           bottom: 6vh;
-          left: 45vw;
+          left: 50vw;
           width: 18vw;
         }
-
       }
     }
-}
+  }
 
   @include media-min(1024px) {
     width: 65%;
-    margin: 0 auto;
+
+    .menu-lanote h3 {
+      font-size: 4rem;
+    }
+
+    .menu-lanote {
+      .page-lanote {
+        font-size: 1.1rem;
+        width: 60%;
+        margin: auto;
+
+        img[src*='lanote1.png'] {
+          top: 3vh;
+          width: 16vw;
+        }
+
+        img[src*='lanote2.png'] {
+          bottom: 3vh;
+          left: 31vw;
+          width: 16vw;
+        }
+      }
+    }
   }
 }

@@ -4,7 +4,6 @@
   background: $blanc;
   width: 100%;
   margin: auto;
-
   ul {
     display: flex;
     flex-direction:column;
@@ -12,7 +11,6 @@
 
     li {
         font-size: 1.2rem;
-        background: $lanote;
         margin: 3vh auto;
         width: 30vw;
         height: 20vh;
@@ -21,95 +19,90 @@
         text-align: center;
         border-radius: 0.5rem;
         border: solid $contour;
-
     }
   }
 }
 
-.recherche{
-  background: $recherche;
-  margin: 0 auto;
-  padding: 2vh 0 2vh 5vw;
-}
-
-/*  --------------- animation ---------
+/*  ----- barre de recherche ---------
 ---------------------------------------*/
-
-.lanote {
-
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
-  }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.4;
+aside{
+  background: $recherche;
+  margin: auto;
+  padding: 2vh 0 2vh 5vw;
+  input{
+    width: 90%;
   }
 }
 
+/* ---Titre et background des cartes  ---
+----------------------------------------*/
 
-.lechic {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
+.menu-ohmyfood li[class*='li-lanote'] {
+  section i {
+    font-size: 3rem;
+    background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.4;
+    h2{
+      font-family: 'Devonshire-Regular';
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
 
-  }
+  background-color: $lanote;
 }
 
-.ledelice {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
+.menu-ohmyfood li[class*='li-lechic'] {
+  section h2 {
+    font-family: 'CroissantOne-Regular';
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(0deg , #c7750c, #6e4bce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.4;
-
-  }
+  background-color: $lechic;
 }
 
-.lapalette {
-  color: $fonte;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-  a {
-    text-decoration: none;
-    color: $fonte;
+.menu-ohmyfood li[class*='li-ledelice'] {
+  section h2 {
+    font-family: 'DancingScript-VariableFont_wght';
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  &:hover {
-    transform: scale(1.4);
-    opacity: 0.4;
+  background-color: $ledelice;
+}
 
+.menu-ohmyfood li[class*='li-lapalette'] {
+  section h2 {
+    font-family: 'KaushanScript-Regular';
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(0deg , #3f9338, #c0ff7d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+  background-color: $lapalette;
+}
+
+h1 {
+  font-family: 'Montserrat-Regular';
+  font-size: 1.5rem;
 }
 
 
-/* -----            media query              ----
+/* -----            media query             ----
 ---------------------------------------------- */
 
 body {
-  width: 100%;
   margin: 0 auto;
+  main{
+    text-align: center;
+  }
 
   @include media-min(768px) {
-    width: 80%;
+
     margin: 0 auto;
 
       .menu-ohmyfood ul{
@@ -118,27 +111,28 @@ body {
         justify-content: center;
         flex-wrap: wrap;
           li {
-            width: 20vw;
-            height: 20vh;
+            width: 23vw;
+            height: 21vh;
             padding: 22vh 5vw;
             margin: 2vh 2vw;
           }
       }
   }
   @include media-min(1024px) {
-    width: 80%;
-    margin: 0 auto;
 
-    .menu-ohmyfood ul{
-      display: flex;
-      flex-direction:row;
-      justify-content: center;
-      flex-wrap: wrap;
-      li {
-        width: 16vw;
-        height: 25vh;
-        padding: 22vh 5vw;
-        margin: 2vh 3vw;
+      margin: 0 auto;
+
+      .menu-ohmyfood ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+          width: 16vw;
+          height: 25vh;
+          padding: 22vh 5vw;
+          margin: 2vh 3vw;
       }
     }
   }

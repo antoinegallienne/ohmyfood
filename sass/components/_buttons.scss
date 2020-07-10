@@ -1,24 +1,63 @@
 
-.btn-prochainement {
-  width: 30%;
-  background: $vert;
+/* ----      bouton prochainement        ------
+----------------------------------------------*/
+
+button[class='pro']  {
+  text-transform: capitalize;
+  width: 35%;
+  background: $col--site;
   color: $ohmyfood;
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
   border-radius: 0.5rem;
+  border: solid $col--site;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
- transition-property: transform;
-  transition-duration: 600ms;
+
   &::after{
+    -webkit-transition: opacity 1.5s linear;
+    -moz-transition: opacity 1.5s linear;
+    -o-transition: opacity 1.5s linear;
+
+    transition: opacity 1.5s linear;
+
     content: '';
-  }
-
+    opacity: 0;
+      }
   &:hover {
-
     &::after {
-      content: ' ! ! !';
+      animation: buttonprochainement 1s;
     }
+  }
+}
+
+
+/* ---- bouton  mention et contact ------
+----------------------------------------*/
+
+
+button[class='footer'] {
+  width: 23%;
+  background: $col--site;
+  color: $ohmyfood;
+  font-family: 'Montserrat-SemiBold';
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid $col--site;
+  padding: 0.5rem 1rem;
+  margin:  auto;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+  &:hover {
+    animation: buttonfooter 0.8s infinite;
+  }
+  a {
+    text-decoration: none;
+    color: $ohmyfood;
   }
 }

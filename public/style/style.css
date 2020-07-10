@@ -1,166 +1,206 @@
-/* ----------------------*/
+@charset "UTF-8";
+/* --------- variable couleur  ----------
+---------------------------------------*/
 /* -----       media query          ----
 --------------------------------------- */
-body {
-  width: 100%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    width: 668px;
-  }
-  body .menu-ohmyfood {
-    background: #fff;
-    width: 100%;
-    margin: auto;
-  }
-  body .menu-ohmyfood ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  body .menu-ohmyfood ul li {
-    width: 100%;
-    /*  border-radius: 10%;*/
-    padding: 0;
-    margin: 2vh;
-    /* border: solid $contour;*/
-    list-style-type: none;
-    text-align: center;
-  }
-  body .menu-ohmyfood ul li img {
-    border-radius: 0.5rem;
-    border: solid #BAA;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    width: 1024px;
-  }
-}
-
-/* ----           Table des menus           ---
+/* ----    Table du menu La note         -----
 -----------------------------------------------*/
-table {
+.menu-lanote {
+  margin: auto;
+  text-align: center;
+}
+.menu-lanote table {
+  padding-left: 0;
   table-layout: fixed;
   width: 100%;
   vertical-align: middle;
   text-align: left;
 }
-table th:nth-child(1) {
+.menu-lanote table th:nth-child(1) {
   width: 90%;
 }
-table th:nth-child(2) {
-  width: 10%;
+.menu-lanote table th:nth-child(2) {
+  width: 5%;
 }
 
+/* -Table du menu Le chic        ---
+-----------------------------------------------*/
+.menu-lechic {
+  margin: auto;
+  text-align: center;
+}
+.menu-lechic table {
+  padding-left: 5vw;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.menu-lechic table th:nth-child(1) {
+  width: 100%;
+}
+.menu-lechic table th:nth-child(2) {
+  width: 15%;
+}
+
+/* -Table du menu Le délice         ---
+-----------------------------------------------*/
+.menu-ledelice {
+  margin: auto;
+  text-align: center;
+}
+.menu-ledelice table {
+  padding-left: 5vw;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.menu-ledelice table th:nth-child(1) {
+  width: 100%;
+}
+.menu-ledelice table th:nth-child(2) {
+  width: 15%;
+}
+
+/* -Table du menu  la palette         ---
+-----------------------------------------------*/
+.menu-lapalette {
+  margin: auto;
+  text-align: center;
+}
+.menu-lapalette table {
+  padding-left: 5vw;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.menu-lapalette table th:nth-child(1) {
+  width: 100%;
+}
+.menu-lapalette table th:nth-child(2) {
+  width: 15%;
+}
+
+/* -------------       h1         ---------------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../public/font/Montserrat-Regular.ttf") format("truetype"), url("../../public/font/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu la note enchantée ---------------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("../../public/font/Devonshire-Regular.ttf") format("truetype"), url("../../public/font/Devonshire-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Itim-Regular";
+  src: url("../../public/font/Itim-Regular.ttf") format("truetype"), url("../../public/font/Itim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu  Le chic à la française----------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url("../../public/font/CroissantOne-Regular.ttf") format("truetype"), url("../../public/font/CroissantOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSerifText-Regular";
+  src: url("../../public/font/DMSerifText-Regular.ttf") format("truetype"), url("../../public/font/DMSerifText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu le délice des papilles ----------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "DancingScript-VariableFont_wght";
+  src: url("../../public/font/DancingScript-VariableFont_wght.ttf") format("truetype"), url("../../public/font/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caveat-Regular";
+  src: url("../../public/font/Caveat-Regular.ttf") format("truetype"), url("../../public/font/Caveat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu la palette du goût ----------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("../../public/font/KaushanScript-Regular.ttf") format("truetype"), url("../../public/font/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSerifText-Regular";
+  src: url("../../public/font/NanumPenScript-Regular.ttf") format("truetype"), url("../../public/font/NanumPenScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* ----    animation trait soulignement menu ---
 -----------------------------------------------*/
-.page h4 {
-  border-bottom: solid rgba(0, 0, 0, 0);
-}
-.page h4::after {
-  content: "";
-  cursor: pointer;
-}
-.page h4:hover {
-  border-bottom: solid black;
-  transition: transform 330ms ease-in-out;
-}
-/* ----           Table des menus           ---
------------------------------------------------*/
-@font-face {
-  font-family: "DancingScript-Regular";
-  src: url("../../public/img/DancingScript-Regular.otf") format("opentype"), url("../../public/img/DancingScript-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "texgyreheros-regular";
-  src: url("../../public/img/texgyreheros-regular.otf") format("opentype"), url("../../public/img/texgyreheros-regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-.btn-prochainement {
-  width: 30%;
-  background: #64A082;
-  color: #EED071;
-  font-size: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  margin: 5vh auto;
-  transition-property: transform;
-  transition-duration: 600ms;
-}
-.btn-prochainement::after {
-  content: "";
-}
-.btn-prochainement:hover::after {
-  content: " ! ! !";
-}
-
-header {
-  color: #EED071;
-  text-align: center;
-  background: #64A082;
-  width: 100%;
-}
-header img {
-  width: 15rem;
-  padding: 4vh;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  bottom: 0.1rem;
-  color: #EED071;
-  font-size: 1.5rem;
-  background: #64A082;
-  height: 10vh;
-}
-footer p {
-  padding-bottom: 0vh;
-}
-footer p a {
-  text-decoration: none;
-  color: #EED071;
-}
-
-.menu-ohmyfood {
-  background: #fff;
-  width: 100%;
+h4 {
   margin: auto;
-}
-.menu-ohmyfood ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.menu-ohmyfood ul li {
-  font-size: 1.2rem;
-  background: #FDE0DC;
-  margin: 3vh auto;
-  width: 30vw;
-  height: 20vh;
-  padding: 22vh 5vw;
-  list-style-type: none;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: solid #BAA;
+  text-decoration: none;
+  width: 30%;
+  cursor: pointer;
+  background: linear-gradient(to top, #64A082 0%, #64A082 15%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 2s;
 }
 
-.recherche {
-  background: #EDEDED;
-  margin: 0 auto;
-  padding: 2vh 0 2vh 5vw;
+h4:hover {
+  background-size: 100% 100%;
 }
 
-/*  --------------- animation ---------
----------------------------------------*/
+/* -- boutons mention et contact  --
+---------------------------------*/
+@keyframes buttonfooter {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, 2px);
+  }
+  30% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  70% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  90% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+/*  --------- animation page d'index ---------
+---------------------------------------------*/
 .lanote {
   color: #000;
   transform: scale(1);
@@ -173,7 +213,7 @@ footer p a {
 }
 .lanote:hover {
   transform: scale(1.4);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .lechic {
@@ -188,7 +228,7 @@ footer p a {
 }
 .lechic:hover {
   transform: scale(1.4);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .ledelice {
@@ -203,7 +243,7 @@ footer p a {
 }
 .ledelice:hover {
   transform: scale(1.4);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .lapalette {
@@ -218,18 +258,228 @@ footer p a {
 }
 .lapalette:hover {
   transform: scale(1.4);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
-/* -----            media query              ----
+/* --- boutons prochainement    ---
+---------------------------------*/
+@keyframes buttonprochainement {
+  0% {
+    opacity: 0;
+    content: "  ! ! !";
+  }
+  20% {
+    opacity: 0.2;
+    content: "  ! ! !";
+  }
+  40% {
+    opacity: 0.4;
+    content: "  ! ! !";
+  }
+  60% {
+    opacity: 0.6;
+    content: "  ! ! !";
+  }
+  80% {
+    opacity: 0.8;
+    content: "  ! ! !";
+  }
+  100% {
+    opacity: 1;
+    content: "  ! ! !";
+  }
+  80% {
+    opacity: 0.8;
+    content: "  ! ! !";
+  }
+  60% {
+    opacity: 0.6;
+    content: "  ! ! !";
+  }
+  40% {
+    opacity: 0.4;
+    content: "  ! ! !";
+  }
+  20% {
+    opacity: 0.2;
+    content: "  ! ! !";
+  }
+  10% {
+    opacity: 0;
+    content: "  ! ! !";
+  }
+}
+/* ----      bouton prochainement        ------
+----------------------------------------------*/
+button[class=pro] {
+  text-transform: capitalize;
+  width: 35%;
+  background: #64A082;
+  color: #EED071;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid #64A082;
+  padding: 0.5rem 1rem;
+  margin: 5vh auto;
+}
+button[class=pro]::after {
+  -webkit-transition: opacity 1.5s linear;
+  -moz-transition: opacity 1.5s linear;
+  -o-transition: opacity 1.5s linear;
+  transition: opacity 1.5s linear;
+  content: "";
+  opacity: 0;
+}
+button[class=pro]:hover::after {
+  animation: buttonprochainement 1s;
+}
+
+/* ---- bouton  mention et contact ------
+----------------------------------------*/
+button[class=footer] {
+  width: 23%;
+  background: #64A082;
+  color: #EED071;
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid #64A082;
+  padding: 0.5rem 1rem;
+  margin: auto;
+}
+button[class=footer]::first-letter {
+  text-transform: capitalize;
+}
+button[class=footer]:hover {
+  animation: buttonfooter 0.8s infinite;
+}
+button[class=footer] a {
+  text-decoration: none;
+  color: #EED071;
+}
+
+header {
+  color: #EED071;
+  text-align: center;
+  background: #64A082;
+  /*width: 100%;*/
+}
+header img {
+  width: 15rem;
+  padding: 4vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0.1rem;
+  background: #64A082;
+  height: 12vh;
+}
+
+.menu-ohmyfood {
+  background: #fff;
+  width: 100%;
+  margin: auto;
+}
+.menu-ohmyfood ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-ohmyfood ul li {
+  font-size: 1.2rem;
+  margin: 3vh auto;
+  width: 30vw;
+  height: 20vh;
+  padding: 22vh 5vw;
+  list-style-type: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: solid #DCC;
+}
+
+/*  ----- barre de recherche ---------
+---------------------------------------*/
+aside {
+  background: #EDEDED;
+  margin: auto;
+  padding: 2vh 0 2vh 5vw;
+}
+aside input {
+  width: 90%;
+}
+
+/* ---Titre et background des cartes  ---
+----------------------------------------*/
+.menu-ohmyfood li[class*=li-lanote] {
+  background-color: #FDE0DC;
+}
+.menu-ohmyfood li[class*=li-lanote] section i {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-ohmyfood li[class*=li-lanote] h2 {
+  font-family: "Devonshire-Regular";
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.menu-ohmyfood li[class*=li-lechic] {
+  background-color: #FFF5FE;
+}
+.menu-ohmyfood li[class*=li-lechic] section h2 {
+  font-family: "CroissantOne-Regular";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg, #c7750c, #6e4bce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-ohmyfood li[class*=li-ledelice] {
+  background-color: #F9F9F9;
+}
+.menu-ohmyfood li[class*=li-ledelice] section h2 {
+  font-family: "DancingScript-VariableFont_wght";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-ohmyfood li[class*=li-lapalette] {
+  background-color: #FDFFFD;
+}
+.menu-ohmyfood li[class*=li-lapalette] section h2 {
+  font-family: "KaushanScript-Regular";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-family: "Montserrat-Regular";
+  font-size: 1.5rem;
+}
+
+/* -----            media query             ----
 ---------------------------------------------- */
 body {
-  width: 100%;
   margin: 0 auto;
+}
+body main {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
     margin: 0 auto;
   }
   body .menu-ohmyfood ul {
@@ -239,15 +489,14 @@ body {
     flex-wrap: wrap;
   }
   body .menu-ohmyfood ul li {
-    width: 20vw;
-    height: 20vh;
+    width: 23vw;
+    height: 21vh;
     padding: 22vh 5vw;
     margin: 2vh 2vw;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 80%;
     margin: 0 auto;
   }
   body .menu-ohmyfood ul {
@@ -264,35 +513,44 @@ body {
   }
 }
 
-.menu-lanote {
+body {
+  font-family: "Itim-Regular";
   background: #fff;
   width: 100%;
   text-align: center;
 }
-.menu-lanote .page {
-  background: #FDE0DC;
-  width: 100%;
-  text-align: center;
+body .menu-lanote h3 {
+  font-family: "Devonshire-Regular";
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+body .page-lanote {
   display: flex;
+  flex-direction: column;
+  background: #FDE0DC;
+  width: 80%;
+  font-size: 1.2rem;
   padding: 1vh 8vw;
   margin: auto;
-  flex-direction: column;
 }
-.menu-lanote .page img[src*="lanote1.png"] {
-  display: inline;
+body .page-lanote h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+body .page-lanote img[src*="lanote1.png"] {
   position: relative;
-  top: 5.5vh;
+  top: 2vh;
   width: 25vw;
 }
-.menu-lanote .page img[src*="lanote2.png"] {
+body .page-lanote img[src*="lanote2.png"] {
   position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
+  bottom: 2vh;
+  left: 52vw;
   width: 25vw;
 }
 
 article i {
-  font-size: 2.4rem;
+  font-size: 4rem;
   padding-top: 5vh;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
@@ -307,49 +565,19 @@ span i {
   -webkit-text-fill-color: transparent;
 }
 
-/*   --------- annimation -----------------------
-
-.page h3{
-  text-decoration: none;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: 50% 50%;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(255,255,255,0.8);
-      transition: transform 250ms;
-    }
-
-      &:hover {
-
-        &::after {
-          transform: translateX(-50%) scaleX(1);
-        }
-
-      }
-
-}*/
-/*  ---------------------------------*/
-.page h4 {
-  border-bottom: solid rgba(0, 0, 0, 0);
-}
-.page h4::after {
-  content: "";
-  cursor: pointer;
-}
-.page h4:hover {
-  border-bottom: solid black;
-  transition: transform 330ms ease-in-out;
-}
 /* --------------- media query -----------------
 ------------------------------------------------ */
 body {
   width: 100%;
   margin: 0 auto;
+}
+body .menu-lanote h3 {
+  font-size: 2.5rem;
+  padding: 0 2vw 5vh 0;
+}
+body .page-lanote h4 {
+  font-size: 1.4rem;
+  font-weight: normal;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -358,8 +586,6 @@ body {
   }
   body .menu-lanote .page {
     width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
-    margin: auto;
   }
   body .menu-lanote .page img[src*="lanote1.png"] {
     top: 6vh;
@@ -367,328 +593,329 @@ body {
   }
   body .menu-lanote .page img[src*="lanote2.png"] {
     bottom: 6vh;
-    left: 45vw;
+    left: 50vw;
     width: 18vw;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
     width: 65%;
-    margin: 0 auto;
+  }
+  body .menu-lanote h3 {
+    font-size: 4rem;
+  }
+  body .menu-lanote .page-lanote {
+    font-size: 1.1rem;
+    width: 60%;
+    margin: auto;
+  }
+  body .menu-lanote .page-lanote img[src*="lanote1.png"] {
+    top: 3vh;
+    width: 16vw;
+  }
+  body .menu-lanote .page-lanote img[src*="lanote2.png"] {
+    bottom: 3vh;
+    left: 31vw;
+    width: 16vw;
   }
 }
 
-.menu-lapalette {
-  background: #fff;
-  width: 100%;
-  text-align: center;
-}
-.menu-lapalette .page {
-  background: #FDFFFD;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  padding: 1vh 8vw;
-  margin: auto;
-  flex-direction: column;
-}
-.menu-lapalette .page img[src*="lapalette1.png"] {
-  display: inline;
-  position: relative;
-  top: 5.5vh;
-  width: 25vw;
-}
-.menu-lapalette .page img[src*="lapalette2.png"] {
-  position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
-}
-
-main h3 {
-  font-size: 2.5rem;
-  padding: 2vh 2vw 5vh 0;
-  background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/*   --------- annimation -----------------------
-
-.page h3{
-  text-decoration: none;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: 50% 50%;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(255,255,255,0.8);
-      transition: transform 250ms;
-    }
-
-      &:hover {
-
-        &::after {
-          transform: translateX(-50%) scaleX(1);
-        }
-
-      }
-
-}*/
-/*  ---------------------------------*/
-.page h4 {
-  border-bottom: solid rgba(0, 0, 0, 0);
-}
-.page h4::after {
-  content: "";
-  cursor: pointer;
-}
-.page h4:hover {
-  border-bottom: solid black;
-  transition: transform 330ms ease-in-out;
-}
-/* --------------- media query -----------------
------------------------------------------------- */
 body {
-  width: 100%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    width: 80%;
-    margin: auto;
-  }
-  body .menu-lapalette .page {
-    width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
-    margin: auto;
-  }
-  body .menu-lapalette .page img[src*="lapalette1.png"] {
-    top: 6vh;
-    width: 18vw;
-  }
-  body .menu-lapalette .page img[src*="lapalette2.png"] {
-    bottom: 6vh;
-    left: 45vw;
-    width: 18vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    width: 65%;
-    margin: 0 auto;
-  }
-}
-
-.menu-lechic {
   background: #fff;
-  width: 100%;
-  text-align: center;
-}
-.menu-lechic .page {
-  background: #FFF5FE;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  padding: 1vh 8vw;
-  margin: auto;
-  flex-direction: column;
-}
-.menu-lechic .page img[src*="lechic1.png"] {
-  display: inline;
-  position: relative;
-  top: 5.5vh;
-  width: 25vw;
-}
-.menu-lechic .page img[src*="lechic2.png"] {
-  position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
-}
-.menu-lechic .page img[src*="lechic3.png"] {
-  display: inline;
-  position: relative;
-  top: 5.5vh;
-  width: 25vw;
-}
-.menu-lechic .page img[src*="lechic4.png"] {
-  position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
-}
-.menu-lechic .page img[src*="lechic5.png"] {
-  display: inline;
-  position: relative;
-  top: 5.5vh;
-  width: 25vw;
-}
-.menu-lechic .page img[src*="lechic6.png"] {
-  position: relative;
-  bottom: 5.5vh;
-  left: 60vw;
-  width: 25vw;
-}
-
-main h3 {
-  font-size: 2.5rem;
-  padding: 2vh 2vw 5vh 0;
-  background: -webkit-linear-gradient(0deg, #c7750c, #6e4bce);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/*   --------- annimation -----------------------
-
-.page h3{
-  text-decoration: none;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: 50% 50%;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(255,255,255,0.8);
-      transition: transform 250ms;
-    }
-
-      &:hover {
-
-        &::after {
-          transform: translateX(-50%) scaleX(1);
-        }
-
-      }
-
-}*/
-/*  ---------------------------------*/
-.page h4 {
-  border-bottom: solid rgba(0, 0, 0, 0);
-}
-.page h4::after {
-  content: "";
-  cursor: pointer;
-}
-.page h4:hover {
-  border-bottom: solid black;
-  transition: transform 330ms ease-in-out;
-}
-/* --------------- media query -----------------
------------------------------------------------- */
-body {
-  width: 100%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    width: 80%;
-    margin: auto;
-  }
-  body .menu-lechic .page {
-    width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
-    margin: auto;
-  }
-  body .menu-lechic .page img[src*="lechic1.png"] {
-    top: 6vh;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic2.png"] {
-    bottom: 6vh;
-    left: 45vw;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic3.png"] {
-    top: 6vh;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic4.png"] {
-    bottom: 6vh;
-    left: 45vw;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic5.png"] {
-    top: 6vh;
-    width: 18vw;
-  }
-  body .menu-lechic .page img[src*="lechic6.png"] {
-    bottom: 6vh;
-    left: 45vw;
-    width: 18vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    width: 65%;
-    margin: 0 auto;
-  }
-}
-
-.menu-ledelice {
-  background: #fff;
-  width: 100%;
-  text-align: center;
-}
-.menu-ledelice .page {
-  background: #F9F9F9;
   width: 90%;
   text-align: center;
+}
+body .page-lapalette {
   display: flex;
+  flex-direction: column;
+  background: #FDFFFD;
+  width: 80%;
   padding: 1vh 8vw;
   margin: auto;
-  flex-direction: column;
 }
-.menu-ledelice .page img[src*="ledelice1.png"] {
-  display: inline;
-  position: relative;
-  top: 8vh;
-  width: 25vw;
+body .page-lapalette h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
 }
-.menu-ledelice .page img[src*="ledelice2.png"] {
+body .page-lapalette img[src*="lapalette1.png"] {
   position: relative;
-  bottom: 8vh;
-  left: 60vw;
-  width: 25vw;
+  top: 2vh;
+  width: 27vw;
 }
-.menu-ledelice .page img[src*="ledelice3.png"] {
-  display: inline;
+body .page-lapalette img[src*="lapalette2.png"] {
   position: relative;
-  top: 8vh;
-  width: 25vw;
-}
-.menu-ledelice .page img[src*="ledelice4.png"] {
-  position: relative;
-  bottom: 8vh;
-  left: 60vw;
-  width: 25vw;
-}
-.menu-ledelice .page img[src*="ledelice5.png"] {
-  display: inline;
-  position: relative;
-  top: 8vh;
-  width: 25vw;
-}
-.menu-ledelice .page img[src*="ledelice6.png"] {
-  position: relative;
-  bottom: 8vh;
-  left: 60vw;
-  width: 25vw;
+  bottom: 2vh;
+  left: 51vw;
+  width: 27vw;
 }
 
-main h3 {
-  font-size: 2.5rem;
-  padding: 2vh 2vw 5vh 0;
+/* --------------- media query -----------------
+------------------------------------------------ */
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+  body .page-lapalette {
+    width: 70%;
+    margin: auto;
+  }
+  body .page-lapalette img[src*="lapalette1.png"] {
+    top: 2vh;
+    width: 22vw;
+  }
+  body .page-lapalette img[src*="lapalette2.png"] {
+    bottom: 2vh;
+    left: 46vw;
+    width: 22vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body .page-lapalette {
+    width: 80%;
+    margin: auto;
+  }
+  body .page-lapalette h4 {
+    font-size: 1.5rem;
+  }
+  body .page-lapalette img[src*="lapalette1.png"] {
+    top: 3vh;
+    width: 20vw;
+  }
+  body .page-lapalette img[src*="lapalette2.png"] {
+    bottom: 3vh;
+    left: 43vw;
+    width: 20vw;
+  }
+}
+
+body {
+  font-family: "DMSerifText-Regular";
+  background: #fff;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+body .menu-lechic h3 {
+  font-family: "CroissantOne-Regular";
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .page-lechic {
+  display: flex;
+  flex-direction: column;
+  background: #FFF5FE;
+  width: 80%;
+  padding: 1vh 8vw;
+  margin: auto;
+}
+body .page-lechic h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+body .page-lechic table[class*=prelude] {
+  color: #c7750c;
+}
+body .page-lechic table[class*=plaisir] {
+  color: #a6679a;
+}
+body .page-lechic table[class*=gourmandise] {
+  color: #6d4acc;
+}
+body .page-lechic img[src*="lechic1.png"] {
+  position: relative;
+  top: 2vh;
+  width: 25vw;
+}
+body .page-lechic img[src*="lechic2.png"] {
+  position: relative;
+  bottom: 2vh;
+  left: 52vw;
+  width: 25vw;
+}
+body .page-lechic img[src*="lechic3.png"] {
+  position: relative;
+  top: 2vh;
+  width: 22vw;
+}
+body .page-lechic img[src*="lechic4.png"] {
+  position: relative;
+  bottom: 2vh;
+  left: 58vw;
+  width: 22vw;
+}
+body .page-lechic img[src*="lechic5.png"] {
+  position: relative;
+  top: 2vh;
+  width: 22vw;
+}
+body .page-lechic img[src*="lechic6.png"] {
+  position: relative;
+  bottom: 2vh;
+  left: 58vw;
+  width: 22vw;
+}
+
+/* --------------- media query -----------------
+------------------------------------------------ */
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+  body .menu-lechic h3 {
+    font-size: 2.3rem;
+  }
+  body .menu-lechic .page-lechic {
+    width: 70%;
+    font-size: 1rem;
+    margin: auto;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic1.png"] {
+    top: 3vh;
+    width: 22vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic2.png"] {
+    bottom: 3vh;
+    left: 47vw;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic3.png"] {
+    top: 3vh;
+    width: 22vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic4.png"] {
+    bottom: 3vh;
+    left: 47vw;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic5.png"] {
+    top: 3vh;
+    width: 22vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic6.png"] {
+    bottom: 3vh;
+    left: 47vw;
+    width: 18vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 65%;
+    margin: 0 auto;
+  }
+  body .menu-lechic h3 {
+    font-size: 3rem;
+  }
+  body .menu-lechic .page-lechic {
+    width: 70%;
+    font-size: 1.2rem;
+    margin: auto;
+  }
+  body .menu-lechic .page-lechic h4 {
+    font-size: 1.3rem;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic1.png"] {
+    top: 3vh;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic2.png"] {
+    bottom: 3vh;
+    left: 37vw;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic3.png"] {
+    top: 3vh;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic4.png"] {
+    bottom: 3vh;
+    left: 37vw;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic5.png"] {
+    top: 3vh;
+    width: 18vw;
+  }
+  body .menu-lechic .page-lechic img[src*="lechic6.png"] {
+    bottom: 3vh;
+    left: 37vw;
+    width: 18vw;
+  }
+}
+
+body {
+  font-family: "Caveat-Regular";
+  background: #fff;
+  width: 90%;
+  text-align: center;
+}
+body .menu-ledelice h3 {
+  font-family: "DancingScript-VariableFont_wght";
+  font-size: 2.3rem;
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+body .page-ledelice {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background: #F9F9F9;
+  font-size: 0.8rem;
+  padding: 1vh 8vw;
+  margin: auto;
+}
+body .page-ledelice h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+body .page-ledelice img[src*="ledelice1.png"] {
+  position: relative;
+  top: 3.8vh;
+  width: 25vw;
+}
+body .page-ledelice img[src*="ledelice2.png"] {
+  position: relative;
+  bottom: 3.8vh;
+  left: 53vw;
+  width: 25vw;
+}
+body .page-ledelice img[src*="ledelice3.png"] {
+  position: relative;
+  top: 3.8vh;
+  width: 25vw;
+}
+body .page-ledelice img[src*="ledelice4.png"] {
+  position: relative;
+  bottom: 3.8vh;
+  left: 53vw;
+  width: 25vw;
+}
+body .page-ledelice img[src*="ledelice5.png"] {
+  position: relative;
+  top: 3.8vh;
+  width: 25vw;
+}
+body .page-ledelice img[src*="ledelice6.png"] {
+  position: relative;
+  bottom: 3.8vh;
+  left: 53vw;
+  width: 25vw;
 }
 
 /* --------------- media query -----------------
@@ -702,75 +929,91 @@ body {
     width: 100%;
     margin: auto;
   }
-  body .menu-ledelice .page {
+  body .page-ledelice {
+    font-size: 0.8rem;
+  }
+  body .page-ledelice h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  body .menu-ledelice h3 {
+    font-size: 3.5rem;
+  }
+  body .page-ledelice {
     width: 70%;
-    /*margin: 5vh 5vw 10vh 5vh ;*/
     margin: auto;
   }
-  body .menu-ledelice .page img[src*="ledelice1.png"] {
-    top: 7vh;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice1.png"] {
+    top: 5vh;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice2.png"] {
-    bottom: 7vh;
-    left: 50vw;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice2.png"] {
+    bottom: 5vh;
+    left: 46vw;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice3.png"] {
-    top: 7vh;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice3.png"] {
+    top: 5vh;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice4.png"] {
-    bottom: 7vh;
-    left: 50vw;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice4.png"] {
+    bottom: 5vh;
+    left: 46vw;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice5.png"] {
-    top: 7vh;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice5.png"] {
+    top: 5vh;
+    width: 23vw;
   }
-  body .menu-ledelice .page img[src*="ledelice6.png"] {
-    bottom: 7vh;
-    left: 50vw;
-    width: 18vw;
+  body .page-ledelice img[src*="ledelice6.png"] {
+    bottom: 5vh;
+    left: 46vw;
+    width: 23vw;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
-  body .menu-ledelice .page {
+  body .menu-ledelice h3 {
+    font-size: 4rem;
+  }
+  body .page-ledelice {
     width: 70%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: auto;
   }
-  body .menu-ledelice .page img[src*="ledelice1.png"] {
-    top: 9.5vh;
-    width: 16vw;
+  body .page-ledelice h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
   }
-  body .menu-ledelice .page img[src*="ledelice2.png"] {
-    bottom: 9.5vh;
-    left: 32.5vw;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice1.png"] {
+    top: 7vh;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice3.png"] {
-    top: 9.5vh;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice2.png"] {
+    bottom: 7vh;
+    left: 35vw;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice4.png"] {
-    bottom: 9.5vh;
-    left: 32.5vw;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice3.png"] {
+    top: 7vh;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice5.png"] {
-    top: 9.5vh;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice4.png"] {
+    bottom: 7vh;
+    left: 35vw;
+    width: 20vw;
   }
-  body .menu-ledelice .page img[src*="ledelice6.png"] {
-    bottom: 9.5vh;
-    left: 32.5vw;
-    width: 16vw;
+  body .page-ledelice img[src*="ledelice5.png"] {
+    top: 7vh;
+    width: 20vw;
+  }
+  body .page-ledelice img[src*="ledelice6.png"] {
+    bottom: 7vh;
+    left: 35vw;
+    width: 20vw;
   }
 }
 

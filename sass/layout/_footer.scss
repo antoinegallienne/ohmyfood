@@ -3,17 +3,8 @@ footer {
   justify-content: space-around;
   position: sticky;
   bottom: 0.1rem;
-  color: $ohmyfood;
-  font-size: 1.5rem;
-  background: $vert;
-  height: 10vh;
 
-  p {
-    padding-bottom : 0vh;
-
-    a {
-      text-decoration: none;
-      color: $ohmyfood;
-    }
-  }
+  background: $col--site;
+  height: 12vh;
 }
+

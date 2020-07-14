@@ -11,7 +11,7 @@
     <meta name="copyright"    content="MIT">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="public/style/style.css">
+    <link rel="stylesheet" href="../public/style/style.css">
 
 
 </head>
@@ -19,7 +19,7 @@
 
      <header>
         <figure>
-            <a href="index.html"><img src="public/img/ohmyfood.png" alt="logo ohmyfood"></a>
+            <a href="../index.html"><img src="../public/img/ohmyfood.png" alt="logo ohmyfood"></a>
         </figure>
     </header>
 
@@ -31,13 +31,28 @@
 
             <h3>La palette du goût</h3>
 
-            <img src="public/img/lapalette1.png" alt="Trait">
-            <h4>Esquisse</h4>
-            <img src="public/img/lapalette2.png" alt="Trait">
+            <table class="titre-esquisse">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../public/img/lapalette1.png" alt="Trait">
+                    </td>
+                    <td><td class="souligne">
+                        <p>Esquisse</p>
+                    </td>
+                    <td>
+                        <img src="../public/img/lapalette2.png" alt="Trait">
+                    </td>
+                </tr>
+            </table>
 
             <!--        Table esquisse      -->
 
-            <table>
+            <table class="esquisse">
                 <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -69,12 +84,27 @@
 
             </table>
 
-            <img src="public/img/lapalette1.png" alt="Trait">
-            <h4>Oeuvre de maître</h4>
-            <img src="public/img/lapalette2.png" alt="Trait">
+            <table class="titre-oeuvre">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../public/img/lapalette1.png" alt="Trait">
+                    </td>
+                    <td class="souligne">
+                        <p>Oeuvre de maître</p>
+                    </td>
+                    <td>
+                        <img src="../public/img/lapalette2.png" alt="Trait">
+                    </td>
+                </tr>
+            </table>
 
             <!--        Table Oeuvre de maître     -->
-            <table>
+            <table class="oeuvre">
                 <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -108,13 +138,27 @@
 
             </table>
 
-
-            <img src="public/img/lapalette1.png" alt="Trait">
-            <h4>Au sommet de l'art</h4>
-            <img src="public/img/lapalette2.png" alt="Trait">
+            <table class="titre-sommet">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../public/img/lapalette1.png" alt="Trait">
+                    </td>
+                    <td class="souligne">
+                        <p>Au sommet de l'art</p>
+                    </td>
+                    <td>
+                        <img src="../public/img/lapalette2.png" alt="Trait">
+                    </td>
+                </tr>
+            </table>
 
             <!--      Table  Au sommet de l'art     -->
-            <table>
+            <table class="sommet">
                 <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -151,8 +195,8 @@
     </main>
 
      <footer>
-         <button class="footer"><a href="mentionslegales.html">mentions légales</a></button>
-         <button class="footer"><a href="mailto:contact@ohmyfood.com">contactez-nous</a></button>
+         <a href="mentionslegales.html">mentions légales</a>
+         <a href="mailto:contact@ohmyfood.com">contactez-nous</a>
      </footer>
 
 

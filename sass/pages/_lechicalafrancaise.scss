@@ -1,14 +1,12 @@
 
 body {
-  font-family: 'DMSerifText-Regular';
-  background: $blanc;
-  width: 90%;
+  width: 100%;
   text-align: center;
-  margin: auto;
+  background: $fond--page;
 
   .menu-lechic h3 {
     font-family: 'CroissantOne-Regular';
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -17,61 +15,11 @@ body {
   .page-lechic {
     display: flex;
     flex-direction: column;
+    font-family: 'CroissantOne-Regular';
     background: $lechic;
-    width: 80%;
-    padding: 1vh 8vw;
+    width: 90%;
     margin: auto;
-
-    h4 {
-      font-size: 0.9rem;
-      font-weight: normal;
-    }
-
-    table[class*='prelude'] {
-      color: #c7750c;
-    }
-    table[class*='plaisir'] {
-      color: #a6679a;
-    }
-    table[class*='gourmandise'] {
-      color: #6d4acc;
-    }
-
-    img[src*='lechic1.png'] {
-      position: relative;
-      top: 2vh;
-      width: 25vw;
-    }
-    img[src*='lechic2.png'] {
-      position: relative;
-      bottom: 2vh;
-      left: 52vw;
-      width: 25vw;
-    }
-
-    img[src*='lechic3.png'] {
-      position: relative;
-      top: 2vh;
-      width: 22vw;
-    }
-    img[src*='lechic4.png'] {
-      position: relative;
-      bottom: 2vh;
-      left: 58vw;
-      width: 22vw;
-    }
-
-    img[src*='lechic5.png'] {
-      position: relative;
-      top: 2vh;
-      width: 22vw;
-    }
-    img[src*='lechic6.png'] {
-      position: relative;
-      bottom: 2vh;
-      left: 58vw;
-      width: 22vw;
-    }
+    padding: 4vh 4vw;
   }
 }
 
@@ -83,94 +31,177 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  @include media-min(768px) {
-    width: 80%;
-    margin: auto;
+  @include media-min(500px) {
 
-    .menu-lechic {
-      h3 {
-        font-size: 2.3rem;
+    .menu-lechic h3 {
+      font-size: 1.6rem;
+    }
+
+    .titre-appetit,
+    .titre-plaisir,
+    .titre-gourmandise {
+
+      table-layout: fixed;
+      margin: 0 7vw;
+
+      img {
+        width: 24vw;
       }
-      .page-lechic {
-        width: 70%;
-        font-size: 1rem;
-        margin: auto;
 
-        img[src*='lechic1.png'] {
-          top: 3vh;
-          width: 22vw;
-        }
-        img[src*='lechic2.png'] {
-          bottom: 3vh;
-          left: 47vw;
-          width: 18vw;
-        }
-        img[src*='lechic3.png'] {
-          top: 3vh;
-          width: 22vw;
-        }
-        img[src*='lechic4.png'] {
-          bottom: 3vh;
-          left: 47vw;
-          width: 18vw;
-        }
-        img[src*='lechic5.png'] {
-          top: 3vh;
-          width: 22vw;
-        }
-        img[src*='lechic6.png'] {
-          bottom: 3vh;
-          left: 47vw;
-          width: 18vw;
-        }
+      p {
+        font-size: 0.55rem;
+      }
+
+      th:nth-child(1) {
+        width: 15%;
+      }
+
+      th:nth-child(2) {
+        width: 50%;
+      }
+
+      th:nth-child(3) {
+        width: 15%;
       }
     }
+    .appetit,
+    .plaisir,
+    .gourmandise {
+      table-layout: fixed;
+      width: 80%;
+      vertical-align: middle;
+      text-align: left;
+      margin: 0 11vw;
+      font-size: 0.5rem;
+
+      th:nth-child(1) {
+        width: 100%;
+      }
+
+      th:nth-child(2) {
+        width: 15%;
+      }
+    }
+
+  }
+  @include media-min(768px) {
+
+    width: 100%;
+    margin: 0 auto;
+
+      .menu-lechic h3 {
+        font-size: 1.6rem;
+      }
+    .page-lechic {
+      width: 70%;
+      margin: auto;
+      margin-bottom: 9vh;
+    }
+
+    .titre-appetit,
+    .titre-plaisir,
+    .titre-gourmandise {
+
+      table-layout: fixed;
+      margin: 0 2vw;
+
+      img {
+        width: 15vw;
+      }
+
+      p {
+        font-size: 0.6rem;
+      }
+
+      th:nth-child(1) {
+        width: 15%;
+      }
+
+      th:nth-child(2) {
+        width: 50%;
+      }
+
+      th:nth-child(3) {
+        width: 15%;
+      }
+    }
+    .appetit,
+    .plaisir,
+    .gourmandise {
+      table-layout: fixed;
+      width: 80%;
+      vertical-align: middle;
+      text-align: left;
+      margin: 0 8vw;
+      font-size: 0.55rem;
+
+      th:nth-child(1) {
+        width: 100%;
+      }
+
+      th:nth-child(2) {
+        width: 15%;
+      }
+    }
+
   }
 
   @include media-min(1024px) {
+
     width: 65%;
-    margin: 0 auto;
-
-    .menu-lechic {
-      h3 {
-        font-size: 3rem;
+      .menu-lechic h3 {
+        font-size: 1.6rem;
       }
-      .page-lechic {
-        width: 70%;
-        font-size: 1.2rem;
-        margin: auto;
+    .page-lechic {
+      width: 70%;
+      margin: auto;
+      margin-bottom: 10vh;
+    }
 
-        h4 {
-        font-size: 1.3rem;
+    .titre-appetit,
+    .titre-plaisir,
+    .titre-gourmandise {
+
+      table-layout: fixed;
+      margin: 0 4vw;
+
+      img {
+        width: 15.5vw;
       }
 
-        img[src*='lechic1.png'] {
-          top: 3vh;
-          width: 18vw;
-        }
-        img[src*='lechic2.png'] {
-          bottom: 3vh;
-          left: 37vw;
-          width: 18vw;
-        }
-        img[src*='lechic3.png'] {
-          top: 3vh;
-          width: 18vw;
-        }
-        img[src*='lechic4.png'] {
-          bottom: 3vh;
-          left: 37vw;
-          width: 18vw;
-        }
-        img[src*='lechic5.png'] {
-          top: 3vh;
-          width: 18vw;
-        }
-        img[src*='lechic6.png'] {
-          bottom: 3vh;
-          left: 37vw;
-          width: 18vw;
-        }
+      p {
+        font-size: 0.8rem;
+      }
+
+      th:nth-child(1) {
+        width: 15%;
+      }
+
+      th:nth-child(2) {
+        width: 50%;
+      }
+
+      th:nth-child(3) {
+        width: 15%;
+      }
+    }
+
+    .appetit,
+    .plaisir,
+    .gourmandise {
+      table-layout: fixed;
+      width: 80%;
+      vertical-align: middle;
+      text-align: left;
+      margin: 0 7vw;
+      font-size: 0.7rem;
+
+      th:nth-child(1) {
+        width: 100%;
+      }
+
+      th:nth-child(2) {
+        width: 15%;
       }
     }
   }

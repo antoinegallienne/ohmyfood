@@ -11,13 +11,13 @@
     <meta name="copyright"    content="MIT">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="public/style/style.css">
+    <link rel="stylesheet" href="../public/style/style.css">
 
 </head>
 <body>
     <header>
         <figure>
-            <a href="index.html"><img src="public/img/ohmyfood.png" alt="logo ohmyfood"></a>
+            <a href="../index.html"><img src="../public/img/ohmyfood.png" alt="logo ohmyfood"></a>
         </figure>
     </header>
 
@@ -30,12 +30,28 @@
             <i class="fas fa-music"></i>
             <h3>La note enchantée</h3>
 
-            <img src="public/img/lanote1.png" alt="Trait">
-            <h4>Prélude</h4>
-            <img src="public/img/lanote2.png" alt="Trait">
+            <table class="titre-prelude">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../public/img/lanote1.png" alt="Trait">
+                    </td>
+                    <td class="souligne">
+                        <p>Prélude</p>
+                    </td>
+                    <td>
+                        <img src="../public/img/lanote2.png" alt="Trait">
+                    </td>
+                </tr>
+            </table>
+
 
 <!--        Table Prélude      -->
-            <table>
+            <table class="prelude">
                 <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -73,14 +89,28 @@
                     </td>
                 </tr>
             </table>
-
-            <img src="public/img/lanote1.png" alt="Trait">
-            <h4>Point d'orgue</h4>
-            <img src="public/img/lanote2.png" alt="Trait">
+            <table class="titre-point">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../public/img/lanote1.png" alt="Trait">
+                    </td>
+                    <td class="souligne">
+                        <p>Point d'orgue</p>
+                    </td>
+                    <td>
+                        <img src="../public/img/lanote2.png" alt="Trait">
+                    </td>
+                </tr>
+            </table>
 
             <!--        Table Point d'orgue      -->
 
-            <table>
+            <table class="point">
                 <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -111,14 +141,28 @@
                 </tr>
 
             </table>
-
-            <img src="public/img/lanote1.png" alt="Trait">
-            <h4>Mouvement final</h4>
-            <img src="public/img/lanote2.png" alt="Trait">
+            <table class="titre-mouvement">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../public/img/lanote1.png" alt="Trait">
+                    </td>
+                    <td class="souligne">
+                        <p>Mouvement final</p>
+                    </td>
+                    <td>
+                        <img src="../public/img/lanote2.png" alt="Trait">
+                    </td>
+                </tr>
+            </table>
 
             <!--        Table Mouvement final      -->
 
-            <table>
+            <table class="mouvement">
                 <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -136,7 +180,6 @@
                         <p>Baba au rhum revisité avec son coulis de citron</p>
                     </td>
                     <td>
-
                     </td>
                 </tr>
                 <tr>
@@ -144,19 +187,19 @@
                         <p>Tarte au citron meringuée destucurée</p>
                     </td>
                     <td>
-
                     </td>
                 </tr>
 
             </table>
 
-            <span><i class="fas fa-music"></i>La note enchantée</span>
+            <span><i class="fas fa-music"></i></span>
+			<p>La note enchantée</p>
         </article>
     </main>
 
     <footer>
-        <button class="footer"><a href="mentionslegales.html">mentions légales</a></button>
-        <button class="footer"><a href="mailto:contact@ohmyfood.com">contactez-nous</a></button>
+        <a href="mentionslegales.html">mentions légales</a>
+        <a href="mailto:contact@ohmyfood.com">contactez-nous</a>
     </footer>
 
 </body>

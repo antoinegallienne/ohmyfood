@@ -71,21 +71,21 @@
     opacity: 1;
     content: '';
   }
-  10% {
+  60% {
     opacity: 1;
     content: ' .';
-  }
-  40% {
-    opacity: 1;
-    content: ' ..';
   }
   80% {
     opacity: 1;
     content: ' ..';
   }
+  90% {
+    opacity: 1;
+    content: ' ..';
+  }
   100% {
     opacity: 1;
-    content: '...';
+    content: ' ...';
   }
 }
 
@@ -94,7 +94,7 @@
 
 
 /* -- boutons mention et contact  --
----------------------------------*/
+----------------------------------*/
 
 
 @keyframes buttonfooter {

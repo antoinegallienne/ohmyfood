@@ -22,6 +22,7 @@ body {
     padding: 4vh 4vw;
   }
 }
+
 /* --------------- media query -----------------
 ------------------------------------------------ */
 
@@ -38,14 +39,13 @@ body {
     .titre-esquisse,
     .titre-oeuvre,
     .titre-sommet {
-
       table-layout: fixed;
-      margin: 0 7vw;
+      margin: 1.5vh 0 1.5vh 7vw;
       img{
         width: 26vw;
       }
       p{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
       th:nth-child(1) {
         width:15%;
@@ -67,7 +67,9 @@ body {
       text-align: left;
       margin: 0 11vw;
       font-size: 0.6rem;
-
+      p {
+        padding: 1vh 0;
+      }
       th:nth-child(1) {
         width: 100%;
       }
@@ -92,7 +94,6 @@ body {
     .titre-esquisse,
     .titre-oeuvre,
     .titre-sommet {
-
       table-layout: fixed;
       margin: 0 3vw;
       img{
@@ -121,7 +122,9 @@ body {
       text-align: left;
       margin: 0 7vw;
       font-size: 0.7rem;
-
+      p {
+        padding: 1vh 0;
+      }
       th:nth-child(1) {
         width: 100%;
       }
@@ -150,7 +153,7 @@ body {
     .titre-sommet {
 
       table-layout: fixed;
-      margin: 0 3vw;
+      margin: 1.6vh 0 1.6vh 3vw;
       img{
         width: 16vw;
       }
@@ -177,7 +180,9 @@ body {
       text-align: left;
       margin: 0 7vw;
       font-size: 0.8rem;
-
+      p {
+        padding: 1.8vh 0;
+      }
       th:nth-child(1) {
         width: 100%;
       }

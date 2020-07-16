@@ -6,10 +6,11 @@ body {
 
   .menu-lechic h3 {
     font-family: 'CroissantOne-Regular';
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 4vh;
   }
 
   .page-lechic {
@@ -34,32 +35,27 @@ body {
   @include media-min(500px) {
 
     .menu-lechic h3 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
 
     .titre-appetit,
     .titre-plaisir,
     .titre-gourmandise {
-
       table-layout: fixed;
       margin: 0 7vw;
 
       img {
-        width: 24vw;
+        width: 22vw;
       }
-
       p {
         font-size: 0.55rem;
       }
-
       th:nth-child(1) {
         width: 15%;
       }
-
       th:nth-child(2) {
         width: 50%;
       }
-
       th:nth-child(3) {
         width: 15%;
       }
@@ -73,25 +69,25 @@ body {
       text-align: left;
       margin: 0 11vw;
       font-size: 0.5rem;
-
+      p {
+        padding: 1vh 0;
+      }
       th:nth-child(1) {
         width: 100%;
       }
-
       th:nth-child(2) {
         width: 15%;
       }
     }
-
   }
+
   @include media-min(768px) {
 
     width: 100%;
     margin: 0 auto;
-
-      .menu-lechic h3 {
-        font-size: 1.6rem;
-      }
+    .menu-lechic h3 {
+      font-size: 1.7rem;
+    }
     .page-lechic {
       width: 70%;
       margin: auto;
@@ -101,26 +97,20 @@ body {
     .titre-appetit,
     .titre-plaisir,
     .titre-gourmandise {
-
       table-layout: fixed;
       margin: 0 2vw;
-
       img {
         width: 15vw;
       }
-
       p {
         font-size: 0.6rem;
       }
-
       th:nth-child(1) {
         width: 15%;
       }
-
       th:nth-child(2) {
         width: 50%;
       }
-
       th:nth-child(3) {
         width: 15%;
       }
@@ -134,7 +124,9 @@ body {
       text-align: left;
       margin: 0 8vw;
       font-size: 0.55rem;
-
+      p {
+        padding: 1vh 0;
+      }
       th:nth-child(1) {
         width: 100%;
       }
@@ -143,44 +135,37 @@ body {
         width: 15%;
       }
     }
-
   }
 
   @include media-min(1024px) {
 
     width: 65%;
       .menu-lechic h3 {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
       }
     .page-lechic {
       width: 70%;
       margin: auto;
       margin-bottom: 10vh;
     }
-
     .titre-appetit,
     .titre-plaisir,
     .titre-gourmandise {
 
       table-layout: fixed;
       margin: 0 4vw;
-
       img {
-        width: 15.5vw;
+        width: 12vw;
       }
-
       p {
         font-size: 0.8rem;
       }
-
       th:nth-child(1) {
         width: 15%;
       }
-
       th:nth-child(2) {
         width: 50%;
       }
-
       th:nth-child(3) {
         width: 15%;
       }
@@ -195,7 +180,9 @@ body {
       text-align: left;
       margin: 0 7vw;
       font-size: 0.7rem;
-
+      p {
+        padding: 1.2vh 0;
+      }
       th:nth-child(1) {
         width: 100%;
       }

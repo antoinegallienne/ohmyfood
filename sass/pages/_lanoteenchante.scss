@@ -21,23 +21,22 @@ body{
     padding: 5vh 4vw;
   }
 
-    article i {
-      font-size: 2rem;
-      padding:2vh 2vw 5vh 0;
-      background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  article i {
+    font-size: 2rem;
+    padding:2vh 2vw 5vh 0;
+    background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    span i{
-      font-size: 1.2rem;
-      padding:2vh 2vw 5vh 0;
-      background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      }
+  span i{
+    font-size: 1.2rem;
+    padding:2vh 2vw 5vh 0;
+    background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
-
 
 span p{
   display: inline;
@@ -68,15 +67,13 @@ body {
     .titre-prelude,
     .titre-point,
     .titre-mouvement{
-
       table-layout: fixed;
-      padding: 0 8vw;
+      padding: 0 1vw;
       img{
-        width: 23vw;
+        width: 20vw;
       }
       p{
         font-size: 0.9rem;
-        padding: 0vh 0;
       }
       th:nth-child(1) {
         width:15%;
@@ -101,8 +98,6 @@ body {
       p {
         padding: 1vh 0;
       }
-
-
       th:nth-child(1) {
         width: 80%;
       }
@@ -113,31 +108,30 @@ body {
   }
 
   @include media-min(768px) {
+
     width: 80%;
     margin: auto;
 
     .menu-lanote h3 {
       font-size: 2rem;
     }
-      .page-lanote {
-        width: 70%;
-        margin: auto;
-        margin-bottom: 9vh;
-      }
+    .page-lanote {
+      width: 70%;
+      margin: auto;
+      margin-bottom: 9vh;
+    }
 
     .titre-prelude,
     .titre-point,
     .titre-mouvement{
 
       table-layout: fixed;
-      padding-left:  0vw;
-      margin: 0 0 0 0vw;
-
+      padding: 0 0vw;
       img{
-        width: 10vw;
+        width: 13vw;
       }
       p{
-        font-size: 0.85rem;
+        font-size: 0.8rem;
       }
       th:nth-child(1) {
         width:15%;
@@ -149,15 +143,20 @@ body {
         width:15%;
       }
     }
+
     .prelude,
     .point,
     .mouvement{
       table-layout: fixed;
-      width: 85%;
+      width: 80%;
       vertical-align: middle;
       text-align: left;
-      margin: 0 4vw;
-      font-size: 0.6rem;
+      margin: 0 5vw;
+      font-size: 0.7rem;
+      p {
+        padding: 1vh 0;
+      }
+
 
       th:nth-child(1) {
         width: 80%;
@@ -172,10 +171,10 @@ body {
 
     width: 70%;
 
-      .menu-lanote h3 {
-        font-size: 3rem;
-        padding-bottom: 8vh;
-      }
+    .menu-lanote h3 {
+      font-size: 3rem;
+      padding-bottom: 8vh;
+    }
     .page-lanote {
       width: 70%;
       margin: auto;
@@ -187,12 +186,12 @@ body {
     .titre-mouvement{
 
       table-layout: fixed;
-      padding: 0 5vw;
+      padding: 0 0vw;
       img{
-        width: 15vw;
+        width: 13vw;
       }
       p{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
       }
       th:nth-child(1) {
         width:15%;
@@ -204,6 +203,7 @@ body {
         width:15%;
       }
     }
+
     .prelude,
     .point,
     .mouvement{

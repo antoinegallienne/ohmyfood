@@ -8,43 +8,41 @@
   width: 35%;
   background: $col--site;
   color: $ohmyfood;
+  font-size: 0.8rem;
   cursor: pointer;
   border-radius: 0.5rem;
   border: solid $col--site;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
-  &::after{
-    content: ' ';
 
-      }
+  &::after{
+    position: absolute;
+    content: ' ';
+    opacity: 0;
+  }
   &:hover {
     &::after {
-      animation: buttonprochainement 2s infinite;
+      animation: buttonprochainement 1.5s infinite;
     }
   }
 }
+
 
 /* ---- bouton  mention et contact ------
 ----------------------------------------*/
 
 footer a{
   font-family: 'Montserrat-SemiBold';
-  width: 30%;
   background: $col--site;
   color: $ohmyfood;
   font-size: 0.9rem;
   text-decoration: none;
   cursor: pointer;
-  border: solid $col--site;
-  padding: 3vh 0;
+  padding: 4vh 0;
   &::first-letter {
     text-transform: capitalize;
   }
   &:hover {
     animation: buttonfooter 0.5s infinite;
-  }
-  a {
-    text-decoration: none;
-    color: $ohmyfood;
   }
 }

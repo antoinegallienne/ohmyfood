@@ -10,7 +10,7 @@
 .titre-mouvement{
 
   table-layout: fixed;
-  padding: 0 6vw;
+  margin: 0 7vw;
   img{
     width: 22vw;
   }
@@ -37,7 +37,9 @@
     text-align: left;
     margin: 0 8vw;
     font-size: 0.6rem;
-
+    p{
+      margin: 0.8vh 0;
+    }
     th:nth-child(1) {
       width: 80%;
     }
@@ -48,6 +50,19 @@
 
 /* -Table du menu Le chic        ---
 -----------------------------------------------*/
+
+  .titre-appetit,
+  .appetit{
+    color: $lechic--appetit;
+  }
+  .titre-plaisir,
+  .plaisir{
+    color: $lechic--plaisir;
+  }
+  .titre-gourmandise,
+  .gourmandise{
+    color: $lechic--gourmandise;
+  }
 
 .titre-appetit,
 .titre-plaisir,
@@ -83,7 +98,7 @@
     margin: 0 11vw;
     font-size: 0.45rem;
     p{
-      margin: 0.5vh 0;
+      margin: 0.8vh 0;
     }
 
     th:nth-child(1) {
@@ -150,12 +165,11 @@
   table-layout: fixed;
   margin: 0 7vw;
   img{
-    width: 26vw;
+    width: 25vw;
   }
   p{
     font-size: 0.7rem;
     margin: 2vh 0;
-
   }
   th:nth-child(1) {
     width:15%;

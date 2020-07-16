@@ -13,7 +13,7 @@
 .titre-point,
 .titre-mouvement {
   table-layout: fixed;
-  padding: 0 6vw;
+  margin: 0 7vw;
 }
 .titre-prelude img,
 .titre-point img,
@@ -51,6 +51,11 @@
   margin: 0 8vw;
   font-size: 0.6rem;
 }
+.prelude p,
+.point p,
+.mouvement p {
+  margin: 0.8vh 0;
+}
 .prelude th:nth-child(1),
 .point th:nth-child(1),
 .mouvement th:nth-child(1) {
@@ -64,6 +69,21 @@
 
 /* -Table du menu Le chic        ---
 -----------------------------------------------*/
+.titre-appetit,
+.appetit {
+  color: #c7750c;
+}
+
+.titre-plaisir,
+.plaisir {
+  color: #a6679a;
+}
+
+.titre-gourmandise,
+.gourmandise {
+  color: #6d4acc;
+}
+
 .titre-appetit,
 .titre-plaisir,
 .titre-gourmandise {
@@ -110,7 +130,7 @@
 .appetit p,
 .plaisir p,
 .gourmandise p {
-  margin: 0.5vh 0;
+  margin: 0.8vh 0;
 }
 .appetit th:nth-child(1),
 .plaisir th:nth-child(1),
@@ -189,7 +209,7 @@
 .titre-esquisse img,
 .titre-oeuvre img,
 .titre-sommet img {
-  width: 26vw;
+  width: 25vw;
 }
 .titre-esquisse p,
 .titre-oeuvre p,
@@ -242,9 +262,9 @@
 /* -------------       h1         ---------------
 -----------------------------------------------------*/
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../../public/font/Montserrat-Regular.ttf") format("truetype"), url("../../public/font/Montserrat-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Montserrat-Bold";
+  src: url("../../public/font/Montserrat-Bold.ttf") format("truetype"), url("../../public/font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 /* -------------Menu la note enchantée ---------------
@@ -270,8 +290,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "DMSerifText-Regular";
-  src: url("../../public/font/DMSerifText-Regular.ttf") format("truetype"), url("../../public/font/DMSerifText-Regular.ttf") format("truetype");
+  font-family: "notomono-regular-webfont";
+  src: url("../../public/font/notomono-regular-webfont.woff2") format("woff2"), url("../../public/font/notomono-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -300,6 +320,14 @@
 @font-face {
   font-family: "DMSerifText-Regular";
   src: url("../../public/font/NanumPenScript-Regular.ttf") format("truetype"), url("../../public/font/NanumPenScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------      footer         ---------------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../public/font/Montserrat-regular.ttf") format("truetype"), url("../../public/font/Montserrat-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -360,25 +388,25 @@
     opacity: 1;
     content: "";
   }
-  10% {
+  60% {
     opacity: 1;
     content: " .";
-  }
-  40% {
-    opacity: 1;
-    content: " ..";
   }
   80% {
     opacity: 1;
     content: " ..";
   }
+  90% {
+    opacity: 1;
+    content: " ..";
+  }
   100% {
     opacity: 1;
-    content: "...";
+    content: " ...";
   }
 }
 /* -- boutons mention et contact  --
----------------------------------*/
+----------------------------------*/
 @keyframes buttonfooter {
   0% {
     transform: translate(2px, 2px);
@@ -406,7 +434,8 @@
   text-transform: capitalize;
   width: 35%;
   background: #589d87;
-  color: #fecc42;
+  color: #fdcb42;
+  font-size: 0.8rem;
   cursor: pointer;
   border-radius: 0.5rem;
   border: solid #589d87;
@@ -414,24 +443,24 @@
   margin: 5vh auto;
 }
 .pro::after {
+  position: absolute;
   content: " ";
+  opacity: 0;
 }
 .pro:hover::after {
-  animation: buttonprochainement 2s infinite;
+  animation: buttonprochainement 1.5s infinite;
 }
 
 /* ---- bouton  mention et contact ------
 ----------------------------------------*/
 footer a {
   font-family: "Montserrat-SemiBold";
-  width: 30%;
   background: #589d87;
-  color: #fecc42;
+  color: #fdcb42;
   font-size: 0.9rem;
   text-decoration: none;
   cursor: pointer;
-  border: solid #589d87;
-  padding: 3vh 0;
+  padding: 4vh 0;
 }
 footer a::first-letter {
   text-transform: capitalize;
@@ -439,26 +468,22 @@ footer a::first-letter {
 footer a:hover {
   animation: buttonfooter 0.5s infinite;
 }
-footer a a {
-  text-decoration: none;
-  color: #fecc42;
-}
 
 header {
-  color: #fecc42;
+  color: #fdcb42;
   text-align: center;
   background: #589d87;
-  height: 12vh;
 }
 header img {
-  width: 12rem;
-  padding: 2vh;
+  width: 50%;
+  padding: 3vh;
 }
 
 h1 {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Bold";
   font-size: 1.3rem;
   padding: 2vh 0;
+  font-weight: bold;
 }
 
 .menu-ohmyfood {
@@ -468,8 +493,14 @@ h1 {
 .menu-ohmyfood ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu-ohmyfood ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 40vw;
   height: 10vh;
   font-size: 1.2rem;
@@ -493,74 +524,88 @@ aside input {
 
 /* ---Titre et background des cartes  ---
 ----------------------------------------*/
-li[class*=li-lanote] {
+.li-lanote {
   background-color: #FDE0DC;
 }
-li[class*=li-lanote] section i {
+.li-lanote .lanote {
+  position: relative;
+  bottom: 2.5vh;
+}
+.li-lanote section i {
   font-size: 2.3rem;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-li[class*=li-lanote] h2 {
+.li-lanote h2 {
   font-family: "Devonshire-Regular";
   font-size: 1.5rem;
   font-weight: normal;
+  margin-bottom: 2vh;
 }
-li[class*=li-lanote] a {
+.li-lanote a {
   font-family: "Itim-Regular";
   text-decoration: none;
+  color: black;
+  font-size: 2rem;
 }
 
-li[class*=li-lechic] {
+.li-lechic {
   background-color: #FFF5FE;
 }
-li[class*=li-lechic] section h2 {
+.li-lechic section h2 {
   font-family: "CroissantOne-Regular";
   font-size: 1.1rem;
   background: -webkit-linear-gradient(0deg, #c7750c, #6e4bce);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 4vh;
 }
-li[class*=li-lechic] a {
-  font-family: "DMSerifText-Regular";
+.li-lechic a {
+  font-family: "quintessential-regular-webfont.woff2";
   text-decoration: none;
   color: #c7750c;
+  font-size: 2rem;
 }
 
-li[class*=li-ledelice] {
+.li-ledelice {
   background-color: #F9F9F9;
 }
-li[class*=li-ledelice] section h2 {
+.li-ledelice section h2 {
   font-family: "DancingScript-VariableFont_wght";
   font-size: 1.5rem;
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 4vh;
 }
-li[class*=li-ledelice] a {
+.li-ledelice a {
   font-family: "Caveat-Regular";
   text-decoration: none;
   color: #1e9dfb;
+  font-size: 2.5rem;
 }
 
-li[class*=li-lapalette] {
+.li-lapalette {
   background-color: #FDFFFD;
 }
-li[class*=li-lapalette] section h2 {
+.li-lapalette section h2 {
   font-family: "KaushanScript-Regular";
   font-size: 1.5rem;
   background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 4vh;
 }
-li[class*=li-lapalette] a {
+.li-lapalette a {
   font-family: "Caveat-Regular";
   text-decoration: none;
   color: #3f9338;
+  font-size: 2.5rem;
 }
 
 .pro {
+  width: 28%;
   font-size: 1rem;
 }
 
@@ -569,7 +614,7 @@ li[class*=li-lapalette] a {
 @media screen and (min-width: 500px) {
   body h1 {
     padding: 3vh 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   body .menu-ohmyfood {
     width: 100%;
@@ -578,15 +623,14 @@ li[class*=li-lapalette] a {
     width: 30vw;
     height: 20vh;
   }
-  body .pro,
-body footer a {
-    width: 30%;
+  body .pro {
+    width: 32%;
     font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 768px) {
   body h1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
   body .menu-ohmyfood ul {
     width: 90%;
@@ -597,32 +641,28 @@ body footer a {
   }
   body .menu-ohmyfood ul li {
     width: 20vw;
-    height: 20vh;
+    height: 22vh;
   }
-  body .pro,
-body footer a {
-    width: 30%;
+  body .pro {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    margin: 0 auto;
+  body h1 {
+    font-size: 2.4rem;
   }
   body .menu-ohmyfood ul {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
   }
   body .menu-ohmyfood ul li {
     width: 16vw;
-    height: 25vh;
-    font-size: 3rem;
+    height: 27vh;
+    font-size: 5rem;
   }
-  body .pro,
-body footer a {
-    width: 29%;
+  body .menu-ohmyfood ul li h2 {
+    font-size: 1.8rem;
+  }
+  body .pro {
     font-size: 2rem;
   }
 }
@@ -630,10 +670,33 @@ body footer a {
 footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: sticky;
   bottom: 0.1rem;
   background: #589d87;
-  height: 10vh;
+  height: 8%;
+}
+footer a {
+  font-family: "Montserrat-Regular";
+  font-size: 1.1rem;
+}
+
+/* -----            media query             ----
+---------------------------------------------- */
+@media screen and (min-width: 500px) {
+  body footer a {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body footer a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body footer a {
+    font-size: 1.6rem;
+  }
 }
 
 body {
@@ -698,18 +761,17 @@ body {
 body .titre-point,
 body .titre-mouvement {
     table-layout: fixed;
-    padding: 0 8vw;
+    padding: 0 1vw;
   }
   body .titre-prelude img,
 body .titre-point img,
 body .titre-mouvement img {
-    width: 23vw;
+    width: 20vw;
   }
   body .titre-prelude p,
 body .titre-point p,
 body .titre-mouvement p {
     font-size: 0.9rem;
-    padding: 0vh 0;
   }
   body .titre-prelude th:nth-child(1),
 body .titre-point th:nth-child(1),
@@ -769,18 +831,17 @@ body .mouvement th:nth-child(2) {
 body .titre-point,
 body .titre-mouvement {
     table-layout: fixed;
-    padding-left: 0vw;
-    margin: 0 0 0 0vw;
+    padding: 0 0vw;
   }
   body .titre-prelude img,
 body .titre-point img,
 body .titre-mouvement img {
-    width: 10vw;
+    width: 13vw;
   }
   body .titre-prelude p,
 body .titre-point p,
 body .titre-mouvement p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   body .titre-prelude th:nth-child(1),
 body .titre-point th:nth-child(1),
@@ -801,11 +862,16 @@ body .titre-mouvement th:nth-child(3) {
 body .point,
 body .mouvement {
     table-layout: fixed;
-    width: 85%;
+    width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 4vw;
-    font-size: 0.6rem;
+    margin: 0 5vw;
+    font-size: 0.7rem;
+  }
+  body .prelude p,
+body .point p,
+body .mouvement p {
+    padding: 1vh 0;
   }
   body .prelude th:nth-child(1),
 body .point th:nth-child(1),
@@ -835,17 +901,17 @@ body .mouvement th:nth-child(2) {
 body .titre-point,
 body .titre-mouvement {
     table-layout: fixed;
-    padding: 0 5vw;
+    padding: 0 0vw;
   }
   body .titre-prelude img,
 body .titre-point img,
 body .titre-mouvement img {
-    width: 15vw;
+    width: 13vw;
   }
   body .titre-prelude p,
 body .titre-point p,
 body .titre-mouvement p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   body .titre-prelude th:nth-child(1),
 body .titre-point th:nth-child(1),
@@ -925,7 +991,7 @@ body {
 body .titre-oeuvre,
 body .titre-sommet {
     table-layout: fixed;
-    margin: 0 7vw;
+    margin: 1.5vh 0 1.5vh 7vw;
   }
   body .titre-esquisse img,
 body .titre-oeuvre img,
@@ -935,7 +1001,7 @@ body .titre-sommet img {
   body .titre-esquisse p,
 body .titre-oeuvre p,
 body .titre-sommet p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   body .titre-esquisse th:nth-child(1),
 body .titre-oeuvre th:nth-child(1),
@@ -961,6 +1027,11 @@ body .sommet {
     text-align: left;
     margin: 0 11vw;
     font-size: 0.6rem;
+  }
+  body .esquisse p,
+body .oeuvre p,
+body .sommet p {
+    padding: 1vh 0;
   }
   body .esquisse th:nth-child(1),
 body .oeuvre th:nth-child(1),
@@ -1027,6 +1098,11 @@ body .sommet {
     margin: 0 7vw;
     font-size: 0.7rem;
   }
+  body .esquisse p,
+body .oeuvre p,
+body .sommet p {
+    padding: 1vh 0;
+  }
   body .esquisse th:nth-child(1),
 body .oeuvre th:nth-child(1),
 body .sommet th:nth-child(1) {
@@ -1055,7 +1131,7 @@ body .sommet th:nth-child(2) {
 body .titre-oeuvre,
 body .titre-sommet {
     table-layout: fixed;
-    margin: 0 3vw;
+    margin: 1.6vh 0 1.6vh 3vw;
   }
   body .titre-esquisse img,
 body .titre-oeuvre img,
@@ -1092,6 +1168,11 @@ body .sommet {
     margin: 0 7vw;
     font-size: 0.8rem;
   }
+  body .esquisse p,
+body .oeuvre p,
+body .sommet p {
+    padding: 1.8vh 0;
+  }
   body .esquisse th:nth-child(1),
 body .oeuvre th:nth-child(1),
 body .sommet th:nth-child(1) {
@@ -1111,10 +1192,11 @@ body {
 }
 body .menu-lechic h3 {
   font-family: "CroissantOne-Regular";
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 4vh;
 }
 body .page-lechic {
   display: flex;
@@ -1134,7 +1216,7 @@ body {
 }
 @media screen and (min-width: 500px) {
   body .menu-lechic h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   body .titre-appetit,
 body .titre-plaisir,
@@ -1145,7 +1227,7 @@ body .titre-gourmandise {
   body .titre-appetit img,
 body .titre-plaisir img,
 body .titre-gourmandise img {
-    width: 24vw;
+    width: 22vw;
   }
   body .titre-appetit p,
 body .titre-plaisir p,
@@ -1177,6 +1259,11 @@ body .gourmandise {
     margin: 0 11vw;
     font-size: 0.5rem;
   }
+  body .appetit p,
+body .plaisir p,
+body .gourmandise p {
+    padding: 1vh 0;
+  }
   body .appetit th:nth-child(1),
 body .plaisir th:nth-child(1),
 body .gourmandise th:nth-child(1) {
@@ -1194,7 +1281,7 @@ body .gourmandise th:nth-child(2) {
     margin: 0 auto;
   }
   body .menu-lechic h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   body .page-lechic {
     width: 70%;
@@ -1242,6 +1329,11 @@ body .gourmandise {
     margin: 0 8vw;
     font-size: 0.55rem;
   }
+  body .appetit p,
+body .plaisir p,
+body .gourmandise p {
+    padding: 1vh 0;
+  }
   body .appetit th:nth-child(1),
 body .plaisir th:nth-child(1),
 body .gourmandise th:nth-child(1) {
@@ -1258,7 +1350,7 @@ body .gourmandise th:nth-child(2) {
     width: 65%;
   }
   body .menu-lechic h3 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
   body .page-lechic {
     width: 70%;
@@ -1274,7 +1366,7 @@ body .titre-gourmandise {
   body .titre-appetit img,
 body .titre-plaisir img,
 body .titre-gourmandise img {
-    width: 15.5vw;
+    width: 12vw;
   }
   body .titre-appetit p,
 body .titre-plaisir p,
@@ -1306,6 +1398,11 @@ body .gourmandise {
     margin: 0 7vw;
     font-size: 0.7rem;
   }
+  body .appetit p,
+body .plaisir p,
+body .gourmandise p {
+    padding: 1.2vh 0;
+  }
   body .appetit th:nth-child(1),
 body .plaisir th:nth-child(1),
 body .gourmandise th:nth-child(1) {
@@ -1325,7 +1422,7 @@ body {
 }
 body .menu-ledelice h3 {
   font-family: "DancingScript-VariableFont_wght";
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1355,7 +1452,7 @@ body {
 body .titre-continuer,
 body .titre-terminer {
     table-layout: fixed;
-    margin: 0 7vw;
+    margin: 0.5vh 0 0.5vh 1vw;
   }
   body .titre-commencer img,
 body .titre-continuer img,
@@ -1387,10 +1484,7 @@ body .titre-terminer th:nth-child(3) {
 body .continuer,
 body .terminer {
     table-layout: fixed;
-    width: 80%;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0 11vw;
+    margin: 0.5vh 0 0.5vh 11vw;
     font-size: 0.8rem;
   }
   body .commencer p,
@@ -1415,7 +1509,7 @@ body .terminer th:nth-child(2) {
     margin: auto;
   }
   body .menu-ledelice h3 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   body .page-ledelice {
     width: 70%;
@@ -1426,7 +1520,7 @@ body .terminer th:nth-child(2) {
 body .titre-continuer,
 body .titre-terminer {
     table-layout: fixed;
-    margin: 0 1vw;
+    margin: 1.5vh 0 1.5vh 1vw;
   }
   body .titre-commencer img,
 body .titre-continuer img,
@@ -1462,6 +1556,11 @@ body .terminer {
     text-align: left;
     margin: 0 5vw;
     font-size: 0.9rem;
+  }
+  body .commencer p,
+body .continuer p,
+body .terminer p {
+    padding: 1.5vh 0;
   }
   body .commencer th:nth-child(1),
 body .continuer th:nth-child(1),

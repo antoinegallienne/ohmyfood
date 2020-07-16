@@ -3,10 +3,10 @@
 /* -------------       h1         ---------------
 -----------------------------------------------------*/
 @font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('../../public/font/Montserrat-Regular.ttf') format('truetype'),
-  url('../../public/font/Montserrat-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Montserrat-Bold';
+  src: url('../../public/font/Montserrat-Bold.ttf') format('truetype'),
+  url('../../public/font/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -38,9 +38,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'DMSerifText-Regular';
-  src: url('../../public/font/DMSerifText-Regular.ttf') format('truetype'),
-  url('../../public/font/DMSerifText-Regular.ttf') format('truetype');
+  font-family: 'notomono-regular-webfont';
+  src: url('../../public/font/notomono-regular-webfont.woff2') format('woff2'),
+  url('../../public/font/notomono-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -75,6 +75,16 @@
   font-family: 'DMSerifText-Regular';
   src: url('../../public/font/NanumPenScript-Regular.ttf') format('truetype'),
   url('../../public/font/NanumPenScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -------------      footer         ---------------
+-----------------------------------------------------*/
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../../public/font/Montserrat-regular.ttf') format('truetype'),
+  url('../../public/font/Montserrat-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

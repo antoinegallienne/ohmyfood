@@ -2,14 +2,29 @@
 /* --------- variable couleur  ----------
 ---------------------------------------*/
 
-$col--site : #64A082;
-$blanc : #fff;
+$col--site : #589d87;
+$ohmyfood : #fdcb42;
 $fonte: #000;
-$ohmyfood : #EED071;
+
+$fond--page : #fff;
 $contour : #DCC;
 $recherche: #EDEDED;
 
 $lanote : #FDE0DC;
-$ledelice: #F9F9F9;
-$lapalette: #FDFFFD;
+$deg1--lanote:#f60d0d;
+$deg2--lanote:#f9aa5d;
+
 $lechic: #FFF5FE;
+$deg1--lechic:#c7750c;
+$deg2--lechic:#6e4bce;
+$lechic--appetit:#c7750c;
+$lechic--plaisir:#a6679a;
+$lechic--gourmandise:#6d4acc;
+
+$ledelice: #F9F9F9;
+$deg1--ledelice:#0025df;
+$deg2--ledelice:#1e9dfb;
+
+$lapalette: #FDFFFD;
+$deg1--lapalette:#3f9338;
+$deg2--lapalette:#c0ff7d;

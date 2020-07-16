@@ -2,13 +2,13 @@
 /* ----      bouton prochainement        ------
 ----------------------------------------------*/
 
-button[class='pro']  {
+.pro {
+  font-family: 'Montserrat-SemiBold';
   text-transform: capitalize;
   width: 35%;
   background: $col--site;
   color: $ohmyfood;
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 0.8rem;
   cursor: pointer;
   border-radius: 0.5rem;
   border: solid $col--site;
@@ -16,18 +16,13 @@ button[class='pro']  {
   margin: 5vh auto;
 
   &::after{
-    -webkit-transition: opacity 1.5s linear;
-    -moz-transition: opacity 1.5s linear;
-    -o-transition: opacity 1.5s linear;
-
-    transition: opacity 1.5s linear;
-
-    content: '';
+    position: absolute;
+    content: ' ';
     opacity: 0;
-      }
+  }
   &:hover {
     &::after {
-      animation: buttonprochainement 1s;
+      animation: buttonprochainement 1.5s infinite;
     }
   }
 }
@@ -36,28 +31,18 @@ button[class='pro']  {
 /* ---- bouton  mention et contact ------
 ----------------------------------------*/
 
-
-button[class='footer'] {
-  width: 23%;
+footer a{
+  font-family: 'Montserrat-SemiBold';
   background: $col--site;
   color: $ohmyfood;
-  font-family: 'Montserrat-SemiBold';
-  font-size: 1.4rem;
-  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: none;
   cursor: pointer;
-  border-radius: 0.5rem;
-  border: solid $col--site;
-  padding: 0.5rem 1rem;
-  margin:  auto;
-
+  padding: 4vh 0;
   &::first-letter {
     text-transform: capitalize;
   }
   &:hover {
-    animation: buttonfooter 0.8s infinite;
-  }
-  a {
-    text-decoration: none;
-    color: $ohmyfood;
+    animation: buttonfooter 0.5s infinite;
   }
 }

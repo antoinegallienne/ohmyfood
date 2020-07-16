@@ -1,33 +1,25 @@
 
 body {
-  background: $blanc;
-  width: 90%;
+  width: 100%;
   text-align: center;
+  background: $fond--page;
+
+  .menu-lapalette h3 {
+    font-family: 'KaushanScript-Regular';
+    background: -webkit-linear-gradient(0deg, $deg1--lapalette, $deg2--lapalette);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    padding: 0 0 5vh 0;
+  }
 
   .page-lapalette {
     display: flex;
     flex-direction: column;
+    font-family: 'KaushanScript-Regular';
     background: $lapalette;
-    width: 80%;
-    padding: 1vh 8vw;
-    margin: auto;
-
-    h4 {
-      font-size: 0.9rem;
-      font-weight: normal;
-    }
-
-    img[src*='lapalette1.png'] {
-      position: relative;
-      top: 2vh;
-      width: 27vw;
-    }
-    img[src*='lapalette2.png'] {
-      position: relative;
-      bottom: 2vh;
-      left: 51vw;
-      width: 27vw;
-    }
+    width: 90%;
+    padding: 4vh 4vw;
   }
 }
 
@@ -38,22 +30,106 @@ body {
   width: 100%;
   margin: 0 auto;
 
+  @include media-min(500px) {
+
+    .menu-lapalette h3 {
+      font-size: 2rem;
+    }
+
+    .titre-esquisse,
+    .titre-oeuvre,
+    .titre-sommet {
+      table-layout: fixed;
+      margin: 1.5vh 0 1.5vh 7vw;
+      img{
+        width: 26vw;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+      th:nth-child(1) {
+        width:15%;
+      }
+      th:nth-child(2) {
+        width: 50%;
+      }
+      th:nth-child(3) {
+        width:15%;
+      }
+    }
+
+    .esquisse,
+    .oeuvre,
+    .sommet {
+      table-layout: fixed;
+      width: 80%;
+      vertical-align: middle;
+      text-align: left;
+      margin: 0 11vw;
+      font-size: 0.6rem;
+      p {
+        padding: 1vh 0;
+      }
+      th:nth-child(1) {
+        width: 100%;
+      }
+      th:nth-child(2) {
+        width: 15%;
+      }
+    }
+  }
+
   @include media-min(768px) {
     width: 80%;
     margin: auto;
 
+    .menu-lapalette h3 {
+      font-size: 2.3rem;
+    }
     .page-lapalette {
       width: 70%;
       margin: auto;
-
-      img[src*='lapalette1.png'] {
-        top: 2vh;
-        width: 22vw;
+      margin-bottom: 9vh;
+    }
+    .titre-esquisse,
+    .titre-oeuvre,
+    .titre-sommet {
+      table-layout: fixed;
+      margin: 0 3vw;
+      img{
+        width: 15vw;
       }
-      img[src*='lapalette2.png'] {
-        bottom: 2vh;
-        left: 46vw;
-        width: 22vw;
+      p{
+        font-size: 1rem;
+      }
+      th:nth-child(1) {
+        width:15%;
+      }
+      th:nth-child(2) {
+        width: 50%;
+      }
+      th:nth-child(3) {
+        width:15%;
+      }
+    }
+
+    .esquisse,
+    .oeuvre,
+    .sommet {
+      table-layout: fixed;
+      width: 80%;
+      vertical-align: middle;
+      text-align: left;
+      margin: 0 7vw;
+      font-size: 0.7rem;
+      p {
+        padding: 1vh 0;
+      }
+      th:nth-child(1) {
+        width: 100%;
+      }
+      th:nth-child(2) {
+        width: 15%;
       }
     }
   }
@@ -63,20 +139,55 @@ body {
     width: 80%;
     margin: 0 auto;
 
-    .page-lapalette {
-      width: 80%;
+      .menu-lapalette h3 {
+        font-size: 3rem;
+      }
+    .page-lanote {
+      width: 70%;
       margin: auto;
-      h4 {
-        font-size: 1.5rem;
+      margin-bottom: 10vh;
+    }
+
+    .titre-esquisse,
+    .titre-oeuvre,
+    .titre-sommet {
+
+      table-layout: fixed;
+      margin: 1.6vh 0 1.6vh 3vw;
+      img{
+        width: 16vw;
       }
-      img[src*='lapalette1.png'] {
-        top: 3vh;
-        width: 20vw;
+      p{
+        font-size: 1rem;
       }
-      img[src*='lapalette2.png'] {
-        bottom: 3vh;
-        left: 43vw;
-        width: 20vw;
+      th:nth-child(1) {
+        width:15%;
+      }
+      th:nth-child(2) {
+        width: 50%;
+      }
+      th:nth-child(3) {
+        width:15%;
+      }
+    }
+
+    .esquisse,
+    .oeuvre,
+    .sommet {
+      table-layout: fixed;
+      width: 80%;
+      vertical-align: middle;
+      text-align: left;
+      margin: 0 7vw;
+      font-size: 0.8rem;
+      p {
+        padding: 1.8vh 0;
+      }
+      th:nth-child(1) {
+        width: 100%;
+      }
+      th:nth-child(2) {
+        width: 15%;
       }
     }
   }

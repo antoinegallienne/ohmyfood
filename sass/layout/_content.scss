@@ -1,0 +1,209 @@
+
+h1 {
+  font-family: 'Montserrat-Bold';
+  font-size: 1.3rem;
+  padding: 2vh 0;
+  font-weight: bold;
+}
+
+.menu-ohmyfood {
+  width: 90%;
+  background: $fond--page;
+
+  ul {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    li {
+
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+
+      width: 40vw;
+      height: 10vh;
+      font-size: 1.2rem;
+      margin: 3vh auto;
+      padding: 22vh 5vw;
+      list-style-type: none;
+      border-radius: 0.5rem;
+      border: solid $contour;
+    }
+  }
+}
+
+/*  ----- barre de recherche ---------
+---------------------------------------*/
+
+aside{
+  background: $recherche;
+  margin: auto;
+  padding: 2vh 0;
+  input{
+    width: 90%;
+  }
+}
+
+/* ---Titre et background des cartes  ---
+----------------------------------------*/
+
+.li-lanote {
+  .lanote{
+    position: relative;
+    bottom: 2.5vh;
+  }
+  section i {
+    font-size: 2.3rem;
+    background: -webkit-linear-gradient(0deg, $deg1--lanote, $deg2--lanote);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+    h2{
+      font-family: 'Devonshire-Regular';
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 2vh;
+    }
+  a{
+    font-family: 'Itim-Regular';
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+  }
+  background-color: $lanote;
+
+}
+
+.li-lechic {
+  section h2 {
+    font-family: 'CroissantOne-Regular';
+    font-size: 1.1rem;
+    background: -webkit-linear-gradient(0deg , $deg1--lechic, $deg2--lechic);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4vh;
+  }
+  a{
+    font-family: 'quintessential-regular-webfont.woff2';
+    text-decoration: none;
+    color: $deg1--lechic;
+    font-size: 2rem;
+  }
+  background-color: $lechic;
+}
+
+.li-ledelice {
+  section h2 {
+    font-family: 'DancingScript-VariableFont_wght';
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(0deg , $deg1--ledelice, $deg2--ledelice);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4vh;
+  }
+  a{
+    font-family: 'Caveat-Regular';
+    text-decoration: none;
+    color: $deg2--ledelice;
+    font-size: 2.5rem;
+  }
+  background-color: $ledelice;
+}
+
+.li-lapalette{
+  section h2 {
+    font-family: 'KaushanScript-Regular';
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(0deg , $deg1--lapalette, $deg2--lapalette);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4vh;
+  }
+
+  a{
+    font-family: 'Caveat-Regular';
+    text-decoration: none;
+    color: $deg1--lapalette;
+    font-size: 2.5rem;
+  }
+  background-color: $lapalette;
+}
+
+
+.pro{
+  width: 28%;
+  font-size: 1rem;
+}
+
+
+/* -----            media query             ----
+---------------------------------------------- */
+
+body {
+
+  @include media-min(500px) {
+
+    h1 {
+      padding: 3vh 0;
+      font-size: 1.6rem;
+    }
+    .menu-ohmyfood {
+      width: 100%;
+      ul {
+        li {
+          width: 30vw;
+          height: 20vh;
+        }
+      }
+    }
+    .pro {
+      width: 32%;
+      font-size: 1.3rem;
+    }
+  }
+
+  @include media-min(768px) {
+
+    h1 {
+      font-size: 1.9rem;
+    }
+    .menu-ohmyfood ul {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        width: 20vw;
+        height: 22vh;
+      }
+    }
+    .pro {
+      font-size: 1.6rem;
+    }
+  }
+
+  @include media-min(1024px) {
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    .menu-ohmyfood ul {
+      justify-content: center;
+      li {
+        width: 16vw;
+        height: 27vh;
+        font-size: 5rem;
+        h2{
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .pro {
+      font-size: 2rem;
+    }
+  }
+}

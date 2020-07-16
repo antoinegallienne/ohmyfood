@@ -3,92 +3,268 @@
 ---------------------------------------*/
 /* -----       media query          ----
 --------------------------------------- */
+* {
+  margin: 0;
+}
+
 /* ----    Table du menu La note         -----
 -----------------------------------------------*/
-.menu-lanote {
-  margin: auto;
-  text-align: center;
-}
-.menu-lanote table {
-  padding-left: 0;
+.titre-prelude,
+.titre-point,
+.titre-mouvement {
   table-layout: fixed;
-  width: 100%;
+  margin: 0 7vw;
+}
+.titre-prelude img,
+.titre-point img,
+.titre-mouvement img {
+  width: 22vw;
+}
+.titre-prelude p,
+.titre-point p,
+.titre-mouvement p {
+  font-size: 0.8rem;
+}
+.titre-prelude th:nth-child(1),
+.titre-point th:nth-child(1),
+.titre-mouvement th:nth-child(1) {
+  width: 15%;
+}
+.titre-prelude th:nth-child(2),
+.titre-point th:nth-child(2),
+.titre-mouvement th:nth-child(2) {
+  width: 50%;
+}
+.titre-prelude th:nth-child(3),
+.titre-point th:nth-child(3),
+.titre-mouvement th:nth-child(3) {
+  width: 15%;
+}
+
+.prelude,
+.point,
+.mouvement {
+  table-layout: fixed;
+  width: 80%;
   vertical-align: middle;
   text-align: left;
+  margin: 0 8vw;
+  font-size: 0.6rem;
 }
-.menu-lanote table th:nth-child(1) {
-  width: 90%;
+.prelude p,
+.point p,
+.mouvement p {
+  margin: 0.8vh 0;
 }
-.menu-lanote table th:nth-child(2) {
+.prelude th:nth-child(1),
+.point th:nth-child(1),
+.mouvement th:nth-child(1) {
+  width: 80%;
+}
+.prelude th:nth-child(2),
+.point th:nth-child(2),
+.mouvement th:nth-child(2) {
   width: 5%;
 }
 
 /* -Table du menu Le chic        ---
 -----------------------------------------------*/
-.menu-lechic {
-  margin: auto;
-  text-align: center;
+.titre-appetit,
+.appetit {
+  color: #c7750c;
 }
-.menu-lechic table {
-  padding-left: 5vw;
+
+.titre-plaisir,
+.plaisir {
+  color: #a6679a;
+}
+
+.titre-gourmandise,
+.gourmandise {
+  color: #6d4acc;
+}
+
+.titre-appetit,
+.titre-plaisir,
+.titre-gourmandise {
   table-layout: fixed;
-  width: 100%;
-  vertical-align: middle;
-  text-align: left;
+  margin: 0 7vw;
 }
-.menu-lechic table th:nth-child(1) {
-  width: 100%;
+.titre-appetit img,
+.titre-plaisir img,
+.titre-gourmandise img {
+  width: 22vw;
 }
-.menu-lechic table th:nth-child(2) {
+.titre-appetit p,
+.titre-plaisir p,
+.titre-gourmandise p {
+  font-size: 0.5rem;
+  margin: 2vh 0;
+}
+.titre-appetit th:nth-child(1),
+.titre-plaisir th:nth-child(1),
+.titre-gourmandise th:nth-child(1) {
+  width: 15%;
+}
+.titre-appetit th:nth-child(2),
+.titre-plaisir th:nth-child(2),
+.titre-gourmandise th:nth-child(2) {
+  width: 50%;
+}
+.titre-appetit th:nth-child(3),
+.titre-plaisir th:nth-child(3),
+.titre-gourmandise th:nth-child(3) {
   width: 15%;
 }
 
-/* -Table du menu Le délice         ---
------------------------------------------------*/
-.menu-ledelice {
-  margin: auto;
-  text-align: center;
-}
-.menu-ledelice table {
-  padding-left: 5vw;
+.appetit,
+.plaisir,
+.gourmandise {
   table-layout: fixed;
-  width: 100%;
+  width: 80%;
   vertical-align: middle;
   text-align: left;
+  margin: 0 11vw;
+  font-size: 0.45rem;
 }
-.menu-ledelice table th:nth-child(1) {
+.appetit p,
+.plaisir p,
+.gourmandise p {
+  margin: 0.8vh 0;
+}
+.appetit th:nth-child(1),
+.plaisir th:nth-child(1),
+.gourmandise th:nth-child(1) {
   width: 100%;
 }
-.menu-ledelice table th:nth-child(2) {
+.appetit th:nth-child(2),
+.plaisir th:nth-child(2),
+.gourmandise th:nth-child(2) {
+  width: 15%;
+}
+
+/* ---     Table du menu Le délice         ---
+-----------------------------------------------*/
+.titre-commencer,
+.titre-continuer,
+.titre-terminer {
+  table-layout: fixed;
+  margin: 0 6vw;
+}
+.titre-commencer img,
+.titre-continuer img,
+.titre-terminer img {
+  width: 25vw;
+}
+.titre-commencer p,
+.titre-continuer p,
+.titre-terminer p {
+  font-size: 0.85rem;
+}
+.titre-commencer th:nth-child(1),
+.titre-continuer th:nth-child(1),
+.titre-terminer th:nth-child(1) {
+  width: 15%;
+}
+.titre-commencer th:nth-child(2),
+.titre-continuer th:nth-child(2),
+.titre-terminer th:nth-child(2) {
+  width: 50%;
+}
+.titre-commencer th:nth-child(3),
+.titre-continuer th:nth-child(3),
+.titre-terminer th:nth-child(3) {
+  width: 15%;
+}
+
+.commencer,
+.continuer,
+.terminer {
+  table-layout: fixed;
+  width: 80%;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 11vw;
+  font-size: 0.75rem;
+}
+.commencer th:nth-child(1),
+.continuer th:nth-child(1),
+.terminer th:nth-child(1) {
+  width: 100%;
+}
+.commencer th:nth-child(2),
+.continuer th:nth-child(2),
+.terminer th:nth-child(2) {
   width: 15%;
 }
 
 /* -Table du menu  la palette         ---
 -----------------------------------------------*/
-.menu-lapalette {
-  margin: auto;
-  text-align: center;
-}
-.menu-lapalette table {
-  padding-left: 5vw;
+.titre-esquisse,
+.titre-oeuvre,
+.titre-sommet {
   table-layout: fixed;
-  width: 100%;
+  margin: 0 7vw;
+}
+.titre-esquisse img,
+.titre-oeuvre img,
+.titre-sommet img {
+  width: 25vw;
+}
+.titre-esquisse p,
+.titre-oeuvre p,
+.titre-sommet p {
+  font-size: 0.7rem;
+  margin: 2vh 0;
+}
+.titre-esquisse th:nth-child(1),
+.titre-oeuvre th:nth-child(1),
+.titre-sommet th:nth-child(1) {
+  width: 15%;
+}
+.titre-esquisse th:nth-child(2),
+.titre-oeuvre th:nth-child(2),
+.titre-sommet th:nth-child(2) {
+  width: 50%;
+}
+.titre-esquisse th:nth-child(3),
+.titre-oeuvre th:nth-child(3),
+.titre-sommet th:nth-child(3) {
+  width: 15%;
+}
+
+.esquisse,
+.oeuvre,
+.sommet {
+  table-layout: fixed;
+  width: 80%;
   vertical-align: middle;
   text-align: left;
+  margin: 0 11vw;
+  font-size: 0.6rem;
 }
-.menu-lapalette table th:nth-child(1) {
+.esquisse p,
+.oeuvre p,
+.sommet p {
+  margin: 0.5vh 0;
+}
+.esquisse th:nth-child(1),
+.oeuvre th:nth-child(1),
+.sommet th:nth-child(1) {
   width: 100%;
 }
-.menu-lapalette table th:nth-child(2) {
+.esquisse th:nth-child(2),
+.oeuvre th:nth-child(2),
+.sommet th:nth-child(2) {
   width: 15%;
 }
 
 /* -------------       h1         ---------------
 -----------------------------------------------------*/
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../../public/font/Montserrat-Regular.ttf") format("truetype"), url("../../public/font/Montserrat-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Montserrat-Bold";
+  src: url("../../public/font/Montserrat-Bold.ttf") format("truetype"), url("../../public/font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 /* -------------Menu la note enchantée ---------------
@@ -114,8 +290,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "DMSerifText-Regular";
-  src: url("../../public/font/DMSerifText-Regular.ttf") format("truetype"), url("../../public/font/DMSerifText-Regular.ttf") format("truetype");
+  font-family: "notomono-regular-webfont";
+  src: url("../../public/font/notomono-regular-webfont.woff2") format("woff2"), url("../../public/font/notomono-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -147,259 +323,190 @@
   font-weight: normal;
   font-style: normal;
 }
+/* -------------      footer         ---------------
+-----------------------------------------------------*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../public/font/Montserrat-regular.ttf") format("truetype"), url("../../public/font/Montserrat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*  --------- animation menu page d'index ---------
+---------------------------------------------*/
+.li-lanote:hover a {
+  text-decoration: none;
+}
+.li-lanote:hover .lanote {
+  transform: scale(1.3);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+.li-lechic:hover a {
+  text-decoration: none;
+}
+.li-lechic:hover .lechic {
+  transform: scale(1.3);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+.li-ledelice:hover a {
+  text-decoration: none;
+}
+.li-ledelice:hover .ledelice {
+  transform: scale(1.4);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+.li-lapalette:hover a {
+  text-decoration: none;
+}
+.li-lapalette:hover .lapalette {
+  transform: scale(1.2);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
 /* ----    animation trait soulignement menu ---
 -----------------------------------------------*/
-h4 {
-  margin: auto;
-  text-decoration: none;
-  width: 30%;
+.souligne p {
   cursor: pointer;
-  background: linear-gradient(to top, #64A082 0%, #64A082 15%, transparent 10%) no-repeat left bottom/0 100%;
-  transition: background-size 2s;
+  background: linear-gradient(to top, #589d87 0%, #589d87 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
 }
 
-h4:hover {
+.souligne p:hover {
   background-size: 100% 100%;
-}
-
-/* -- boutons mention et contact  --
----------------------------------*/
-@keyframes buttonfooter {
-  0% {
-    transform: translate(2px, 2px);
-  }
-  10% {
-    transform: translate(-2px, -2px);
-  }
-  20% {
-    transform: translate(2px, 2px);
-  }
-  30% {
-    transform: translate(-2px, -2px);
-  }
-  40% {
-    transform: translate(2px, 2px);
-  }
-  50% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  70% {
-    transform: translate(-2px, -2px);
-  }
-  80% {
-    transform: translate(2px, 2px);
-  }
-  90% {
-    transform: translate(-2px, -2px);
-  }
-  100% {
-    transform: translate(2px, 2px);
-  }
-}
-/*  --------- animation page d'index ---------
----------------------------------------------*/
-.lanote {
-  color: #000;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-}
-.lanote a {
-  text-decoration: none;
-  color: #000;
-}
-.lanote:hover {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-
-.lechic {
-  color: #000;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-}
-.lechic a {
-  text-decoration: none;
-  color: #000;
-}
-.lechic:hover {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-
-.ledelice {
-  color: #000;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-}
-.ledelice a {
-  text-decoration: none;
-  color: #000;
-}
-.ledelice:hover {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-
-.lapalette {
-  color: #000;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 600ms;
-}
-.lapalette a {
-  text-decoration: none;
-  color: #000;
-}
-.lapalette:hover {
-  transform: scale(1.4);
-  opacity: 0.5;
 }
 
 /* --- boutons prochainement    ---
 ---------------------------------*/
 @keyframes buttonprochainement {
   0% {
-    opacity: 0;
-    content: "  ! ! !";
-  }
-  20% {
-    opacity: 0.2;
-    content: "  ! ! !";
-  }
-  40% {
-    opacity: 0.4;
-    content: "  ! ! !";
+    opacity: 1;
+    content: "";
   }
   60% {
-    opacity: 0.6;
-    content: "  ! ! !";
+    opacity: 1;
+    content: " .";
   }
   80% {
-    opacity: 0.8;
-    content: "  ! ! !";
+    opacity: 1;
+    content: " ..";
+  }
+  90% {
+    opacity: 1;
+    content: " ..";
   }
   100% {
     opacity: 1;
-    content: "  ! ! !";
+    content: " ...";
   }
-  80% {
-    opacity: 0.8;
-    content: "  ! ! !";
-  }
-  60% {
-    opacity: 0.6;
-    content: "  ! ! !";
-  }
-  40% {
-    opacity: 0.4;
-    content: "  ! ! !";
+}
+/* -- boutons mention et contact  --
+----------------------------------*/
+@keyframes buttonfooter {
+  0% {
+    transform: translate(2px, 2px);
   }
   20% {
-    opacity: 0.2;
-    content: "  ! ! !";
+    transform: translate(-2px, -2px);
   }
-  10% {
-    opacity: 0;
-    content: "  ! ! !";
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(-2px, -2px);
   }
 }
 /* ----      bouton prochainement        ------
 ----------------------------------------------*/
-button[class=pro] {
+.pro {
+  font-family: "Montserrat-SemiBold";
   text-transform: capitalize;
   width: 35%;
-  background: #64A082;
-  color: #EED071;
-  font-size: 1.5rem;
-  text-align: center;
+  background: #589d87;
+  color: #fdcb42;
+  font-size: 0.8rem;
   cursor: pointer;
   border-radius: 0.5rem;
-  border: solid #64A082;
+  border: solid #589d87;
   padding: 0.5rem 1rem;
   margin: 5vh auto;
 }
-button[class=pro]::after {
-  -webkit-transition: opacity 1.5s linear;
-  -moz-transition: opacity 1.5s linear;
-  -o-transition: opacity 1.5s linear;
-  transition: opacity 1.5s linear;
-  content: "";
+.pro::after {
+  position: absolute;
+  content: " ";
   opacity: 0;
 }
-button[class=pro]:hover::after {
-  animation: buttonprochainement 1s;
+.pro:hover::after {
+  animation: buttonprochainement 1.5s infinite;
 }
 
 /* ---- bouton  mention et contact ------
 ----------------------------------------*/
-button[class=footer] {
-  width: 23%;
-  background: #64A082;
-  color: #EED071;
+footer a {
   font-family: "Montserrat-SemiBold";
-  font-size: 1.4rem;
-  text-align: center;
+  background: #589d87;
+  color: #fdcb42;
+  font-size: 0.9rem;
+  text-decoration: none;
   cursor: pointer;
-  border-radius: 0.5rem;
-  border: solid #64A082;
-  padding: 0.5rem 1rem;
-  margin: auto;
+  padding: 4vh 0;
 }
-button[class=footer]::first-letter {
+footer a::first-letter {
   text-transform: capitalize;
 }
-button[class=footer]:hover {
-  animation: buttonfooter 0.8s infinite;
-}
-button[class=footer] a {
-  text-decoration: none;
-  color: #EED071;
+footer a:hover {
+  animation: buttonfooter 0.5s infinite;
 }
 
 header {
-  color: #EED071;
+  color: #fdcb42;
   text-align: center;
-  background: #64A082;
-  /*width: 100%;*/
+  background: #589d87;
 }
 header img {
-  width: 15rem;
-  padding: 4vh;
+  width: 50%;
+  padding: 3vh;
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  bottom: 0.1rem;
-  background: #64A082;
-  height: 12vh;
+h1 {
+  font-family: "Montserrat-Bold";
+  font-size: 1.3rem;
+  padding: 2vh 0;
+  font-weight: bold;
 }
 
 .menu-ohmyfood {
+  width: 90%;
   background: #fff;
-  width: 100%;
-  margin: auto;
 }
 .menu-ohmyfood ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .menu-ohmyfood ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 10vh;
   font-size: 1.2rem;
   margin: 3vh auto;
-  width: 30vw;
-  height: 20vh;
   padding: 22vh 5vw;
   list-style-type: none;
-  text-align: center;
   border-radius: 0.5rem;
   border: solid #DCC;
 }
@@ -409,7 +516,7 @@ footer {
 aside {
   background: #EDEDED;
   margin: auto;
-  padding: 2vh 0 2vh 5vw;
+  padding: 2vh 0;
 }
 aside input {
   width: 90%;
@@ -417,236 +524,457 @@ aside input {
 
 /* ---Titre et background des cartes  ---
 ----------------------------------------*/
-.menu-ohmyfood li[class*=li-lanote] {
+.li-lanote {
   background-color: #FDE0DC;
 }
-.menu-ohmyfood li[class*=li-lanote] section i {
-  font-size: 3rem;
+.li-lanote .lanote {
+  position: relative;
+  bottom: 2.5vh;
+}
+.li-lanote section i {
+  font-size: 2.3rem;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu-ohmyfood li[class*=li-lanote] h2 {
+.li-lanote h2 {
   font-family: "Devonshire-Regular";
   font-size: 1.5rem;
   font-weight: normal;
+  margin-bottom: 2vh;
+}
+.li-lanote a {
+  font-family: "Itim-Regular";
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
 }
 
-.menu-ohmyfood li[class*=li-lechic] {
+.li-lechic {
   background-color: #FFF5FE;
 }
-.menu-ohmyfood li[class*=li-lechic] section h2 {
+.li-lechic section h2 {
   font-family: "CroissantOne-Regular";
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   background: -webkit-linear-gradient(0deg, #c7750c, #6e4bce);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 4vh;
+}
+.li-lechic a {
+  font-family: "quintessential-regular-webfont.woff2";
+  text-decoration: none;
+  color: #c7750c;
+  font-size: 2rem;
 }
 
-.menu-ohmyfood li[class*=li-ledelice] {
+.li-ledelice {
   background-color: #F9F9F9;
 }
-.menu-ohmyfood li[class*=li-ledelice] section h2 {
+.li-ledelice section h2 {
   font-family: "DancingScript-VariableFont_wght";
   font-size: 1.5rem;
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 4vh;
+}
+.li-ledelice a {
+  font-family: "Caveat-Regular";
+  text-decoration: none;
+  color: #1e9dfb;
+  font-size: 2.5rem;
 }
 
-.menu-ohmyfood li[class*=li-lapalette] {
+.li-lapalette {
   background-color: #FDFFFD;
 }
-.menu-ohmyfood li[class*=li-lapalette] section h2 {
+.li-lapalette section h2 {
   font-family: "KaushanScript-Regular";
   font-size: 1.5rem;
   background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 4vh;
+}
+.li-lapalette a {
+  font-family: "Caveat-Regular";
+  text-decoration: none;
+  color: #3f9338;
+  font-size: 2.5rem;
 }
 
-h1 {
-  font-family: "Montserrat-Regular";
-  font-size: 1.5rem;
+.pro {
+  width: 28%;
+  font-size: 1rem;
 }
 
 /* -----            media query             ----
 ---------------------------------------------- */
-body {
-  margin: 0 auto;
-}
-body main {
-  text-align: center;
+@media screen and (min-width: 500px) {
+  body h1 {
+    padding: 3vh 0;
+    font-size: 1.6rem;
+  }
+  body .menu-ohmyfood {
+    width: 100%;
+  }
+  body .menu-ohmyfood ul li {
+    width: 30vw;
+    height: 20vh;
+  }
+  body .pro {
+    width: 32%;
+    font-size: 1.3rem;
+  }
 }
 @media screen and (min-width: 768px) {
-  body {
-    margin: 0 auto;
+  body h1 {
+    font-size: 1.9rem;
   }
   body .menu-ohmyfood ul {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
   body .menu-ohmyfood ul li {
-    width: 23vw;
-    height: 21vh;
-    padding: 22vh 5vw;
-    margin: 2vh 2vw;
+    width: 20vw;
+    height: 22vh;
+  }
+  body .pro {
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    margin: 0 auto;
+  body h1 {
+    font-size: 2.4rem;
   }
   body .menu-ohmyfood ul {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
   }
   body .menu-ohmyfood ul li {
     width: 16vw;
-    height: 25vh;
-    padding: 22vh 5vw;
-    margin: 2vh 3vw;
+    height: 27vh;
+    font-size: 5rem;
+  }
+  body .menu-ohmyfood ul li h2 {
+    font-size: 1.8rem;
+  }
+  body .pro {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  bottom: 0.1rem;
+  background: #589d87;
+  height: 8%;
+}
+footer a {
+  font-family: "Montserrat-Regular";
+  font-size: 1.1rem;
+}
+
+/* -----            media query             ----
+---------------------------------------------- */
+@media screen and (min-width: 500px) {
+  body footer a {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body footer a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body footer a {
+    font-size: 1.6rem;
   }
 }
 
 body {
-  font-family: "Itim-Regular";
-  background: #fff;
   width: 100%;
   text-align: center;
+  background: #fff;
 }
 body .menu-lanote h3 {
   font-family: "Devonshire-Regular";
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: normal;
+  padding-bottom: 4vh;
 }
 body .page-lanote {
   display: flex;
   flex-direction: column;
+  font-family: "Itim-Regular";
   background: #FDE0DC;
-  width: 80%;
-  font-size: 1.2rem;
-  padding: 1vh 8vw;
-  margin: auto;
+  width: 90%;
+  font-style: italic;
+  padding: 5vh 4vw;
 }
-body .page-lanote h4 {
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-body .page-lanote img[src*="lanote1.png"] {
-  position: relative;
-  top: 2vh;
-  width: 25vw;
-}
-body .page-lanote img[src*="lanote2.png"] {
-  position: relative;
-  bottom: 2vh;
-  left: 52vw;
-  width: 25vw;
-}
-
-article i {
-  font-size: 4rem;
-  padding-top: 5vh;
+body article i {
+  font-size: 2rem;
+  padding: 2vh 2vw 5vh 0;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-span i {
-  font-size: 1.5rem;
+body span i {
+  font-size: 1.2rem;
   padding: 2vh 2vw 5vh 0;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+span p {
+  display: inline;
+  font-family: "Devonshire-Regular";
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /* --------------- media query -----------------
 ------------------------------------------------ */
 body {
   width: 100%;
   margin: 0 auto;
 }
-body .menu-lanote h3 {
-  font-size: 2.5rem;
-  padding: 0 2vw 5vh 0;
-}
-body .page-lanote h4 {
-  font-size: 1.4rem;
-  font-weight: normal;
+@media screen and (min-width: 500px) {
+  body article i {
+    font-size: 2.3rem;
+  }
+  body span i {
+    font-size: 1.2rem;
+  }
+  body .menu-lanote h3 {
+    font-size: 2rem;
+  }
+  body .titre-prelude,
+body .titre-point,
+body .titre-mouvement {
+    table-layout: fixed;
+    padding: 0 1vw;
+  }
+  body .titre-prelude img,
+body .titre-point img,
+body .titre-mouvement img {
+    width: 20vw;
+  }
+  body .titre-prelude p,
+body .titre-point p,
+body .titre-mouvement p {
+    font-size: 0.9rem;
+  }
+  body .titre-prelude th:nth-child(1),
+body .titre-point th:nth-child(1),
+body .titre-mouvement th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-prelude th:nth-child(2),
+body .titre-point th:nth-child(2),
+body .titre-mouvement th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-prelude th:nth-child(3),
+body .titre-point th:nth-child(3),
+body .titre-mouvement th:nth-child(3) {
+    width: 15%;
+  }
+  body .prelude,
+body .point,
+body .mouvement {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 9vw;
+    font-size: 0.7rem;
+  }
+  body .prelude p,
+body .point p,
+body .mouvement p {
+    padding: 1vh 0;
+  }
+  body .prelude th:nth-child(1),
+body .point th:nth-child(1),
+body .mouvement th:nth-child(1) {
+    width: 80%;
+  }
+  body .prelude th:nth-child(2),
+body .point th:nth-child(2),
+body .mouvement th:nth-child(2) {
+    width: 5%;
+  }
 }
 @media screen and (min-width: 768px) {
   body {
     width: 80%;
     margin: auto;
   }
-  body .menu-lanote .page {
+  body .menu-lanote h3 {
+    font-size: 2rem;
+  }
+  body .page-lanote {
     width: 70%;
+    margin: auto;
+    margin-bottom: 9vh;
   }
-  body .menu-lanote .page img[src*="lanote1.png"] {
-    top: 6vh;
-    width: 18vw;
+  body .titre-prelude,
+body .titre-point,
+body .titre-mouvement {
+    table-layout: fixed;
+    padding: 0 0vw;
   }
-  body .menu-lanote .page img[src*="lanote2.png"] {
-    bottom: 6vh;
-    left: 50vw;
-    width: 18vw;
+  body .titre-prelude img,
+body .titre-point img,
+body .titre-mouvement img {
+    width: 13vw;
+  }
+  body .titre-prelude p,
+body .titre-point p,
+body .titre-mouvement p {
+    font-size: 0.8rem;
+  }
+  body .titre-prelude th:nth-child(1),
+body .titre-point th:nth-child(1),
+body .titre-mouvement th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-prelude th:nth-child(2),
+body .titre-point th:nth-child(2),
+body .titre-mouvement th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-prelude th:nth-child(3),
+body .titre-point th:nth-child(3),
+body .titre-mouvement th:nth-child(3) {
+    width: 15%;
+  }
+  body .prelude,
+body .point,
+body .mouvement {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 5vw;
+    font-size: 0.7rem;
+  }
+  body .prelude p,
+body .point p,
+body .mouvement p {
+    padding: 1vh 0;
+  }
+  body .prelude th:nth-child(1),
+body .point th:nth-child(1),
+body .mouvement th:nth-child(1) {
+    width: 80%;
+  }
+  body .prelude th:nth-child(2),
+body .point th:nth-child(2),
+body .mouvement th:nth-child(2) {
+    width: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 65%;
+    width: 70%;
   }
   body .menu-lanote h3 {
-    font-size: 4rem;
+    font-size: 3rem;
+    padding-bottom: 8vh;
   }
-  body .menu-lanote .page-lanote {
-    font-size: 1.1rem;
-    width: 60%;
+  body .page-lanote {
+    width: 70%;
     margin: auto;
+    margin-bottom: 10vh;
   }
-  body .menu-lanote .page-lanote img[src*="lanote1.png"] {
-    top: 3vh;
-    width: 16vw;
+  body .titre-prelude,
+body .titre-point,
+body .titre-mouvement {
+    table-layout: fixed;
+    padding: 0 0vw;
   }
-  body .menu-lanote .page-lanote img[src*="lanote2.png"] {
-    bottom: 3vh;
-    left: 31vw;
-    width: 16vw;
+  body .titre-prelude img,
+body .titre-point img,
+body .titre-mouvement img {
+    width: 13vw;
+  }
+  body .titre-prelude p,
+body .titre-point p,
+body .titre-mouvement p {
+    font-size: 0.9rem;
+  }
+  body .titre-prelude th:nth-child(1),
+body .titre-point th:nth-child(1),
+body .titre-mouvement th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-prelude th:nth-child(2),
+body .titre-point th:nth-child(2),
+body .titre-mouvement th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-prelude th:nth-child(3),
+body .titre-point th:nth-child(3),
+body .titre-mouvement th:nth-child(3) {
+    width: 15%;
+  }
+  body .prelude,
+body .point,
+body .mouvement {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 5.5vw;
+    font-size: 0.8rem;
+  }
+  body .prelude p,
+body .point p,
+body .mouvement p {
+    padding: 2vh 0;
+  }
+  body .prelude th:nth-child(1),
+body .point th:nth-child(1),
+body .mouvement th:nth-child(1) {
+    width: 80%;
+  }
+  body .prelude th:nth-child(2),
+body .point th:nth-child(2),
+body .mouvement th:nth-child(2) {
+    width: 5%;
   }
 }
 
 body {
-  background: #fff;
-  width: 90%;
+  width: 100%;
   text-align: center;
+  background: #fff;
+}
+body .menu-lapalette h3 {
+  font-family: "KaushanScript-Regular";
+  background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  padding: 0 0 5vh 0;
 }
 body .page-lapalette {
   display: flex;
   flex-direction: column;
+  font-family: "KaushanScript-Regular";
   background: #FDFFFD;
-  width: 80%;
-  padding: 1vh 8vw;
-  margin: auto;
-}
-body .page-lapalette h4 {
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-body .page-lapalette img[src*="lapalette1.png"] {
-  position: relative;
-  top: 2vh;
-  width: 27vw;
-}
-body .page-lapalette img[src*="lapalette2.png"] {
-  position: relative;
-  bottom: 2vh;
-  left: 51vw;
-  width: 27vw;
+  width: 90%;
+  padding: 4vh 4vw;
 }
 
 /* --------------- media query -----------------
@@ -655,23 +983,135 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 500px) {
+  body .menu-lapalette h3 {
+    font-size: 2rem;
+  }
+  body .titre-esquisse,
+body .titre-oeuvre,
+body .titre-sommet {
+    table-layout: fixed;
+    margin: 1.5vh 0 1.5vh 7vw;
+  }
+  body .titre-esquisse img,
+body .titre-oeuvre img,
+body .titre-sommet img {
+    width: 26vw;
+  }
+  body .titre-esquisse p,
+body .titre-oeuvre p,
+body .titre-sommet p {
+    font-size: 0.9rem;
+  }
+  body .titre-esquisse th:nth-child(1),
+body .titre-oeuvre th:nth-child(1),
+body .titre-sommet th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-esquisse th:nth-child(2),
+body .titre-oeuvre th:nth-child(2),
+body .titre-sommet th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-esquisse th:nth-child(3),
+body .titre-oeuvre th:nth-child(3),
+body .titre-sommet th:nth-child(3) {
+    width: 15%;
+  }
+  body .esquisse,
+body .oeuvre,
+body .sommet {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 11vw;
+    font-size: 0.6rem;
+  }
+  body .esquisse p,
+body .oeuvre p,
+body .sommet p {
+    padding: 1vh 0;
+  }
+  body .esquisse th:nth-child(1),
+body .oeuvre th:nth-child(1),
+body .sommet th:nth-child(1) {
+    width: 100%;
+  }
+  body .esquisse th:nth-child(2),
+body .oeuvre th:nth-child(2),
+body .sommet th:nth-child(2) {
+    width: 15%;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     width: 80%;
     margin: auto;
   }
+  body .menu-lapalette h3 {
+    font-size: 2.3rem;
+  }
   body .page-lapalette {
     width: 70%;
     margin: auto;
+    margin-bottom: 9vh;
   }
-  body .page-lapalette img[src*="lapalette1.png"] {
-    top: 2vh;
-    width: 22vw;
+  body .titre-esquisse,
+body .titre-oeuvre,
+body .titre-sommet {
+    table-layout: fixed;
+    margin: 0 3vw;
   }
-  body .page-lapalette img[src*="lapalette2.png"] {
-    bottom: 2vh;
-    left: 46vw;
-    width: 22vw;
+  body .titre-esquisse img,
+body .titre-oeuvre img,
+body .titre-sommet img {
+    width: 15vw;
+  }
+  body .titre-esquisse p,
+body .titre-oeuvre p,
+body .titre-sommet p {
+    font-size: 1rem;
+  }
+  body .titre-esquisse th:nth-child(1),
+body .titre-oeuvre th:nth-child(1),
+body .titre-sommet th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-esquisse th:nth-child(2),
+body .titre-oeuvre th:nth-child(2),
+body .titre-sommet th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-esquisse th:nth-child(3),
+body .titre-oeuvre th:nth-child(3),
+body .titre-sommet th:nth-child(3) {
+    width: 15%;
+  }
+  body .esquisse,
+body .oeuvre,
+body .sommet {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 7vw;
+    font-size: 0.7rem;
+  }
+  body .esquisse p,
+body .oeuvre p,
+body .sommet p {
+    padding: 1vh 0;
+  }
+  body .esquisse th:nth-child(1),
+body .oeuvre th:nth-child(1),
+body .sommet th:nth-child(1) {
+    width: 100%;
+  }
+  body .esquisse th:nth-child(2),
+body .oeuvre th:nth-child(2),
+body .sommet th:nth-child(2) {
+    width: 15%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -679,91 +1119,93 @@ body {
     width: 80%;
     margin: 0 auto;
   }
-  body .page-lapalette {
-    width: 80%;
+  body .menu-lapalette h3 {
+    font-size: 3rem;
+  }
+  body .page-lanote {
+    width: 70%;
     margin: auto;
+    margin-bottom: 10vh;
   }
-  body .page-lapalette h4 {
-    font-size: 1.5rem;
+  body .titre-esquisse,
+body .titre-oeuvre,
+body .titre-sommet {
+    table-layout: fixed;
+    margin: 1.6vh 0 1.6vh 3vw;
   }
-  body .page-lapalette img[src*="lapalette1.png"] {
-    top: 3vh;
-    width: 20vw;
+  body .titre-esquisse img,
+body .titre-oeuvre img,
+body .titre-sommet img {
+    width: 16vw;
   }
-  body .page-lapalette img[src*="lapalette2.png"] {
-    bottom: 3vh;
-    left: 43vw;
-    width: 20vw;
+  body .titre-esquisse p,
+body .titre-oeuvre p,
+body .titre-sommet p {
+    font-size: 1rem;
+  }
+  body .titre-esquisse th:nth-child(1),
+body .titre-oeuvre th:nth-child(1),
+body .titre-sommet th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-esquisse th:nth-child(2),
+body .titre-oeuvre th:nth-child(2),
+body .titre-sommet th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-esquisse th:nth-child(3),
+body .titre-oeuvre th:nth-child(3),
+body .titre-sommet th:nth-child(3) {
+    width: 15%;
+  }
+  body .esquisse,
+body .oeuvre,
+body .sommet {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 7vw;
+    font-size: 0.8rem;
+  }
+  body .esquisse p,
+body .oeuvre p,
+body .sommet p {
+    padding: 1.8vh 0;
+  }
+  body .esquisse th:nth-child(1),
+body .oeuvre th:nth-child(1),
+body .sommet th:nth-child(1) {
+    width: 100%;
+  }
+  body .esquisse th:nth-child(2),
+body .oeuvre th:nth-child(2),
+body .sommet th:nth-child(2) {
+    width: 15%;
   }
 }
 
 body {
-  font-family: "DMSerifText-Regular";
-  background: #fff;
-  width: 90%;
+  width: 100%;
   text-align: center;
-  margin: auto;
+  background: #fff;
 }
 body .menu-lechic h3 {
   font-family: "CroissantOne-Regular";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 4vh;
 }
 body .page-lechic {
   display: flex;
   flex-direction: column;
+  font-family: "CroissantOne-Regular";
   background: #FFF5FE;
-  width: 80%;
-  padding: 1vh 8vw;
+  width: 90%;
   margin: auto;
-}
-body .page-lechic h4 {
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-body .page-lechic table[class*=prelude] {
-  color: #c7750c;
-}
-body .page-lechic table[class*=plaisir] {
-  color: #a6679a;
-}
-body .page-lechic table[class*=gourmandise] {
-  color: #6d4acc;
-}
-body .page-lechic img[src*="lechic1.png"] {
-  position: relative;
-  top: 2vh;
-  width: 25vw;
-}
-body .page-lechic img[src*="lechic2.png"] {
-  position: relative;
-  bottom: 2vh;
-  left: 52vw;
-  width: 25vw;
-}
-body .page-lechic img[src*="lechic3.png"] {
-  position: relative;
-  top: 2vh;
-  width: 22vw;
-}
-body .page-lechic img[src*="lechic4.png"] {
-  position: relative;
-  bottom: 2vh;
-  left: 58vw;
-  width: 22vw;
-}
-body .page-lechic img[src*="lechic5.png"] {
-  position: relative;
-  top: 2vh;
-  width: 22vw;
-}
-body .page-lechic img[src*="lechic6.png"] {
-  position: relative;
-  bottom: 2vh;
-  left: 58vw;
-  width: 22vw;
+  padding: 4vh 4vw;
 }
 
 /* --------------- media query -----------------
@@ -772,150 +1214,228 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 500px) {
+  body .menu-lechic h3 {
+    font-size: 1.4rem;
+  }
+  body .titre-appetit,
+body .titre-plaisir,
+body .titre-gourmandise {
+    table-layout: fixed;
+    margin: 0 7vw;
+  }
+  body .titre-appetit img,
+body .titre-plaisir img,
+body .titre-gourmandise img {
+    width: 22vw;
+  }
+  body .titre-appetit p,
+body .titre-plaisir p,
+body .titre-gourmandise p {
+    font-size: 0.55rem;
+  }
+  body .titre-appetit th:nth-child(1),
+body .titre-plaisir th:nth-child(1),
+body .titre-gourmandise th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-appetit th:nth-child(2),
+body .titre-plaisir th:nth-child(2),
+body .titre-gourmandise th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-appetit th:nth-child(3),
+body .titre-plaisir th:nth-child(3),
+body .titre-gourmandise th:nth-child(3) {
+    width: 15%;
+  }
+  body .appetit,
+body .plaisir,
+body .gourmandise {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 11vw;
+    font-size: 0.5rem;
+  }
+  body .appetit p,
+body .plaisir p,
+body .gourmandise p {
+    padding: 1vh 0;
+  }
+  body .appetit th:nth-child(1),
+body .plaisir th:nth-child(1),
+body .gourmandise th:nth-child(1) {
+    width: 100%;
+  }
+  body .appetit th:nth-child(2),
+body .plaisir th:nth-child(2),
+body .gourmandise th:nth-child(2) {
+    width: 15%;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
   }
   body .menu-lechic h3 {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
-  body .menu-lechic .page-lechic {
+  body .page-lechic {
     width: 70%;
-    font-size: 1rem;
     margin: auto;
+    margin-bottom: 9vh;
   }
-  body .menu-lechic .page-lechic img[src*="lechic1.png"] {
-    top: 3vh;
-    width: 22vw;
+  body .titre-appetit,
+body .titre-plaisir,
+body .titre-gourmandise {
+    table-layout: fixed;
+    margin: 0 2vw;
   }
-  body .menu-lechic .page-lechic img[src*="lechic2.png"] {
-    bottom: 3vh;
-    left: 47vw;
-    width: 18vw;
+  body .titre-appetit img,
+body .titre-plaisir img,
+body .titre-gourmandise img {
+    width: 15vw;
   }
-  body .menu-lechic .page-lechic img[src*="lechic3.png"] {
-    top: 3vh;
-    width: 22vw;
+  body .titre-appetit p,
+body .titre-plaisir p,
+body .titre-gourmandise p {
+    font-size: 0.6rem;
   }
-  body .menu-lechic .page-lechic img[src*="lechic4.png"] {
-    bottom: 3vh;
-    left: 47vw;
-    width: 18vw;
+  body .titre-appetit th:nth-child(1),
+body .titre-plaisir th:nth-child(1),
+body .titre-gourmandise th:nth-child(1) {
+    width: 15%;
   }
-  body .menu-lechic .page-lechic img[src*="lechic5.png"] {
-    top: 3vh;
-    width: 22vw;
+  body .titre-appetit th:nth-child(2),
+body .titre-plaisir th:nth-child(2),
+body .titre-gourmandise th:nth-child(2) {
+    width: 50%;
   }
-  body .menu-lechic .page-lechic img[src*="lechic6.png"] {
-    bottom: 3vh;
-    left: 47vw;
-    width: 18vw;
+  body .titre-appetit th:nth-child(3),
+body .titre-plaisir th:nth-child(3),
+body .titre-gourmandise th:nth-child(3) {
+    width: 15%;
+  }
+  body .appetit,
+body .plaisir,
+body .gourmandise {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 8vw;
+    font-size: 0.55rem;
+  }
+  body .appetit p,
+body .plaisir p,
+body .gourmandise p {
+    padding: 1vh 0;
+  }
+  body .appetit th:nth-child(1),
+body .plaisir th:nth-child(1),
+body .gourmandise th:nth-child(1) {
+    width: 100%;
+  }
+  body .appetit th:nth-child(2),
+body .plaisir th:nth-child(2),
+body .gourmandise th:nth-child(2) {
+    width: 15%;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
     width: 65%;
-    margin: 0 auto;
   }
   body .menu-lechic h3 {
-    font-size: 3rem;
+    font-size: 1.9rem;
   }
-  body .menu-lechic .page-lechic {
+  body .page-lechic {
     width: 70%;
-    font-size: 1.2rem;
     margin: auto;
+    margin-bottom: 10vh;
   }
-  body .menu-lechic .page-lechic h4 {
-    font-size: 1.3rem;
+  body .titre-appetit,
+body .titre-plaisir,
+body .titre-gourmandise {
+    table-layout: fixed;
+    margin: 0 4vw;
   }
-  body .menu-lechic .page-lechic img[src*="lechic1.png"] {
-    top: 3vh;
-    width: 18vw;
+  body .titre-appetit img,
+body .titre-plaisir img,
+body .titre-gourmandise img {
+    width: 12vw;
   }
-  body .menu-lechic .page-lechic img[src*="lechic2.png"] {
-    bottom: 3vh;
-    left: 37vw;
-    width: 18vw;
+  body .titre-appetit p,
+body .titre-plaisir p,
+body .titre-gourmandise p {
+    font-size: 0.8rem;
   }
-  body .menu-lechic .page-lechic img[src*="lechic3.png"] {
-    top: 3vh;
-    width: 18vw;
+  body .titre-appetit th:nth-child(1),
+body .titre-plaisir th:nth-child(1),
+body .titre-gourmandise th:nth-child(1) {
+    width: 15%;
   }
-  body .menu-lechic .page-lechic img[src*="lechic4.png"] {
-    bottom: 3vh;
-    left: 37vw;
-    width: 18vw;
+  body .titre-appetit th:nth-child(2),
+body .titre-plaisir th:nth-child(2),
+body .titre-gourmandise th:nth-child(2) {
+    width: 50%;
   }
-  body .menu-lechic .page-lechic img[src*="lechic5.png"] {
-    top: 3vh;
-    width: 18vw;
+  body .titre-appetit th:nth-child(3),
+body .titre-plaisir th:nth-child(3),
+body .titre-gourmandise th:nth-child(3) {
+    width: 15%;
   }
-  body .menu-lechic .page-lechic img[src*="lechic6.png"] {
-    bottom: 3vh;
-    left: 37vw;
-    width: 18vw;
+  body .appetit,
+body .plaisir,
+body .gourmandise {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 7vw;
+    font-size: 0.7rem;
+  }
+  body .appetit p,
+body .plaisir p,
+body .gourmandise p {
+    padding: 1.2vh 0;
+  }
+  body .appetit th:nth-child(1),
+body .plaisir th:nth-child(1),
+body .gourmandise th:nth-child(1) {
+    width: 100%;
+  }
+  body .appetit th:nth-child(2),
+body .plaisir th:nth-child(2),
+body .gourmandise th:nth-child(2) {
+    width: 15%;
   }
 }
 
 body {
-  font-family: "Caveat-Regular";
-  background: #fff;
-  width: 90%;
+  width: 100%;
   text-align: center;
+  background: #fff;
 }
 body .menu-ledelice h3 {
   font-family: "DancingScript-VariableFont_wght";
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0 0 7vh 0;
 }
 body .page-ledelice {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  font-family: "Caveat-Regular";
   background: #F9F9F9;
-  font-size: 0.8rem;
-  padding: 1vh 8vw;
+  width: 90%;
   margin: auto;
-}
-body .page-ledelice h4 {
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-body .page-ledelice img[src*="ledelice1.png"] {
-  position: relative;
-  top: 3.8vh;
-  width: 25vw;
-}
-body .page-ledelice img[src*="ledelice2.png"] {
-  position: relative;
-  bottom: 3.8vh;
-  left: 53vw;
-  width: 25vw;
-}
-body .page-ledelice img[src*="ledelice3.png"] {
-  position: relative;
-  top: 3.8vh;
-  width: 25vw;
-}
-body .page-ledelice img[src*="ledelice4.png"] {
-  position: relative;
-  bottom: 3.8vh;
-  left: 53vw;
-  width: 25vw;
-}
-body .page-ledelice img[src*="ledelice5.png"] {
-  position: relative;
-  top: 3.8vh;
-  width: 25vw;
-}
-body .page-ledelice img[src*="ledelice6.png"] {
-  position: relative;
-  bottom: 3.8vh;
-  left: 53vw;
-  width: 25vw;
+  padding: 5vh 4vw;
 }
 
 /* --------------- media query -----------------
@@ -924,96 +1444,197 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
-  body {
-    width: 100%;
-    margin: auto;
+@media screen and (min-width: 500px) {
+  body .menu-ledelice h3 {
+    font-size: 2.3rem;
   }
-  body .page-ledelice {
+  body .titre-commencer,
+body .titre-continuer,
+body .titre-terminer {
+    table-layout: fixed;
+    margin: 0.5vh 0 0.5vh 1vw;
+  }
+  body .titre-commencer img,
+body .titre-continuer img,
+body .titre-terminer img {
+    width: 23vw;
+  }
+  body .titre-commencer p,
+body .titre-continuer p,
+body .titre-terminer p {
+    font-size: 1rem;
+    padding: 1vh 0;
+  }
+  body .titre-commencer th:nth-child(1),
+body .titre-continuer th:nth-child(1),
+body .titre-terminer th:nth-child(1) {
+    width: 15%;
+  }
+  body .titre-commencer th:nth-child(2),
+body .titre-continuer th:nth-child(2),
+body .titre-terminer th:nth-child(2) {
+    width: 50%;
+  }
+  body .titre-commencer th:nth-child(3),
+body .titre-continuer th:nth-child(3),
+body .titre-terminer th:nth-child(3) {
+    width: 15%;
+  }
+  body .commencer,
+body .continuer,
+body .terminer {
+    table-layout: fixed;
+    margin: 0.5vh 0 0.5vh 11vw;
     font-size: 0.8rem;
   }
-  body .page-ledelice h4 {
-    font-size: 0.9rem;
-    font-weight: normal;
+  body .commencer p,
+body .continuer p,
+body .terminer p {
+    padding: 1vh 0;
+  }
+  body .commencer th:nth-child(1),
+body .continuer th:nth-child(1),
+body .terminer th:nth-child(1) {
+    width: 100%;
+  }
+  body .commencer th:nth-child(2),
+body .continuer th:nth-child(2),
+body .terminer th:nth-child(2) {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: auto;
   }
   body .menu-ledelice h3 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   body .page-ledelice {
     width: 70%;
     margin: auto;
+    margin-bottom: 9vh;
   }
-  body .page-ledelice img[src*="ledelice1.png"] {
-    top: 5vh;
-    width: 23vw;
+  body .titre-commencer,
+body .titre-continuer,
+body .titre-terminer {
+    table-layout: fixed;
+    margin: 1.5vh 0 1.5vh 1vw;
   }
-  body .page-ledelice img[src*="ledelice2.png"] {
-    bottom: 5vh;
-    left: 46vw;
-    width: 23vw;
+  body .titre-commencer img,
+body .titre-continuer img,
+body .titre-terminer img {
+    width: 16vw;
   }
-  body .page-ledelice img[src*="ledelice3.png"] {
-    top: 5vh;
-    width: 23vw;
+  body .titre-commencer p,
+body .titre-continuer p,
+body .titre-terminer p {
+    font-size: 1.2rem;
   }
-  body .page-ledelice img[src*="ledelice4.png"] {
-    bottom: 5vh;
-    left: 46vw;
-    width: 23vw;
+  body .titre-commencer th:nth-child(1),
+body .titre-continuer th:nth-child(1),
+body .titre-terminer th:nth-child(1) {
+    width: 15%;
   }
-  body .page-ledelice img[src*="ledelice5.png"] {
-    top: 5vh;
-    width: 23vw;
+  body .titre-commencer th:nth-child(2),
+body .titre-continuer th:nth-child(2),
+body .titre-terminer th:nth-child(2) {
+    width: 50%;
   }
-  body .page-ledelice img[src*="ledelice6.png"] {
-    bottom: 5vh;
-    left: 46vw;
-    width: 23vw;
+  body .titre-commencer th:nth-child(3),
+body .titre-continuer th:nth-child(3),
+body .titre-terminer th:nth-child(3) {
+    width: 15%;
+  }
+  body .commencer,
+body .continuer,
+body .terminer {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 5vw;
+    font-size: 0.9rem;
+  }
+  body .commencer p,
+body .continuer p,
+body .terminer p {
+    padding: 1.5vh 0;
+  }
+  body .commencer th:nth-child(1),
+body .continuer th:nth-child(1),
+body .terminer th:nth-child(1) {
+    width: 80%;
+  }
+  body .commencer th:nth-child(2),
+body .continuer th:nth-child(2),
+body .terminer th:nth-child(2) {
+    width: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 80%;
-    margin: 0 auto;
+    width: 75%;
   }
   body .menu-ledelice h3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   body .page-ledelice {
     width: 70%;
-    font-size: 1.2rem;
     margin: auto;
+    margin-bottom: 10vh;
   }
-  body .page-ledelice h4 {
+  body .titre-commencer,
+body .titre-continuer,
+body .titre-terminer {
+    table-layout: fixed;
+    margin: 0 0vw;
+  }
+  body .titre-commencer img,
+body .titre-continuer img,
+body .titre-terminer img {
+    width: 17vw;
+  }
+  body .titre-commencer p,
+body .titre-continuer p,
+body .titre-terminer p {
     font-size: 1.4rem;
-    font-weight: normal;
   }
-  body .page-ledelice img[src*="ledelice1.png"] {
-    top: 7vh;
-    width: 20vw;
+  body .titre-commencer th:nth-child(1),
+body .titre-continuer th:nth-child(1),
+body .titre-terminer th:nth-child(1) {
+    width: 15%;
   }
-  body .page-ledelice img[src*="ledelice2.png"] {
-    bottom: 7vh;
-    left: 35vw;
-    width: 20vw;
+  body .titre-commencer th:nth-child(2),
+body .titre-continuer th:nth-child(2),
+body .titre-terminer th:nth-child(2) {
+    width: 50%;
   }
-  body .page-ledelice img[src*="ledelice3.png"] {
-    top: 7vh;
-    width: 20vw;
+  body .titre-commencer th:nth-child(3),
+body .titre-continuer th:nth-child(3),
+body .titre-terminer th:nth-child(3) {
+    width: 15%;
   }
-  body .page-ledelice img[src*="ledelice4.png"] {
-    bottom: 7vh;
-    left: 35vw;
-    width: 20vw;
+  body .commencer,
+body .continuer,
+body .terminer {
+    table-layout: fixed;
+    width: 85%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 5vw;
+    font-size: 1rem;
   }
-  body .page-ledelice img[src*="ledelice5.png"] {
-    top: 7vh;
-    width: 20vw;
+  body .commencer th:nth-child(1),
+body .continuer th:nth-child(1),
+body .terminer th:nth-child(1) {
+    width: 100%;
   }
-  body .page-ledelice img[src*="ledelice6.png"] {
-    bottom: 7vh;
-    left: 35vw;
-    width: 20vw;
+  body .commencer th:nth-child(2),
+body .continuer th:nth-child(2),
+body .terminer th:nth-child(2) {
+    width: 15%;
   }
 }
 

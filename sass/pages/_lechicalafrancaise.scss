@@ -10,7 +10,8 @@ body {
     background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
   }
 
   .page-lechic {
@@ -21,6 +22,8 @@ body {
     width: 90%;
     margin: auto;
     padding: 4vh 4vw;
+    border: solid $contour;
+
   }
 }
 
@@ -36,6 +39,8 @@ body {
 
     .menu-lechic h3 {
       font-size: 1.4rem;
+      padding-top: 6vh;
+      padding-bottom: 4vh;
     }
 
     .titre-appetit,
@@ -87,6 +92,11 @@ body {
     margin: 0 auto;
     .menu-lechic h3 {
       font-size: 1.7rem;
+      .menu-lechic h3 {
+        font-size: 1.9rem;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
+      }
     }
     .page-lechic {
       width: 70%;
@@ -142,11 +152,14 @@ body {
     width: 65%;
       .menu-lechic h3 {
         font-size: 1.9rem;
+        padding-top: 10vh;
+        padding-bottom: 8vh;
       }
     .page-lechic {
       width: 70%;
       margin: auto;
       margin-bottom: 10vh;
+      padding-bottom: 20vh;
     }
     .titre-appetit,
     .titre-plaisir,

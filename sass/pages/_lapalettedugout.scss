@@ -10,7 +10,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
-    padding: 0 0 5vh 0;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
   }
 
   .page-lapalette {
@@ -20,6 +21,7 @@ body {
     background: $lapalette;
     width: 90%;
     padding: 4vh 4vw;
+    border: solid $contour;
   }
 }
 
@@ -34,6 +36,8 @@ body {
 
     .menu-lapalette h3 {
       font-size: 2rem;
+      padding-top: 6vh;
+      padding-bottom: 4vh;
     }
 
     .titre-esquisse,
@@ -85,6 +89,8 @@ body {
 
     .menu-lapalette h3 {
       font-size: 2.3rem;
+      padding-top: 7vh;
+      padding-bottom: 5vh;
     }
     .page-lapalette {
       width: 70%;
@@ -141,11 +147,14 @@ body {
 
       .menu-lapalette h3 {
         font-size: 3rem;
+        padding-top: 10vh;
+        padding-bottom: 8vh;
       }
     .page-lanote {
       width: 70%;
       margin: auto;
       margin-bottom: 10vh;
+      padding-bottom: 20vh;
     }
 
     .titre-esquisse,

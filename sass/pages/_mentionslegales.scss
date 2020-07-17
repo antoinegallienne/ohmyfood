@@ -1,0 +1,36 @@
+
+body {
+  width: 100%;
+  background: $fond--page;
+
+  h1{
+    padding-top: 5vh;
+  }
+  main p{
+    text-align: left;
+    font-family: 'Montserrat-Regular';
+    font-size: 0.7rem;
+    padding: 3vh 8vw 6vh 8vw;
+  }
+
+}
+/* --------------- media query -----------------
+------------------------------------------------ */
+
+body {
+  width: 100%;
+
+  @include media-min(768px) {
+    width: 80%;
+    main p{
+      font-size: 1rem;
+    }
+  }
+
+  @include media-min(1024px) {
+    width: 80%;
+    main p{
+      font-size: 1.2rem;
+    }
+  }
+}

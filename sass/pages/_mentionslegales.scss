@@ -6,7 +6,7 @@ body {
   h1{
     padding-top: 5vh;
   }
-  main p{
+  .mention p{
     text-align: left;
     font-family: 'Montserrat-Regular';
     font-size: 0.7rem;
@@ -22,14 +22,14 @@ body {
 
   @include media-min(768px) {
     width: 80%;
-    main p{
+    .mention p{
       font-size: 1rem;
     }
   }
 
   @include media-min(1024px) {
     width: 80%;
-    main p{
+    .mention p{
       font-size: 1.2rem;
     }
   }

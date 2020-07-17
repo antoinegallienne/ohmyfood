@@ -83,7 +83,48 @@ body {
   }
 }
 
->>>>>>> Stashed changes
+/* ----           Table des menus           ---
+-----------------------------------------------*/
+table {
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+table th:nth-child(1) {
+  width: 90%;
+}
+table th:nth-child(2) {
+  width: 10%;
+}
+
+/* ----    animation trait soulignement menu ---
+-----------------------------------------------*/
+.page h4 {
+  border-bottom: solid rgba(0, 0, 0, 0);
+}
+.page h4::after {
+  content: "";
+  cursor: pointer;
+}
+.page h4:hover {
+  border-bottom: solid black;
+  transition: transform 330ms ease-in-out;
+}
+/* ----           Table des menus           ---
+-----------------------------------------------*/
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("../../public/img/DancingScript-Regular.otf") format("opentype"), url("../../public/img/DancingScript-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "texgyreheros-regular";
+  src: url("../../public/img/texgyreheros-regular.otf") format("opentype"), url("../../public/img/texgyreheros-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .btn-prochainement {
   width: 30%;
   background: #64A082;

@@ -430,7 +430,7 @@
 /* ----      bouton prochainement        ------
 ----------------------------------------------*/
 .pro {
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat-Regular";
   text-transform: capitalize;
   width: 35%;
   background: #589d87;
@@ -708,7 +708,7 @@ body .menu-lanote h3 {
   font-family: "Devonshire-Regular";
   font-size: 1.5rem;
   font-weight: normal;
-  padding-bottom: 4vh;
+  padding-bottom: 3vh;
 }
 body .page-lanote {
   display: flex;
@@ -718,10 +718,12 @@ body .page-lanote {
   width: 90%;
   font-style: italic;
   padding: 5vh 4vw;
+  border: solid #DCC;
+  padding-bottom: 10vh;
 }
 body article i {
-  font-size: 2rem;
-  padding: 2vh 2vw 5vh 0;
+  font-size: 3rem;
+  padding: 5vh 2vw 3vh 0;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -749,13 +751,15 @@ body {
 }
 @media screen and (min-width: 500px) {
   body article i {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   body span i {
     font-size: 1.2rem;
   }
   body .menu-lanote h3 {
     font-size: 2rem;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
   }
   body .titre-prelude,
 body .titre-point,
@@ -821,11 +825,15 @@ body .mouvement th:nth-child(2) {
   }
   body .menu-lanote h3 {
     font-size: 2rem;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
   }
   body .page-lanote {
     width: 70%;
     margin: auto;
     margin-bottom: 9vh;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
   }
   body .titre-prelude,
 body .titre-point,
@@ -890,18 +898,19 @@ body .mouvement th:nth-child(2) {
   }
   body .menu-lanote h3 {
     font-size: 3rem;
+    padding-top: 3vh;
     padding-bottom: 8vh;
   }
   body .page-lanote {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
   body .titre-prelude,
 body .titre-point,
 body .titre-mouvement {
     table-layout: fixed;
-    padding: 0 0vw;
   }
   body .titre-prelude img,
 body .titre-point img,
@@ -935,8 +944,8 @@ body .mouvement {
     width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 5.5vw;
-    font-size: 0.8rem;
+    margin: 0 6vw;
+    font-size: 0.7rem;
   }
   body .prelude p,
 body .point p,
@@ -966,7 +975,8 @@ body .menu-lapalette h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
-  padding: 0 0 5vh 0;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 }
 body .page-lapalette {
   display: flex;
@@ -975,6 +985,7 @@ body .page-lapalette {
   background: #FDFFFD;
   width: 90%;
   padding: 4vh 4vw;
+  border: solid #DCC;
 }
 
 /* --------------- media query -----------------
@@ -986,6 +997,8 @@ body {
 @media screen and (min-width: 500px) {
   body .menu-lapalette h3 {
     font-size: 2rem;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
   body .titre-esquisse,
 body .titre-oeuvre,
@@ -1051,6 +1064,8 @@ body .sommet th:nth-child(2) {
   }
   body .menu-lapalette h3 {
     font-size: 2.3rem;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
   }
   body .page-lapalette {
     width: 70%;
@@ -1121,11 +1136,14 @@ body .sommet th:nth-child(2) {
   }
   body .menu-lapalette h3 {
     font-size: 3rem;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
   }
   body .page-lanote {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
   body .titre-esquisse,
 body .titre-oeuvre,
@@ -1196,7 +1214,8 @@ body .menu-lechic h3 {
   background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 4vh;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 }
 body .page-lechic {
   display: flex;
@@ -1206,6 +1225,7 @@ body .page-lechic {
   width: 90%;
   margin: auto;
   padding: 4vh 4vw;
+  border: solid #DCC;
 }
 
 /* --------------- media query -----------------
@@ -1217,6 +1237,8 @@ body {
 @media screen and (min-width: 500px) {
   body .menu-lechic h3 {
     font-size: 1.4rem;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
   body .titre-appetit,
 body .titre-plaisir,
@@ -1282,6 +1304,11 @@ body .gourmandise th:nth-child(2) {
   }
   body .menu-lechic h3 {
     font-size: 1.7rem;
+  }
+  body .menu-lechic h3 .menu-lechic h3 {
+    font-size: 1.9rem;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
   }
   body .page-lechic {
     width: 70%;
@@ -1351,11 +1378,14 @@ body .gourmandise th:nth-child(2) {
   }
   body .menu-lechic h3 {
     font-size: 1.9rem;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
   }
   body .page-lechic {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
   body .titre-appetit,
 body .titre-plaisir,
@@ -1426,7 +1456,8 @@ body .menu-ledelice h3 {
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 0 7vh 0;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 }
 body .page-ledelice {
   display: flex;
@@ -1436,6 +1467,8 @@ body .page-ledelice {
   width: 90%;
   margin: auto;
   padding: 5vh 4vw;
+  border: solid #DCC;
+  padding-bottom: 20vh;
 }
 
 /* --------------- media query -----------------
@@ -1447,6 +1480,8 @@ body {
 @media screen and (min-width: 500px) {
   body .menu-ledelice h3 {
     font-size: 2.3rem;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
   body .titre-commencer,
 body .titre-continuer,
@@ -1510,6 +1545,8 @@ body .terminer th:nth-child(2) {
   }
   body .menu-ledelice h3 {
     font-size: 2.5rem;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
   }
   body .page-ledelice {
     width: 70%;
@@ -1579,11 +1616,14 @@ body .terminer th:nth-child(2) {
   }
   body .menu-ledelice h3 {
     font-size: 3rem;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
   }
   body .page-ledelice {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
   body .titre-commencer,
 body .titre-continuer,
@@ -1635,6 +1675,42 @@ body .terminer th:nth-child(1) {
 body .continuer th:nth-child(2),
 body .terminer th:nth-child(2) {
     width: 15%;
+  }
+}
+
+body {
+  width: 100%;
+  background: #fff;
+}
+body h1 {
+  padding-top: 5vh;
+}
+body main p {
+  text-align: left;
+  font-family: "Montserrat-Regular";
+  font-size: 0.7rem;
+  padding: 3vh 8vw 6vh 8vw;
+}
+
+/* --------------- media query -----------------
+------------------------------------------------ */
+body {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+  }
+  body main p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 80%;
+  }
+  body main p {
+    font-size: 1.2rem;
   }
 }
 

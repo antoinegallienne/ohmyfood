@@ -5,9 +5,7 @@
 /* ----    Table du menu La note         -----
 -----------------------------------------------*/
 
-.titre-prelude,
-.titre-point,
-.titre-mouvement{
+.titre-lanote{
 
   table-layout: fixed;
   margin: 0 7vw;
@@ -28,9 +26,7 @@
   }
 }
 
-  .prelude,
-  .point,
-  .mouvement{
+  .table-lanote{
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
@@ -40,11 +36,11 @@
     p{
       margin: 0.8vh 0;
     }
-    th:nth-child(1) {
-      width: 80%;
+    th:first-child {
+      width: 100%;
     }
-    th:nth-child(2) {
-      width: 5%;
+    th:last-child{
+      width: 15%;
     }
   }
 
@@ -69,12 +65,12 @@
 .titre-gourmandise {
 
   table-layout: fixed;
-  margin: 0 7vw;
+  margin: 0 5vw;
   img{
     width: 22vw;
   }
   p{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin: 2vh 0;
   }
   th:nth-child(1) {
@@ -96,15 +92,15 @@
     vertical-align: middle;
     text-align: left;
     margin: 0 11vw;
-    font-size: 0.45rem;
+    font-size: 0.55rem;
     p{
       margin: 0.8vh 0;
     }
 
-    th:nth-child(1) {
+    th:first-child {
       width: 100%;
     }
-   th:nth-child(2) {
+    th:last-child{
       width: 15%;
     }
   }
@@ -113,20 +109,19 @@
 /* ---     Table du menu Le délice         ---
 -----------------------------------------------*/
 
-.titre-commencer,
-.titre-continuer,
-.titre-terminer{
+.titre-ledelice{
 
   table-layout: fixed;
-  margin: 0 6vw;
+  margin: 0 3vw;
   img{
-    width: 25vw;
+    width: 28vw;
   }
   p{
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
   th:nth-child(1) {
     width:15%;
+
   }
   th:nth-child(2) {
     width: 50%;
@@ -136,20 +131,18 @@
   }
 }
 
-  .commencer,
-  .continuer,
-  .terminer {
+  .table-ledelice {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 11vw;
-    font-size: 0.75rem;
+    margin: 0 9vw;
+    font-size: 0.9rem;
 
-    th:nth-child(1) {
+    th:first-child {
       width: 100%;
     }
-    th:nth-child(2) {
+    th:last-child{
       width: 15%;
     }
   }
@@ -158,9 +151,7 @@
 /* -Table du menu  la palette         ---
 -----------------------------------------------*/
 
-.titre-esquisse,
-.titre-oeuvre,
-.titre-sommet {
+.titre-lapalette {
 
   table-layout: fixed;
   margin: 0 7vw;
@@ -168,7 +159,7 @@
     width: 25vw;
   }
   p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin: 2vh 0;
   }
   th:nth-child(1) {
@@ -176,29 +167,28 @@
   }
   th:nth-child(2) {
     width: 50%;
+    font-weight: normal;
   }
   th:nth-child(3) {
     width:15%;
   }
 }
 
-.esquisse,
-.oeuvre,
-.sommet {
+.table-lapalette {
   table-layout: fixed;
   width: 80%;
   vertical-align: middle;
   text-align: left;
   margin: 0 11vw;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   p{
     margin: 0.5vh 0;
   }
 
-    th:nth-child(1) {
-      width: 100%;
-    }
-    th:nth-child(2) {
-      width: 15%;
-    }
+  th:first-child {
+    width: 100%;
+  }
+  th:last-child{
+    width: 15%;
+  }
   }

@@ -38,11 +38,10 @@ footer a{
   font-size: 0.9rem;
   text-decoration: none;
   cursor: pointer;
-  padding: 4vh 0;
   &::first-letter {
     text-transform: capitalize;
   }
   &:hover {
-    animation: buttonfooter 0.5s infinite;
+    animation: buttonfooter 400ms infinite;
   }
 }

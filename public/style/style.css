@@ -3,262 +3,6 @@
 ---------------------------------------*/
 /* -----       media query          ----
 --------------------------------------- */
-* {
-  margin: 0;
-}
-
-/* ----    Table du menu La note         -----
------------------------------------------------*/
-.titre-prelude,
-.titre-point,
-.titre-mouvement {
-  table-layout: fixed;
-  margin: 0 7vw;
-}
-.titre-prelude img,
-.titre-point img,
-.titre-mouvement img {
-  width: 22vw;
-}
-.titre-prelude p,
-.titre-point p,
-.titre-mouvement p {
-  font-size: 0.8rem;
-}
-.titre-prelude th:nth-child(1),
-.titre-point th:nth-child(1),
-.titre-mouvement th:nth-child(1) {
-  width: 15%;
-}
-.titre-prelude th:nth-child(2),
-.titre-point th:nth-child(2),
-.titre-mouvement th:nth-child(2) {
-  width: 50%;
-}
-.titre-prelude th:nth-child(3),
-.titre-point th:nth-child(3),
-.titre-mouvement th:nth-child(3) {
-  width: 15%;
-}
-
-.prelude,
-.point,
-.mouvement {
-  table-layout: fixed;
-  width: 80%;
-  vertical-align: middle;
-  text-align: left;
-  margin: 0 8vw;
-  font-size: 0.6rem;
-}
-.prelude p,
-.point p,
-.mouvement p {
-  margin: 0.8vh 0;
-}
-.prelude th:nth-child(1),
-.point th:nth-child(1),
-.mouvement th:nth-child(1) {
-  width: 80%;
-}
-.prelude th:nth-child(2),
-.point th:nth-child(2),
-.mouvement th:nth-child(2) {
-  width: 5%;
-}
-
-/* -Table du menu Le chic        ---
------------------------------------------------*/
-.titre-appetit,
-.appetit {
-  color: #c7750c;
-}
-
-.titre-plaisir,
-.plaisir {
-  color: #a6679a;
-}
-
-.titre-gourmandise,
-.gourmandise {
-  color: #6d4acc;
-}
-
-.titre-appetit,
-.titre-plaisir,
-.titre-gourmandise {
-  table-layout: fixed;
-  margin: 0 7vw;
-}
-.titre-appetit img,
-.titre-plaisir img,
-.titre-gourmandise img {
-  width: 22vw;
-}
-.titre-appetit p,
-.titre-plaisir p,
-.titre-gourmandise p {
-  font-size: 0.5rem;
-  margin: 2vh 0;
-}
-.titre-appetit th:nth-child(1),
-.titre-plaisir th:nth-child(1),
-.titre-gourmandise th:nth-child(1) {
-  width: 15%;
-}
-.titre-appetit th:nth-child(2),
-.titre-plaisir th:nth-child(2),
-.titre-gourmandise th:nth-child(2) {
-  width: 50%;
-}
-.titre-appetit th:nth-child(3),
-.titre-plaisir th:nth-child(3),
-.titre-gourmandise th:nth-child(3) {
-  width: 15%;
-}
-
-.appetit,
-.plaisir,
-.gourmandise {
-  table-layout: fixed;
-  width: 80%;
-  vertical-align: middle;
-  text-align: left;
-  margin: 0 11vw;
-  font-size: 0.45rem;
-}
-.appetit p,
-.plaisir p,
-.gourmandise p {
-  margin: 0.8vh 0;
-}
-.appetit th:nth-child(1),
-.plaisir th:nth-child(1),
-.gourmandise th:nth-child(1) {
-  width: 100%;
-}
-.appetit th:nth-child(2),
-.plaisir th:nth-child(2),
-.gourmandise th:nth-child(2) {
-  width: 15%;
-}
-
-/* ---     Table du menu Le délice         ---
------------------------------------------------*/
-.titre-commencer,
-.titre-continuer,
-.titre-terminer {
-  table-layout: fixed;
-  margin: 0 6vw;
-}
-.titre-commencer img,
-.titre-continuer img,
-.titre-terminer img {
-  width: 25vw;
-}
-.titre-commencer p,
-.titre-continuer p,
-.titre-terminer p {
-  font-size: 0.85rem;
-}
-.titre-commencer th:nth-child(1),
-.titre-continuer th:nth-child(1),
-.titre-terminer th:nth-child(1) {
-  width: 15%;
-}
-.titre-commencer th:nth-child(2),
-.titre-continuer th:nth-child(2),
-.titre-terminer th:nth-child(2) {
-  width: 50%;
-}
-.titre-commencer th:nth-child(3),
-.titre-continuer th:nth-child(3),
-.titre-terminer th:nth-child(3) {
-  width: 15%;
-}
-
-.commencer,
-.continuer,
-.terminer {
-  table-layout: fixed;
-  width: 80%;
-  vertical-align: middle;
-  text-align: left;
-  margin: 0 11vw;
-  font-size: 0.75rem;
-}
-.commencer th:nth-child(1),
-.continuer th:nth-child(1),
-.terminer th:nth-child(1) {
-  width: 100%;
-}
-.commencer th:nth-child(2),
-.continuer th:nth-child(2),
-.terminer th:nth-child(2) {
-  width: 15%;
-}
-
-/* -Table du menu  la palette         ---
------------------------------------------------*/
-.titre-esquisse,
-.titre-oeuvre,
-.titre-sommet {
-  table-layout: fixed;
-  margin: 0 7vw;
-}
-.titre-esquisse img,
-.titre-oeuvre img,
-.titre-sommet img {
-  width: 25vw;
-}
-.titre-esquisse p,
-.titre-oeuvre p,
-.titre-sommet p {
-  font-size: 0.7rem;
-  margin: 2vh 0;
-}
-.titre-esquisse th:nth-child(1),
-.titre-oeuvre th:nth-child(1),
-.titre-sommet th:nth-child(1) {
-  width: 15%;
-}
-.titre-esquisse th:nth-child(2),
-.titre-oeuvre th:nth-child(2),
-.titre-sommet th:nth-child(2) {
-  width: 50%;
-}
-.titre-esquisse th:nth-child(3),
-.titre-oeuvre th:nth-child(3),
-.titre-sommet th:nth-child(3) {
-  width: 15%;
-}
-
-.esquisse,
-.oeuvre,
-.sommet {
-  table-layout: fixed;
-  width: 80%;
-  vertical-align: middle;
-  text-align: left;
-  margin: 0 11vw;
-  font-size: 0.6rem;
-}
-.esquisse p,
-.oeuvre p,
-.sommet p {
-  margin: 0.5vh 0;
-}
-.esquisse th:nth-child(1),
-.oeuvre th:nth-child(1),
-.sommet th:nth-child(1) {
-  width: 100%;
-}
-.esquisse th:nth-child(2),
-.oeuvre th:nth-child(2),
-.sommet th:nth-child(2) {
-  width: 15%;
-}
-
 /* -------------       h1         ---------------
 -----------------------------------------------------*/
 @font-face {
@@ -331,6 +75,205 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  margin: 0;
+}
+
+/* ----    Table du menu La note         -----
+-----------------------------------------------*/
+.titre-lanote {
+  table-layout: fixed;
+  margin: 0 7vw;
+}
+.titre-lanote img {
+  width: 22vw;
+}
+.titre-lanote p {
+  font-size: 0.8rem;
+}
+.titre-lanote th:nth-child(1) {
+  width: 15%;
+}
+.titre-lanote th:nth-child(2) {
+  width: 50%;
+}
+.titre-lanote th:nth-child(3) {
+  width: 15%;
+}
+
+.table-lanote {
+  table-layout: fixed;
+  width: 80%;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 8vw;
+  font-size: 0.6rem;
+}
+.table-lanote p {
+  margin: 0.8vh 0;
+}
+.table-lanote th:first-child {
+  width: 100%;
+}
+.table-lanote th:last-child {
+  width: 15%;
+}
+
+/* -Table du menu Le chic        ---
+-----------------------------------------------*/
+.titre-appetit,
+.appetit {
+  color: #c7750c;
+}
+
+.titre-plaisir,
+.plaisir {
+  color: #a6679a;
+}
+
+.titre-gourmandise,
+.gourmandise {
+  color: #6d4acc;
+}
+
+.titre-appetit,
+.titre-plaisir,
+.titre-gourmandise {
+  table-layout: fixed;
+  margin: 0 5vw;
+}
+.titre-appetit img,
+.titre-plaisir img,
+.titre-gourmandise img {
+  width: 22vw;
+}
+.titre-appetit p,
+.titre-plaisir p,
+.titre-gourmandise p {
+  font-size: 0.7rem;
+  margin: 2vh 0;
+}
+.titre-appetit th:nth-child(1),
+.titre-plaisir th:nth-child(1),
+.titre-gourmandise th:nth-child(1) {
+  width: 15%;
+}
+.titre-appetit th:nth-child(2),
+.titre-plaisir th:nth-child(2),
+.titre-gourmandise th:nth-child(2) {
+  width: 50%;
+}
+.titre-appetit th:nth-child(3),
+.titre-plaisir th:nth-child(3),
+.titre-gourmandise th:nth-child(3) {
+  width: 15%;
+}
+
+.appetit,
+.plaisir,
+.gourmandise {
+  table-layout: fixed;
+  width: 80%;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 11vw;
+  font-size: 0.55rem;
+}
+.appetit p,
+.plaisir p,
+.gourmandise p {
+  margin: 0.8vh 0;
+}
+.appetit th:first-child,
+.plaisir th:first-child,
+.gourmandise th:first-child {
+  width: 100%;
+}
+.appetit th:last-child,
+.plaisir th:last-child,
+.gourmandise th:last-child {
+  width: 15%;
+}
+
+/* ---     Table du menu Le délice         ---
+-----------------------------------------------*/
+.titre-ledelice {
+  table-layout: fixed;
+  margin: 0 3vw;
+}
+.titre-ledelice img {
+  width: 28vw;
+}
+.titre-ledelice p {
+  font-size: 1.2rem;
+}
+.titre-ledelice th:nth-child(1) {
+  width: 15%;
+}
+.titre-ledelice th:nth-child(2) {
+  width: 50%;
+}
+.titre-ledelice th:nth-child(3) {
+  width: 15%;
+}
+
+.table-ledelice {
+  table-layout: fixed;
+  width: 80%;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 9vw;
+  font-size: 0.9rem;
+}
+.table-ledelice th:first-child {
+  width: 100%;
+}
+.table-ledelice th:last-child {
+  width: 15%;
+}
+
+/* -Table du menu  la palette         ---
+-----------------------------------------------*/
+.titre-lapalette {
+  table-layout: fixed;
+  margin: 0 7vw;
+}
+.titre-lapalette img {
+  width: 25vw;
+}
+.titre-lapalette p {
+  font-size: 0.8rem;
+  margin: 2vh 0;
+}
+.titre-lapalette th:nth-child(1) {
+  width: 15%;
+}
+.titre-lapalette th:nth-child(2) {
+  width: 50%;
+  font-weight: normal;
+}
+.titre-lapalette th:nth-child(3) {
+  width: 15%;
+}
+
+.table-lapalette {
+  table-layout: fixed;
+  width: 80%;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 11vw;
+  font-size: 0.7rem;
+}
+.table-lapalette p {
+  margin: 0.5vh 0;
+}
+.table-lapalette th:first-child {
+  width: 100%;
+}
+.table-lapalette th:last-child {
+  width: 15%;
+}
+
 /*  --------- animation menu page d'index ---------
 ---------------------------------------------*/
 .li-lanote:hover a {
@@ -460,13 +403,12 @@ footer a {
   font-size: 0.9rem;
   text-decoration: none;
   cursor: pointer;
-  padding: 4vh 0;
 }
 footer a::first-letter {
   text-transform: capitalize;
 }
 footer a:hover {
-  animation: buttonfooter 0.5s infinite;
+  animation: buttonfooter 400ms infinite;
 }
 
 header {
@@ -486,17 +428,28 @@ h1 {
   font-weight: bold;
 }
 
-.menu-ohmyfood {
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: solid #DCC;
+  border-bottom: solid #DCC;
+}
+
+/*   --------------------------------- */
+nav {
   width: 90%;
   background: #fff;
+  margin: auto;
 }
-.menu-ohmyfood ul {
+nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
-.menu-ohmyfood ul li {
+nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -616,12 +569,14 @@ aside input {
     padding: 3vh 0;
     font-size: 1.6rem;
   }
-  body .menu-ohmyfood {
+  body nav {
     width: 100%;
+    margin: auto;
   }
-  body .menu-ohmyfood ul li {
+  body nav ul li {
     width: 30vw;
     height: 20vh;
+    margin: 3vh auto;
   }
   body .pro {
     width: 32%;
@@ -632,16 +587,17 @@ aside input {
   body h1 {
     font-size: 1.9rem;
   }
-  body .menu-ohmyfood ul {
-    width: 90%;
+  body nav ul {
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
   }
-  body .menu-ohmyfood ul li {
+  body nav ul li {
     width: 20vw;
     height: 22vh;
+    margin: 3vh auto;
   }
   body .pro {
     font-size: 1.6rem;
@@ -651,15 +607,15 @@ aside input {
   body h1 {
     font-size: 2.4rem;
   }
-  body .menu-ohmyfood ul {
+  body nav ul {
     justify-content: center;
   }
-  body .menu-ohmyfood ul li {
-    width: 16vw;
-    height: 27vh;
+  body nav ul li {
+    width: 20vw;
+    height: 30vh;
     font-size: 5rem;
   }
-  body .menu-ohmyfood ul li h2 {
+  body nav ul li h2 {
     font-size: 1.8rem;
   }
   body .pro {
@@ -675,6 +631,7 @@ footer {
   bottom: 0.1rem;
   background: #589d87;
   height: 8%;
+  padding: 4vh 0;
 }
 footer a {
   font-family: "Montserrat-Regular";
@@ -699,34 +656,29 @@ footer a {
   }
 }
 
-body {
-  width: 100%;
-  text-align: center;
-  background: #fff;
-}
-body .menu-lanote h3 {
+.menu-lanote h3 {
   font-family: "Devonshire-Regular";
   font-size: 1.5rem;
   font-weight: normal;
-  padding-bottom: 4vh;
+  padding-bottom: 3vh;
 }
-body .page-lanote {
-  display: flex;
-  flex-direction: column;
+
+.page-lanote {
   font-family: "Itim-Regular";
   background: #FDE0DC;
-  width: 90%;
   font-style: italic;
-  padding: 5vh 4vw;
+  padding-bottom: 10vh;
 }
-body article i {
-  font-size: 2rem;
-  padding: 2vh 2vw 5vh 0;
+
+article i {
+  font-size: 3rem;
+  padding: 5vh 2vw 3vh 0;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body span i {
+
+span i {
   font-size: 1.2rem;
   padding: 2vh 2vw 5vh 0;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
@@ -745,422 +697,191 @@ span p {
 ------------------------------------------------ */
 body {
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  background: #fff;
 }
 @media screen and (min-width: 500px) {
   body article i {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   body span i {
     font-size: 1.2rem;
   }
   body .menu-lanote h3 {
     font-size: 2rem;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
   }
-  body .titre-prelude,
-body .titre-point,
-body .titre-mouvement {
+  body .titre-lanote {
     table-layout: fixed;
-    padding: 0 1vw;
   }
-  body .titre-prelude img,
-body .titre-point img,
-body .titre-mouvement img {
-    width: 20vw;
+  body .titre-lanote img {
+    width: 25vw;
   }
-  body .titre-prelude p,
-body .titre-point p,
-body .titre-mouvement p {
-    font-size: 0.9rem;
+  body .titre-lanote p {
+    font-size: 1.1rem;
   }
-  body .titre-prelude th:nth-child(1),
-body .titre-point th:nth-child(1),
-body .titre-mouvement th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-prelude th:nth-child(2),
-body .titre-point th:nth-child(2),
-body .titre-mouvement th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-prelude th:nth-child(3),
-body .titre-point th:nth-child(3),
-body .titre-mouvement th:nth-child(3) {
-    width: 15%;
-  }
-  body .prelude,
-body .point,
-body .mouvement {
+  body .table-lanote {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 9vw;
-    font-size: 0.7rem;
+    margin: 0 8vw;
+    font-size: 0.75rem;
   }
-  body .prelude p,
-body .point p,
-body .mouvement p {
+  body .table-lanote p {
     padding: 1vh 0;
-  }
-  body .prelude th:nth-child(1),
-body .point th:nth-child(1),
-body .mouvement th:nth-child(1) {
-    width: 80%;
-  }
-  body .prelude th:nth-child(2),
-body .point th:nth-child(2),
-body .mouvement th:nth-child(2) {
-    width: 5%;
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
     margin: auto;
   }
   body .menu-lanote h3 {
     font-size: 2rem;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
   }
   body .page-lanote {
     width: 70%;
     margin: auto;
     margin-bottom: 9vh;
+    padding: 4vh 5vw 10vh 4vw;
+    border: solid #DCC;
   }
-  body .titre-prelude,
-body .titre-point,
-body .titre-mouvement {
+  body .titre-lanote {
     table-layout: fixed;
-    padding: 0 0vw;
   }
-  body .titre-prelude img,
-body .titre-point img,
-body .titre-mouvement img {
-    width: 13vw;
+  body .titre-lanote img {
+    width: 17vw;
   }
-  body .titre-prelude p,
-body .titre-point p,
-body .titre-mouvement p {
-    font-size: 0.8rem;
+  body .titre-lanote p {
+    font-size: 1.1rem;
   }
-  body .titre-prelude th:nth-child(1),
-body .titre-point th:nth-child(1),
-body .titre-mouvement th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-prelude th:nth-child(2),
-body .titre-point th:nth-child(2),
-body .titre-mouvement th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-prelude th:nth-child(3),
-body .titre-point th:nth-child(3),
-body .titre-mouvement th:nth-child(3) {
-    width: 15%;
-  }
-  body .prelude,
-body .point,
-body .mouvement {
+  body .table-lanote {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 5vw;
+    margin: 0 6vw;
     font-size: 0.7rem;
   }
-  body .prelude p,
-body .point p,
-body .mouvement p {
+  body .table-lanote p {
     padding: 1vh 0;
-  }
-  body .prelude th:nth-child(1),
-body .point th:nth-child(1),
-body .mouvement th:nth-child(1) {
-    width: 80%;
-  }
-  body .prelude th:nth-child(2),
-body .point th:nth-child(2),
-body .mouvement th:nth-child(2) {
-    width: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    width: 70%;
-  }
   body .menu-lanote h3 {
     font-size: 3rem;
+    padding-top: 3vh;
     padding-bottom: 8vh;
   }
   body .page-lanote {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
-  body .titre-prelude,
-body .titre-point,
-body .titre-mouvement {
+  body .titre-lanote {
     table-layout: fixed;
-    padding: 0 0vw;
   }
-  body .titre-prelude img,
-body .titre-point img,
-body .titre-mouvement img {
-    width: 13vw;
+  body .titre-lanote img {
+    width: 18vw;
   }
-  body .titre-prelude p,
-body .titre-point p,
-body .titre-mouvement p {
-    font-size: 0.9rem;
+  body .titre-lanote p {
+    font-size: 1.2rem;
   }
-  body .titre-prelude th:nth-child(1),
-body .titre-point th:nth-child(1),
-body .titre-mouvement th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-prelude th:nth-child(2),
-body .titre-point th:nth-child(2),
-body .titre-mouvement th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-prelude th:nth-child(3),
-body .titre-point th:nth-child(3),
-body .titre-mouvement th:nth-child(3) {
-    width: 15%;
-  }
-  body .prelude,
-body .point,
-body .mouvement {
+  body .table-lanote {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 5.5vw;
-    font-size: 0.8rem;
+    margin: 0 7vw;
+    font-size: 0.9rem;
   }
-  body .prelude p,
-body .point p,
-body .mouvement p {
+  body .table-lanote p {
     padding: 2vh 0;
-  }
-  body .prelude th:nth-child(1),
-body .point th:nth-child(1),
-body .mouvement th:nth-child(1) {
-    width: 80%;
-  }
-  body .prelude th:nth-child(2),
-body .point th:nth-child(2),
-body .mouvement th:nth-child(2) {
-    width: 5%;
   }
 }
 
-body {
-  width: 100%;
-  text-align: center;
-  background: #fff;
-}
-body .menu-lapalette h3 {
+.menu-lapalette h3 {
   font-family: "KaushanScript-Regular";
   background: -webkit-linear-gradient(0deg, #3f9338, #c0ff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
-  padding: 0 0 5vh 0;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 }
-body .page-lapalette {
-  display: flex;
-  flex-direction: column;
+
+.page-lapalette {
   font-family: "KaushanScript-Regular";
   background: #FDFFFD;
-  width: 90%;
-  padding: 4vh 4vw;
+  padding-bottom: 7vh;
 }
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
 body {
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  background: #fff;
 }
 @media screen and (min-width: 500px) {
   body .menu-lapalette h3 {
     font-size: 2rem;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
-  body .titre-esquisse,
-body .titre-oeuvre,
-body .titre-sommet {
+  body .titre-lapalette {
     table-layout: fixed;
-    margin: 1.5vh 0 1.5vh 7vw;
+    margin: 1.4vh 0 1.4vh 4vw;
   }
-  body .titre-esquisse img,
-body .titre-oeuvre img,
-body .titre-sommet img {
-    width: 26vw;
+  body .titre-lapalette img {
+    width: 27vw;
   }
-  body .titre-esquisse p,
-body .titre-oeuvre p,
-body .titre-sommet p {
-    font-size: 0.9rem;
+  body .titre-lapalette p {
+    font-size: 1rem;
   }
-  body .titre-esquisse th:nth-child(1),
-body .titre-oeuvre th:nth-child(1),
-body .titre-sommet th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-esquisse th:nth-child(2),
-body .titre-oeuvre th:nth-child(2),
-body .titre-sommet th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-esquisse th:nth-child(3),
-body .titre-oeuvre th:nth-child(3),
-body .titre-sommet th:nth-child(3) {
-    width: 15%;
-  }
-  body .esquisse,
-body .oeuvre,
-body .sommet {
+  body .table-lapalette {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
     text-align: left;
     margin: 0 11vw;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
-  body .esquisse p,
-body .oeuvre p,
-body .sommet p {
+  body .table-lapalette p {
     padding: 1vh 0;
-  }
-  body .esquisse th:nth-child(1),
-body .oeuvre th:nth-child(1),
-body .sommet th:nth-child(1) {
-    width: 100%;
-  }
-  body .esquisse th:nth-child(2),
-body .oeuvre th:nth-child(2),
-body .sommet th:nth-child(2) {
-    width: 15%;
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
     margin: auto;
   }
   body .menu-lapalette h3 {
     font-size: 2.3rem;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
   }
   body .page-lapalette {
     width: 70%;
     margin: auto;
     margin-bottom: 9vh;
+    padding: 4vh 4vw;
+    border: solid #DCC;
   }
-  body .titre-esquisse,
-body .titre-oeuvre,
-body .titre-sommet {
+  body .titre-lapalette {
     table-layout: fixed;
     margin: 0 3vw;
   }
-  body .titre-esquisse img,
-body .titre-oeuvre img,
-body .titre-sommet img {
-    width: 15vw;
+  body .titre-lapalette img {
+    width: 20vw;
   }
-  body .titre-esquisse p,
-body .titre-oeuvre p,
-body .titre-sommet p {
-    font-size: 1rem;
+  body .titre-lapalette p {
+    font-size: 1.1rem;
   }
-  body .titre-esquisse th:nth-child(1),
-body .titre-oeuvre th:nth-child(1),
-body .titre-sommet th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-esquisse th:nth-child(2),
-body .titre-oeuvre th:nth-child(2),
-body .titre-sommet th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-esquisse th:nth-child(3),
-body .titre-oeuvre th:nth-child(3),
-body .titre-sommet th:nth-child(3) {
-    width: 15%;
-  }
-  body .esquisse,
-body .oeuvre,
-body .sommet {
-    table-layout: fixed;
-    width: 80%;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0 7vw;
-    font-size: 0.7rem;
-  }
-  body .esquisse p,
-body .oeuvre p,
-body .sommet p {
-    padding: 1vh 0;
-  }
-  body .esquisse th:nth-child(1),
-body .oeuvre th:nth-child(1),
-body .sommet th:nth-child(1) {
-    width: 100%;
-  }
-  body .esquisse th:nth-child(2),
-body .oeuvre th:nth-child(2),
-body .sommet th:nth-child(2) {
-    width: 15%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    width: 80%;
-    margin: 0 auto;
-  }
-  body .menu-lapalette h3 {
-    font-size: 3rem;
-  }
-  body .page-lanote {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 10vh;
-  }
-  body .titre-esquisse,
-body .titre-oeuvre,
-body .titre-sommet {
-    table-layout: fixed;
-    margin: 1.6vh 0 1.6vh 3vw;
-  }
-  body .titre-esquisse img,
-body .titre-oeuvre img,
-body .titre-sommet img {
-    width: 16vw;
-  }
-  body .titre-esquisse p,
-body .titre-oeuvre p,
-body .titre-sommet p {
-    font-size: 1rem;
-  }
-  body .titre-esquisse th:nth-child(1),
-body .titre-oeuvre th:nth-child(1),
-body .titre-sommet th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-esquisse th:nth-child(2),
-body .titre-oeuvre th:nth-child(2),
-body .titre-sommet th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-esquisse th:nth-child(3),
-body .titre-oeuvre th:nth-child(3),
-body .titre-sommet th:nth-child(3) {
-    width: 15%;
-  }
-  body .esquisse,
-body .oeuvre,
-body .sommet {
+  body .table-lapalette {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
@@ -1168,55 +889,77 @@ body .sommet {
     margin: 0 7vw;
     font-size: 0.8rem;
   }
-  body .esquisse p,
-body .oeuvre p,
-body .sommet p {
+  body .table-lapalette p {
+    padding: 1vh 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+  }
+  body .menu-lapalette h3 {
+    font-size: 3.5rem;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+  }
+  body .page-lapalette {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10vh;
+    padding-bottom: 15vh;
+  }
+  body .titre-lapalette {
+    table-layout: fixed;
+    margin: 1.6vh 0 1.6vh 3vw;
+  }
+  body .titre-lapalette img {
+    width: 20vw;
+  }
+  body .titre-lapalette p {
+    font-size: 1.5rem;
+  }
+  body .table-lapalette {
+    table-layout: fixed;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 9vw;
+    font-size: 1rem;
+  }
+  body .table-lapalette p {
     padding: 1.8vh 0;
-  }
-  body .esquisse th:nth-child(1),
-body .oeuvre th:nth-child(1),
-body .sommet th:nth-child(1) {
-    width: 100%;
-  }
-  body .esquisse th:nth-child(2),
-body .oeuvre th:nth-child(2),
-body .sommet th:nth-child(2) {
-    width: 15%;
   }
 }
 
-body {
-  width: 100%;
-  text-align: center;
-  background: #fff;
-}
-body .menu-lechic h3 {
+.menu-lechic h3 {
   font-family: "CroissantOne-Regular";
   font-size: 1.3rem;
   background: -webkit-linear-gradient(290deg, #e48a0a, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 4vh;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 }
-body .page-lechic {
-  display: flex;
-  flex-direction: column;
+
+.page-lechic {
   font-family: "CroissantOne-Regular";
   background: #FFF5FE;
-  width: 90%;
   margin: auto;
-  padding: 4vh 4vw;
+  padding-bottom: 6vh;
 }
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
 body {
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  background: #fff;
 }
 @media screen and (min-width: 500px) {
   body .menu-lechic h3 {
     font-size: 1.4rem;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
   body .titre-appetit,
 body .titre-plaisir,
@@ -1232,22 +975,7 @@ body .titre-gourmandise img {
   body .titre-appetit p,
 body .titre-plaisir p,
 body .titre-gourmandise p {
-    font-size: 0.55rem;
-  }
-  body .titre-appetit th:nth-child(1),
-body .titre-plaisir th:nth-child(1),
-body .titre-gourmandise th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-appetit th:nth-child(2),
-body .titre-plaisir th:nth-child(2),
-body .titre-gourmandise th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-appetit th:nth-child(3),
-body .titre-plaisir th:nth-child(3),
-body .titre-gourmandise th:nth-child(3) {
-    width: 15%;
+    font-size: 0.7rem;
   }
   body .appetit,
 body .plaisir,
@@ -1257,36 +985,32 @@ body .gourmandise {
     vertical-align: middle;
     text-align: left;
     margin: 0 11vw;
-    font-size: 0.5rem;
+    font-size: 0.55rem;
   }
   body .appetit p,
 body .plaisir p,
 body .gourmandise p {
     padding: 1vh 0;
   }
-  body .appetit th:nth-child(1),
-body .plaisir th:nth-child(1),
-body .gourmandise th:nth-child(1) {
-    width: 100%;
-  }
-  body .appetit th:nth-child(2),
-body .plaisir th:nth-child(2),
-body .gourmandise th:nth-child(2) {
-    width: 15%;
-  }
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 100%;
     margin: 0 auto;
   }
   body .menu-lechic h3 {
     font-size: 1.7rem;
   }
+  body .menu-lechic h3 .menu-lechic h3 {
+    font-size: 1.9rem;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+  }
   body .page-lechic {
     width: 70%;
     margin: auto;
     margin-bottom: 9vh;
+    padding: 4vh 4vw;
+    border: solid #DCC;
   }
   body .titre-appetit,
 body .titre-plaisir,
@@ -1304,21 +1028,6 @@ body .titre-plaisir p,
 body .titre-gourmandise p {
     font-size: 0.6rem;
   }
-  body .titre-appetit th:nth-child(1),
-body .titre-plaisir th:nth-child(1),
-body .titre-gourmandise th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-appetit th:nth-child(2),
-body .titre-plaisir th:nth-child(2),
-body .titre-gourmandise th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-appetit th:nth-child(3),
-body .titre-plaisir th:nth-child(3),
-body .titre-gourmandise th:nth-child(3) {
-    width: 15%;
-  }
   body .appetit,
 body .plaisir,
 body .gourmandise {
@@ -1334,28 +1043,18 @@ body .plaisir p,
 body .gourmandise p {
     padding: 1vh 0;
   }
-  body .appetit th:nth-child(1),
-body .plaisir th:nth-child(1),
-body .gourmandise th:nth-child(1) {
-    width: 100%;
-  }
-  body .appetit th:nth-child(2),
-body .plaisir th:nth-child(2),
-body .gourmandise th:nth-child(2) {
-    width: 15%;
-  }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    width: 65%;
-  }
   body .menu-lechic h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
   }
   body .page-lechic {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
   body .titre-appetit,
 body .titre-plaisir,
@@ -1366,27 +1065,12 @@ body .titre-gourmandise {
   body .titre-appetit img,
 body .titre-plaisir img,
 body .titre-gourmandise img {
-    width: 12vw;
+    width: 16vw;
   }
   body .titre-appetit p,
 body .titre-plaisir p,
 body .titre-gourmandise p {
-    font-size: 0.8rem;
-  }
-  body .titre-appetit th:nth-child(1),
-body .titre-plaisir th:nth-child(1),
-body .titre-gourmandise th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-appetit th:nth-child(2),
-body .titre-plaisir th:nth-child(2),
-body .titre-gourmandise th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-appetit th:nth-child(3),
-body .titre-plaisir th:nth-child(3),
-body .titre-gourmandise th:nth-child(3) {
-    width: 15%;
+    font-size: 1.2rem;
   }
   body .appetit,
 body .plaisir,
@@ -1395,161 +1079,93 @@ body .gourmandise {
     width: 80%;
     vertical-align: middle;
     text-align: left;
-    margin: 0 7vw;
-    font-size: 0.7rem;
+    margin: 0 9vw;
+    font-size: 0.85rem;
   }
   body .appetit p,
 body .plaisir p,
 body .gourmandise p {
     padding: 1.2vh 0;
   }
-  body .appetit th:nth-child(1),
-body .plaisir th:nth-child(1),
-body .gourmandise th:nth-child(1) {
-    width: 100%;
-  }
-  body .appetit th:nth-child(2),
-body .plaisir th:nth-child(2),
-body .gourmandise th:nth-child(2) {
-    width: 15%;
-  }
 }
 
-body {
-  width: 100%;
-  text-align: center;
-  background: #fff;
-}
-body .menu-ledelice h3 {
+.menu-ledelice h3 {
   font-family: "DancingScript-VariableFont_wght";
   font-size: 1.9rem;
   background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 0 7vh 0;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 }
-body .page-ledelice {
-  display: flex;
-  flex-direction: column;
+
+.page-ledelice {
   font-family: "Caveat-Regular";
   background: #F9F9F9;
-  width: 90%;
   margin: auto;
-  padding: 5vh 4vw;
+  padding-bottom: 7vh;
 }
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
 body {
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  background: #fff;
 }
 @media screen and (min-width: 500px) {
   body .menu-ledelice h3 {
     font-size: 2.3rem;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
   }
-  body .titre-commencer,
-body .titre-continuer,
-body .titre-terminer {
+  body .titre-ledelice {
     table-layout: fixed;
     margin: 0.5vh 0 0.5vh 1vw;
   }
-  body .titre-commencer img,
-body .titre-continuer img,
-body .titre-terminer img {
-    width: 23vw;
+  body .titre-ledelice img {
+    width: 31vw;
   }
-  body .titre-commencer p,
-body .titre-continuer p,
-body .titre-terminer p {
-    font-size: 1rem;
+  body .titre-ledelice p {
+    font-size: 1.3rem;
     padding: 1vh 0;
   }
-  body .titre-commencer th:nth-child(1),
-body .titre-continuer th:nth-child(1),
-body .titre-terminer th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-commencer th:nth-child(2),
-body .titre-continuer th:nth-child(2),
-body .titre-terminer th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-commencer th:nth-child(3),
-body .titre-continuer th:nth-child(3),
-body .titre-terminer th:nth-child(3) {
-    width: 15%;
-  }
-  body .commencer,
-body .continuer,
-body .terminer {
+  body .table-ledelice {
     table-layout: fixed;
     margin: 0.5vh 0 0.5vh 11vw;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
-  body .commencer p,
-body .continuer p,
-body .terminer p {
+  body .table-ledelice p {
     padding: 1vh 0;
-  }
-  body .commencer th:nth-child(1),
-body .continuer th:nth-child(1),
-body .terminer th:nth-child(1) {
-    width: 100%;
-  }
-  body .commencer th:nth-child(2),
-body .continuer th:nth-child(2),
-body .terminer th:nth-child(2) {
-    width: 15%;
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
     margin: auto;
   }
   body .menu-ledelice h3 {
     font-size: 2.5rem;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
   }
   body .page-ledelice {
     width: 70%;
     margin: auto;
     margin-bottom: 9vh;
+    padding: 5vh 4vw;
+    border: solid #DCC;
   }
-  body .titre-commencer,
-body .titre-continuer,
-body .titre-terminer {
+  body .titre-ledelice {
     table-layout: fixed;
     margin: 1.5vh 0 1.5vh 1vw;
   }
-  body .titre-commencer img,
-body .titre-continuer img,
-body .titre-terminer img {
+  body .titre-ledelice img {
     width: 16vw;
   }
-  body .titre-commencer p,
-body .titre-continuer p,
-body .titre-terminer p {
+  body .titre-ledelice p {
     font-size: 1.2rem;
   }
-  body .titre-commencer th:nth-child(1),
-body .titre-continuer th:nth-child(1),
-body .titre-terminer th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-commencer th:nth-child(2),
-body .titre-continuer th:nth-child(2),
-body .titre-terminer th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-commencer th:nth-child(3),
-body .titre-continuer th:nth-child(3),
-body .titre-terminer th:nth-child(3) {
-    width: 15%;
-  }
-  body .commencer,
-body .continuer,
-body .terminer {
+  body .table-ledelice {
     table-layout: fixed;
     width: 80%;
     vertical-align: middle;
@@ -1557,84 +1173,39 @@ body .terminer {
     margin: 0 5vw;
     font-size: 0.9rem;
   }
-  body .commencer p,
-body .continuer p,
-body .terminer p {
+  body .table-ledelice p {
     padding: 1.5vh 0;
-  }
-  body .commencer th:nth-child(1),
-body .continuer th:nth-child(1),
-body .terminer th:nth-child(1) {
-    width: 80%;
-  }
-  body .commencer th:nth-child(2),
-body .continuer th:nth-child(2),
-body .terminer th:nth-child(2) {
-    width: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    width: 75%;
-  }
   body .menu-ledelice h3 {
     font-size: 3rem;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
   }
   body .page-ledelice {
     width: 70%;
     margin: auto;
     margin-bottom: 10vh;
+    padding-bottom: 20vh;
   }
-  body .titre-commencer,
-body .titre-continuer,
-body .titre-terminer {
+  body .titre-ledelice {
     table-layout: fixed;
     margin: 0 0vw;
   }
-  body .titre-commencer img,
-body .titre-continuer img,
-body .titre-terminer img {
-    width: 17vw;
+  body .titre-ledelice img {
+    width: 23vw;
   }
-  body .titre-commencer p,
-body .titre-continuer p,
-body .titre-terminer p {
-    font-size: 1.4rem;
+  body .titre-ledelice p {
+    font-size: 1.9rem;
   }
-  body .titre-commencer th:nth-child(1),
-body .titre-continuer th:nth-child(1),
-body .titre-terminer th:nth-child(1) {
-    width: 15%;
-  }
-  body .titre-commencer th:nth-child(2),
-body .titre-continuer th:nth-child(2),
-body .titre-terminer th:nth-child(2) {
-    width: 50%;
-  }
-  body .titre-commencer th:nth-child(3),
-body .titre-continuer th:nth-child(3),
-body .titre-terminer th:nth-child(3) {
-    width: 15%;
-  }
-  body .commencer,
-body .continuer,
-body .terminer {
+  body .table-ledelice {
     table-layout: fixed;
     width: 85%;
     vertical-align: middle;
     text-align: left;
     margin: 0 5vw;
-    font-size: 1rem;
-  }
-  body .commencer th:nth-child(1),
-body .continuer th:nth-child(1),
-body .terminer th:nth-child(1) {
-    width: 100%;
-  }
-  body .commencer th:nth-child(2),
-body .continuer th:nth-child(2),
-body .terminer th:nth-child(2) {
-    width: 15%;
+    font-size: 1.4rem;
   }
 }
 
@@ -1645,7 +1216,7 @@ body {
 body h1 {
   padding-top: 5vh;
 }
-body .mention p {
+body .mention {
   text-align: left;
   font-family: "Montserrat-Regular";
   font-size: 0.7rem;
@@ -1654,22 +1225,13 @@ body .mention p {
 
 /* --------------- media query -----------------
 ------------------------------------------------ */
-body {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
-  body {
-    width: 80%;
-  }
-  body .mention p {
+  body .mention {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    width: 80%;
-  }
-  body .mention p {
+  body .mention {
     font-size: 1.2rem;
   }
 }

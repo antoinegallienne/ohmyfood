@@ -6,17 +6,28 @@ h1 {
   font-weight: bold;
 }
 
-.menu-ohmyfood {
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: solid $contour;
+  border-bottom: solid $contour;
+}
+
+
+/*   --------------------------------- */
+
+nav {
   width: 90%;
   background: $fond--page;
-
+  margin: auto;
   ul {
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    padding: 0;
     li {
-
       display: flex;
       flex-direction:column;
       align-items: center;
@@ -148,12 +159,14 @@ body {
       padding: 3vh 0;
       font-size: 1.6rem;
     }
-    .menu-ohmyfood {
+    nav {
       width: 100%;
+      margin: auto;
       ul {
         li {
           width: 30vw;
           height: 20vh;
+          margin: 3vh auto;
         }
       }
     }
@@ -168,15 +181,16 @@ body {
     h1 {
       font-size: 1.9rem;
     }
-    .menu-ohmyfood ul {
-      width: 90%;
+    nav ul {
+      width: 80%;
       display: flex;
       flex-direction: row;
-      justify-content: center;
       flex-wrap: wrap;
+      margin: auto;
       li {
         width: 20vw;
         height: 22vh;
+        margin: 3vh auto;
       }
     }
     .pro {
@@ -190,11 +204,11 @@ body {
       font-size: 2.4rem;
     }
 
-    .menu-ohmyfood ul {
+    nav ul {
       justify-content: center;
       li {
-        width: 16vw;
-        height: 27vh;
+        width: 20vw;
+        height: 30vh;
         font-size: 5rem;
         h2{
           font-size: 1.8rem;

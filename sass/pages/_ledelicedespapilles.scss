@@ -1,27 +1,20 @@
 
-body {
-  width: 100%;
-  text-align: center;
-  background: $fond--page;
-
   .menu-ledelice h3 {
     font-family: 'DancingScript-VariableFont_wght';
     font-size: 1.9rem;
     background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 0 0 7vh 0;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
   }
   .page-ledelice {
-    display: flex;
-    flex-direction: column;
     font-family: 'Caveat-Regular';
     background: $ledelice;
-    width: 90%;
     margin: auto;
-    padding: 5vh 4vw;
+    padding-bottom: 7vh ;
   }
-}
+
 
 
 /* --------------- media query -----------------
@@ -29,70 +22,55 @@ body {
 
 body {
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  background: $fond--page;
 
   @include media-min(500px) {
 
     .menu-ledelice h3 {
       font-size: 2.3rem;
+      padding-top: 6vh;
+      padding-bottom: 4vh;
     }
-    .titre-commencer,
-    .titre-continuer,
-    .titre-terminer{
+    .titre-ledelice{
 
       table-layout: fixed;
       margin: 0.5vh 0 0.5vh 1vw;
       img{
-        width: 23vw;
+        width: 31vw;
       }
       p{
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 1vh 0;
-      }
-      th:nth-child(1) {
-        width:15%;
-      }
-      th:nth-child(2) {
-        width: 50%;
-      }
-      th:nth-child(3) {
-        width:15%;
       }
     }
 
-    .commencer,
-    .continuer,
-    .terminer {
+    .table-ledelice {
       table-layout: fixed;
       margin: 0.5vh 0 0.5vh 11vw;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       p {
         padding: 1vh 0;
-      }
-      th:nth-child(1) {
-        width: 100%;
-      }
-      th:nth-child(2) {
-        width: 15%;
       }
     }
   }
 
   @include media-min(768px) {
-    width: 80%;
     margin: auto;
 
     .menu-ledelice h3 {
       font-size: 2.5rem;
+      padding-top: 7vh;
+      padding-bottom: 5vh;
     }
     .page-ledelice {
       width: 70%;
       margin: auto;
       margin-bottom: 9vh;
+      padding: 5vh 4vw;
+      border: solid $contour;
     }
-    .titre-commencer,
-    .titre-continuer,
-    .titre-terminer{
+    .titre-ledelice{
       table-layout: fixed;
       margin: 1.5vh 0 1.5vh 1vw;
       img{
@@ -101,20 +79,9 @@ body {
       p{
         font-size: 1.2rem;
       }
-      th:nth-child(1) {
-        width:15%;
-      }
-      th:nth-child(2) {
-        width: 50%;
-      }
-      th:nth-child(3) {
-        width:15%;
-      }
     }
 
-    .commencer,
-    .continuer,
-    .terminer {
+    .table-ledelice {
       table-layout: fixed;
       width: 80%;
       vertical-align: middle;
@@ -124,65 +91,41 @@ body {
       p {
         padding: 1.5vh 0;
       }
-      th:nth-child(1) {
-        width: 80%;
-      }
-      th:nth-child(2) {
-        width: 5%;
-      }
     }
   }
 
   @include media-min(1024px) {
 
-    width: 75%;
-
     .menu-ledelice h3 {
       font-size: 3rem;
+      padding-top: 10vh;
+      padding-bottom: 8vh;
     }
     .page-ledelice {
       width: 70%;
       margin: auto;
       margin-bottom: 10vh;
+      padding-bottom: 20vh;
     }
-    .titre-commencer,
-    .titre-continuer,
-    .titre-terminer{
+    .titre-ledelice{
       table-layout: fixed;
       margin: 0 0vw;
       img{
-        width: 17vw;
+        width: 23vw;
       }
       p{
-        font-size: 1.4rem;
-      }
-      th:nth-child(1) {
-        width:15%;
-      }
-      th:nth-child(2) {
-        width: 50%;
-      }
-      th:nth-child(3) {
-        width:15%;
+        font-size: 1.9rem;
       }
     }
 
-    .commencer,
-    .continuer,
-    .terminer {
+    .table-ledelice {
       table-layout: fixed;
       width: 85%;
       vertical-align: middle;
       text-align: left;
       margin: 0 5vw;
-      font-size: 1rem;
+      font-size: 1.4rem;
 
-      th:nth-child(1) {
-        width: 100%;
-      }
-      th:nth-child(2) {
-        width: 15%;
-      }
     }
   }
 }

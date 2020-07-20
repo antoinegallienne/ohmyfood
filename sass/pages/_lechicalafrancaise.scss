@@ -1,28 +1,21 @@
 
-body {
-  width: 100%;
-  text-align: center;
-  background: $fond--page;
-
   .menu-lechic h3 {
     font-family: 'CroissantOne-Regular';
     font-size: 1.3rem;
     background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
   }
 
   .page-lechic {
-    display: flex;
-    flex-direction: column;
     font-family: 'CroissantOne-Regular';
     background: $lechic;
-    width: 90%;
     margin: auto;
-    padding: 4vh 4vw;
+    padding-bottom: 6vh;
   }
-}
+
 
 
 /* --------------- media query -----------------
@@ -30,12 +23,15 @@ body {
 
 body {
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  background: $fond--page;
 
   @include media-min(500px) {
 
     .menu-lechic h3 {
       font-size: 1.4rem;
+      padding-top: 6vh;
+      padding-bottom: 4vh;
     }
 
     .titre-appetit,
@@ -48,16 +44,7 @@ body {
         width: 22vw;
       }
       p {
-        font-size: 0.55rem;
-      }
-      th:nth-child(1) {
-        width: 15%;
-      }
-      th:nth-child(2) {
-        width: 50%;
-      }
-      th:nth-child(3) {
-        width: 15%;
+        font-size: 0.7rem;
       }
     }
     .appetit,
@@ -68,30 +55,30 @@ body {
       vertical-align: middle;
       text-align: left;
       margin: 0 11vw;
-      font-size: 0.5rem;
+      font-size: 0.55rem;
       p {
         padding: 1vh 0;
-      }
-      th:nth-child(1) {
-        width: 100%;
-      }
-      th:nth-child(2) {
-        width: 15%;
       }
     }
   }
 
   @include media-min(768px) {
 
-    width: 100%;
     margin: 0 auto;
     .menu-lechic h3 {
       font-size: 1.7rem;
+      .menu-lechic h3 {
+        font-size: 1.9rem;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
+      }
     }
     .page-lechic {
       width: 70%;
       margin: auto;
       margin-bottom: 9vh;
+      padding: 4vh 4vw;
+      border: solid $contour;
     }
 
     .titre-appetit,
@@ -104,15 +91,6 @@ body {
       }
       p {
         font-size: 0.6rem;
-      }
-      th:nth-child(1) {
-        width: 15%;
-      }
-      th:nth-child(2) {
-        width: 50%;
-      }
-      th:nth-child(3) {
-        width: 15%;
       }
     }
     .appetit,
@@ -127,26 +105,21 @@ body {
       p {
         padding: 1vh 0;
       }
-      th:nth-child(1) {
-        width: 100%;
-      }
-
-      th:nth-child(2) {
-        width: 15%;
-      }
     }
   }
 
   @include media-min(1024px) {
 
-    width: 65%;
       .menu-lechic h3 {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
+        padding-top: 10vh;
+        padding-bottom: 8vh;
       }
     .page-lechic {
       width: 70%;
       margin: auto;
       margin-bottom: 10vh;
+      padding-bottom: 20vh;
     }
     .titre-appetit,
     .titre-plaisir,
@@ -155,19 +128,10 @@ body {
       table-layout: fixed;
       margin: 0 4vw;
       img {
-        width: 12vw;
+        width: 16vw;
       }
       p {
-        font-size: 0.8rem;
-      }
-      th:nth-child(1) {
-        width: 15%;
-      }
-      th:nth-child(2) {
-        width: 50%;
-      }
-      th:nth-child(3) {
-        width: 15%;
+        font-size: 1.2rem;
       }
     }
 
@@ -178,17 +142,10 @@ body {
       width: 80%;
       vertical-align: middle;
       text-align: left;
-      margin: 0 7vw;
-      font-size: 0.7rem;
+      margin: 0 9vw;
+      font-size: 0.85rem;
       p {
         padding: 1.2vh 0;
-      }
-      th:nth-child(1) {
-        width: 100%;
-      }
-
-      th:nth-child(2) {
-        width: 15%;
       }
     }
   }

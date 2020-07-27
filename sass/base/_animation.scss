@@ -52,9 +52,9 @@
 /* ----    animation trait soulignement menu ---
 -----------------------------------------------*/
 
- .souligne p{
+.souligne p{
   cursor: pointer;
-  background: linear-gradient(to top, 0%, $col--site 10%, transparent 10%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, $col--site 10%, $col--site 10%, transparent 10%) no-repeat left bottom / 0 100%;
   transition: background-size 1s;
 }
 .souligne p:hover  {

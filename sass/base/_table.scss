@@ -1,4 +1,4 @@
-  * {
+* {
   margin: 0;
 }
 
@@ -8,151 +8,94 @@
 .titre-lanote{
 
   table-layout: fixed;
-  margin: 0 7vw;
+  margin: 0 12vw;
   img{
     width: 22vw;
   }
   p{
     font-size: 0.8rem;
   }
-  th:nth-child(1) {
-    width:15%;
-  }
-  th:nth-child(2) {
-    width: 50%;
-  }
-  th:nth-child(3) {
-    width:15%;
-  }
+  @include titre-table;
 }
-
-  .table-lanote{
-    table-layout: fixed;
-    width: 80%;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0 8vw;
-    font-size: 0.6rem;
-    p{
-      margin: 0.8vh 0;
-    }
-    th:first-child {
-      width: 100%;
-    }
-    th:last-child{
-      width: 15%;
-    }
+.table-lanote{
+  margin: 0 12vw;
+  font-size: 0.6rem;
+  p{
+    margin: 0.8vh 0;
   }
+  @include table;
+}
 
 /* -Table du menu Le chic        ---
 -----------------------------------------------*/
-
-  .titre-appetit,
-  .appetit{
-    color: $lechic--appetit;
-  }
-  .titre-plaisir,
-  .plaisir{
-    color: $lechic--plaisir;
-  }
-  .titre-gourmandise,
-  .gourmandise{
-    color: $lechic--gourmandise;
-  }
+.titre-appetit,
+.appetit{
+  color: $lechic--appetit;
+}
+.titre-plaisir,
+.plaisir{
+  color: $lechic--plaisir;
+}
+.titre-gourmandise,
+.gourmandise{
+  color: $lechic--gourmandise;
+}
 
 .titre-appetit,
 .titre-plaisir,
 .titre-gourmandise {
-
   table-layout: fixed;
   margin: 0 5vw;
   img{
     width: 22vw;
   }
   p{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin: 2vh 0;
   }
-  th:nth-child(1) {
-      width:15%;
-    }
-  th:nth-child(2) {
-      width: 50%;
-    }
-  th:nth-child(3) {
-      width:15%;
-    }
-  }
+  @include titre-table;
+}
 
-  .appetit,
-  .plaisir,
-  .gourmandise {
-    table-layout: fixed;
-    width: 80%;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0 11vw;
-    font-size: 0.55rem;
-    p{
-      margin: 0.8vh 0;
-    }
-
-    th:first-child {
-      width: 100%;
-    }
-    th:last-child{
-      width: 15%;
-    }
+.appetit,
+.plaisir,
+.gourmandise {
+  margin: 0 11vw;
+  font-size: 0.55rem;
+  p{
+    margin: 0.8vh 0;
   }
+  @include table;
+}
 
 
 /* ---     Table du menu Le délice         ---
 -----------------------------------------------*/
 
 .titre-ledelice{
-
   table-layout: fixed;
   margin: 0 3vw;
   img{
     width: 28vw;
   }
   p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  th:nth-child(1) {
-    width:15%;
-
-  }
-  th:nth-child(2) {
-    width: 50%;
-  }
-  th:nth-child(3) {
-    width:15%;
-  }
+  @include titre-table;
 }
 
-  .table-ledelice {
-    table-layout: fixed;
-    width: 80%;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0 9vw;
-    font-size: 0.9rem;
+.table-ledelice {
 
-    th:first-child {
-      width: 100%;
-    }
-    th:last-child{
-      width: 15%;
-    }
-  }
+  margin: 0 9vw;
+  font-size: 0.9rem;
+
+  @include table;
+}
 
 
 /* -Table du menu  la palette         ---
 -----------------------------------------------*/
 
 .titre-lapalette {
-
   table-layout: fixed;
   margin: 0 7vw;
   img{
@@ -162,33 +105,15 @@
     font-size: 0.8rem;
     margin: 2vh 0;
   }
-  th:nth-child(1) {
-    width:15%;
-  }
-  th:nth-child(2) {
-    width: 50%;
-    font-weight: normal;
-  }
-  th:nth-child(3) {
-    width:15%;
-  }
+  @include titre-table;
 }
 
 .table-lapalette {
-  table-layout: fixed;
-  width: 80%;
-  vertical-align: middle;
-  text-align: left;
   margin: 0 11vw;
   font-size: 0.7rem;
   p{
     margin: 0.5vh 0;
   }
 
-  th:first-child {
-    width: 100%;
-  }
-  th:last-child{
-    width: 15%;
-  }
-  }
+  @include table;
+}

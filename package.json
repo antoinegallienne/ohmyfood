@@ -2,10 +2,10 @@
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "projet ohmyfood openclassrooms",
-  "main": "index.js",
+  "main": "index.htlm",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/style/style.css"
   },
   "author": "Antoine Gallienne",
-  "license": "ISC"
+  "license": "MIT"
 }

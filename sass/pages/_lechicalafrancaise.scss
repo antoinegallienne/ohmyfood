@@ -1,25 +1,23 @@
 
-  .menu-lechic h3 {
-    font-family: 'CroissantOne-Regular';
-    font-size: 1.3rem;
-    background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 4vh;
-    padding-bottom: 3vh;
-  }
+.menu-lechic h3 {
+  font-family: 'CroissantOne-Regular';
+  font-size: 1.3rem;
+  background: -webkit-linear-gradient(290deg , #e48a0a, #8e5aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+}
 
-  .page-lechic {
-    font-family: 'CroissantOne-Regular';
-    background: $lechic;
-    margin: auto;
-    padding-bottom: 6vh;
-  }
+.page-lechic {
+  font-family: 'CroissantOne-Regular';
+  background: $lechic;
+  margin: auto;
+  padding-bottom: 6vh;
+}
 
-
-
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query ----------------- */
+// ------------------------------------------------
 
 body {
   width: 100%;

@@ -1,42 +1,44 @@
 
-  .menu-lanote h3 {
-    font-family: 'Devonshire-Regular';
-    font-size: 1.5rem;
-    font-weight: normal;
-    padding-bottom: 3vh;
-  }
+.menu-lanote h3 {
+  font-family: 'Devonshire-Regular';
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: 3vh;
+}
 
-  .page-lanote {
-    font-family: 'Itim-Regular';
-    background: $lanote;
-    font-style: italic;
-    padding-bottom: 8vh ;
-  }
+.page-lanote {
+  font-family: 'Itim-Regular';
+  background: $lanote;
+  font-style: italic;
+  padding-bottom: 8vh ;
+}
 
-  article i {
-    font-size: 3rem;
-    padding:5vh 2vw 3vh 0;
-    background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+article i {
+  font-size: 3rem;
+  padding:5vh 2vw 3vh 0;
+  background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  span i{
-    position: relative;
-    right: 18vw;
-    top: 4vh;
-    padding: 0;
-    font-size: 1.5rem;
-    background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .lanoteenchantee{
-    font-family: 'Devonshire-Regular';
-    font-size: 1.3rem;
-  }
-/* --------------- media query -----------------
------------------------------------------------- */
+span i{
+  position: relative;
+  right: 18vw;
+  top: 4vh;
+  padding: 0;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lanoteenchantee{
+  font-family: 'Devonshire-Regular';
+  font-size: 1.3rem;
+}
+
+/* --------------- media query -----------------*/
+//-----------------------------------------------
 
 body {
   width: 100%;
@@ -47,7 +49,7 @@ body {
     article i {
       font-size: 3rem;
     }
-    span i{
+    span i {
       font-size: 1.2rem;
     }
     .menu-lanote h3 {
@@ -56,7 +58,7 @@ body {
       padding-bottom: 4vh;
     }
 
-    .titre-lanote{
+    .titre-lanote {
       table-layout: fixed;
       img{
         width: 23vw;
@@ -66,7 +68,7 @@ body {
       }
     }
 
-    .table-lanote{
+    .table-lanote {
       table-layout: fixed;
       width: 80%;
       vertical-align: middle;
@@ -77,7 +79,7 @@ body {
         padding: 1vh 0;
       }
     }
-    span i{
+    span i {
       font-size: 1.5rem;
       right: 15vw;
       top: 4vh;
@@ -85,9 +87,6 @@ body {
   }
 
   @include media-min(768px) {
-
-
-    margin: auto;
 
     .menu-lanote h3 {
       font-size: 2rem;
@@ -102,7 +101,7 @@ body {
       border: solid $contour;
     }
 
-    .titre-lanote{
+    .titre-lanote {
       table-layout: fixed;
       margin: 0;
       padding: 0 5vw;
@@ -114,7 +113,7 @@ body {
       }
     }
 
-    .table-lanote{
+    .table-lanote {
       table-layout: fixed;
       width: 90%;
       vertical-align: middle;
@@ -125,12 +124,12 @@ body {
         padding: 1vh 0;
       }
     }
-    span i{
+    span i {
       font-size: 1.7rem;
       right: 13vw;
       top: 5vh;
     }
-    .lanoteenchantee{
+    .lanoteenchantee {
       display: inline;
       font-family: 'Devonshire-Regular';
       font-size: 1.7rem;
@@ -151,10 +150,10 @@ body {
       padding-bottom: 20vh;
     }
 
-    .titre-lanote{
+    .titre-lanote {
 
       table-layout: fixed;
-      img{
+      img {
         width: 20vw;
       }
       p{
@@ -162,7 +161,7 @@ body {
       }
     }
 
-    .table-lanote{
+    .table-lanote {
       table-layout: fixed;
       width: 90%;
       vertical-align: middle;
@@ -173,12 +172,12 @@ body {
         padding: 2vh 0;
       }
     }
-    span i{
+    span i {
       font-size: 2rem;
       right: 13vw;
       top: 6vh;
     }
-    .lanoteenchantee{
+    .lanoteenchantee {
       font-size: 2.3rem;
     }
   }

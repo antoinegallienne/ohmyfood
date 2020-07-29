@@ -1,12 +1,14 @@
 
+//  ------ animation menu page d'index -------
+//--------------------------------------------
 
-/*  --------- animation menu page d'index ---------
----------------------------------------------*/
+/*  ------ animation menu page la note -------*/
 
-.li-lanote:hover{
-  a {
+.li-lanote:hover {
+   a {
     text-decoration: none;
   }
+
   .lanote{
     transform: scale(1.3);
     opacity: 0.5;
@@ -14,59 +16,62 @@
   }
 }
 
-.li-lechic:hover{
+/*  ------ animation menu page le chic -------*/
 
+.li-lechic:hover {
   a {
     text-decoration: none;
   }
-   .lechic{
-     transform: scale(1.3);
-     opacity: 0.5;
-     transition-duration: 600ms;
+  .lechic {
+    transform: scale(1.3);
+    opacity: 0.5;
+    transition-duration: 600ms;
   }
 }
 
-.li-ledelice:hover{
+/*  ------ animation menu page le delice -------*/
+
+.li-ledelice:hover {
   a {
     text-decoration: none;
+
   }
-  .ledelice{
+  .ledelice {
     transform: scale(1.4);
     opacity: 0.5;
     transition-duration: 600ms;
   }
 }
 
-.li-lapalette:hover{
+/*  ------ animation menu page la palette -------*/
+
+.li-lapalette:hover {
   a {
     text-decoration: none;
   }
-  .lapalette{
+  .lapalette {
     transform: scale(1.2);
     opacity: 0.5;
     transition-duration: 600ms;
   }
 }
 
+/* ----    animation trait soulignement menu ---*/
+//-----------------------------------------------
 
-/* ----    animation trait soulignement menu ---
------------------------------------------------*/
-
-.souligne p{
+.souligne p {
   cursor: pointer;
-  background: linear-gradient(to top, $col--site 10%, $col--site 10%, transparent 10%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, $col--site 10%, transparent 10%) no-repeat left bottom / 0 100%;
   transition: background-size 1s;
 }
 .souligne p:hover  {
   background-size: 100% 100%;
 }
 
+/* --- boutons prochainement   ---*/
+// ---------------------------------
 
-
-/* --- boutons prochainement    ---
----------------------------------*/
-
-@keyframes buttonprochainement {
+@keyframes bouton-prochainement {
   0% {
     opacity: 1;
     content: '';
@@ -79,8 +84,8 @@
     opacity: 1;
     content: ' ..';
   }
-  90% {
-    opacity: 1;
+  90%
+  {opacity: 1;
     content: ' ..';
   }
   100% {
@@ -89,36 +94,27 @@
   }
 }
 
+/* -- boutons mention et contact  --*/
+//----------------------------------
 
-
-
-
-/* -- boutons mention et contact  --
-----------------------------------*/
-
-
-@keyframes buttonfooter {
+@keyframes bouton-footer {
   0% {
     transform: translate( 2px , 2px );
   }
-
   20% {
     transform: translate( -2px , -2px );
   }
-
   40% {
     transform: translate( 2px , 2px );
   }
-
   60% {
     transform: translate( -2px , -2px );
   }
-
   80% {
     transform: translate( 2px , 2px );
   }
-
   100% {
     transform: translate( -2px , -2px );
   }
 }
+

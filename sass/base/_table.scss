@@ -1,22 +1,49 @@
 * {
   margin: 0;
 }
-/* ----    Table du menu La note         -----
------------------------------------------------*/
 
-.titre-lanote{
+//  ---------------------------------
+
+h1 {
+  font-family: 'Montserrat-Bold';
+  font-size: 1.3rem;
+  padding: 2vh 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: solid $contour;
+  border-bottom: solid $contour;
+}
+
+.table {
+  table-layout: fixed;
+  width: 80%;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* ----    Table du menu La note         ----- */
+//----------------------------------------------
+
+.titre-lanote {
 
   table-layout: fixed;
   margin: 0 12vw;
   img{
     width: 22vw;
   }
-  p{
+
+  p {
     font-size: 0.8rem;
   }
+
   @include titre-table;
 }
-.table-lanote{
+
+.table-lanote {
   margin: 0 12vw;
   font-size: 0.6rem;
   p{
@@ -25,18 +52,21 @@
   @include table;
 }
 
-/* -Table du menu Le chic        ---
------------------------------------------------*/
+/* -----Table du menu Le chic        --- */
+// ---------------------------------------
+
 .titre-appetit,
-.appetit{
+.appetit {
   color: $lechic--appetit;
 }
+
 .titre-plaisir,
-.plaisir{
+.plaisir {
   color: $lechic--plaisir;
 }
+
 .titre-gourmandise,
-.gourmandise{
+.gourmandise {
   color: $lechic--gourmandise;
 }
 
@@ -48,7 +78,7 @@
   img{
     width: 22vw;
   }
-  p{
+  p {
     font-size: 0.6rem;
     margin: 2vh 0;
   }
@@ -60,15 +90,14 @@
 .gourmandise {
   margin: 0 11vw;
   font-size: 0.55rem;
-  p{
+  p {
     margin: 0.8vh 0;
   }
   @include table;
 }
 
-
-/* ---     Table du menu Le délice         ---
------------------------------------------------*/
+/* ---     Table du menu Le délice         ---*/
+// ---------------------------------------------
 
 .titre-ledelice{
   table-layout: fixed;
@@ -76,23 +105,21 @@
   img{
     width: 28vw;
   }
-  p{
+  p {
     font-size: 1.1rem;
   }
   @include titre-table;
 }
 
 .table-ledelice {
-
   margin: 0 9vw;
   font-size: 0.9rem;
-
   @include table;
 }
 
 
-/* -Table du menu  la palette         ---
------------------------------------------------*/
+/* -Table du menu  la palette         ---*/
+// ----------------------------------------
 
 .titre-lapalette {
   table-layout: fixed;
@@ -100,7 +127,7 @@
   img{
     width: 25vw;
   }
-  p{
+  p {
     font-size: 0.8rem;
     margin: 2vh 0;
   }
@@ -110,9 +137,8 @@
 .table-lapalette {
   margin: 0 11vw;
   font-size: 0.7rem;
-  p{
+  p {
     margin: 0.5vh 0;
   }
-
   @include table;
 }

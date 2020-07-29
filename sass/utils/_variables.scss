@@ -1,6 +1,6 @@
 
-/* --------- variable couleur  ----------
----------------------------------------*/
+// --------- variable couleur  ----------
+//---------------------------------------
 
 $col--site : #589d87;
 $ohmyfood : #fdcb42;
@@ -29,28 +29,3 @@ $lapalette: #FDFFFD;
 $deg1--lapalette:#3f9338;
 $deg2--lapalette:#c0ff7d;
 
-/*   --------------------------------- */
-
-h1 {
-  font-family: 'Montserrat-Bold';
-  font-size: 1.3rem;
-  padding: 2vh 0;
-
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-top: solid $contour;
-  border-bottom: solid $contour;
-}
-
-.table{
-  table-layout: fixed;
-  width: 80%;
-  vertical-align: middle;
-  text-align: left;
-}
-
-/*   --------------------------------- */

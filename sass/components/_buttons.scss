@@ -1,6 +1,6 @@
 
-/* ----      bouton prochainement        ------
-----------------------------------------------*/
+/* ----      bouton prochainement        ------*/
+//----------------------------------------------
 
 .pro {
   font-family: 'Montserrat-Regular';
@@ -15,23 +15,22 @@
   padding: 0.5rem 1rem;
   margin: 5vh auto;
 
-  &::after{
+  &::after {
     position: absolute;
     content: ' ';
     opacity: 0;
   }
   &:hover {
     &::after {
-      animation: buttonprochainement 1.5s infinite;
+      animation: bouton-prochainement 1.5s infinite;
     }
   }
 }
 
+/* ---- bouton  mention et contact ------*/
+//----------------------------------------
 
-/* ---- bouton  mention et contact ------
-----------------------------------------*/
-
-footer a{
+footer a {
   background: $col--site;
   color: $ohmyfood;
   font-size: 0.9rem;
@@ -41,6 +40,6 @@ footer a{
     text-transform: capitalize;
   }
   &:hover {
-    animation: buttonfooter 400ms infinite;
+    animation: bouton-footer 400ms infinite;
   }
 }

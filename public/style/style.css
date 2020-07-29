@@ -1,7 +1,168 @@
 @charset "UTF-8";
-/* --------- variable couleur  ----------
----------------------------------------*/
-/*   --------------------------------- */
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../../public/font/Montserrat-Bold.ttf") format("truetype"), url("../../public/font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* -------------Menu la note enchantée ---------------*/
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("../../public/font/Devonshire-Regular.ttf") format("truetype"), url("../../public/font/Devonshire-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Itim-Regular";
+  src: url("../../public/font/Itim-Regular.ttf") format("truetype"), url("../../public/font/Itim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu  Le chic à la française----------*/
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url("../../public/font/CroissantOne-Regular.ttf") format("truetype"), url("../../public/font/CroissantOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notomono-regular-webfont";
+  src: url("../../public/font/notomono-regular-webfont.woff2") format("woff2"), url("../../public/font/notomono-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu le délice des papilles ----------*/
+@font-face {
+  font-family: "DancingScript-VariableFont_wght";
+  src: url("../../public/font/DancingScript-VariableFont_wght.ttf") format("truetype"), url("../../public/font/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caveat-Regular";
+  src: url("../../public/font/Caveat-Regular.ttf") format("truetype"), url("../../public/font/Caveat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------Menu la palette du goût ----------*/
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("../../public/font/KaushanScript-Regular.ttf") format("truetype"), url("../../public/font/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSerifText-Regular";
+  src: url("../../public/font/NanumPenScript-Regular.ttf") format("truetype"), url("../../public/font/NanumPenScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------      footer         ----------------*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../public/font/Montserrat-regular.ttf") format("truetype"), url("../../public/font/Montserrat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*  ------ animation menu page la note -------*/
+.li-lanote:hover a {
+  text-decoration: none;
+}
+.li-lanote:hover .lanote {
+  transform: scale(1.3);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+/*  ------ animation menu page le chic -------*/
+.li-lechic:hover a {
+  text-decoration: none;
+}
+.li-lechic:hover .lechic {
+  transform: scale(1.3);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+/*  ------ animation menu page le delice -------*/
+.li-ledelice:hover a {
+  text-decoration: none;
+}
+.li-ledelice:hover .ledelice {
+  transform: scale(1.4);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+/*  ------ animation menu page la palette -------*/
+.li-lapalette:hover a {
+  text-decoration: none;
+}
+.li-lapalette:hover .lapalette {
+  transform: scale(1.2);
+  opacity: 0.5;
+  transition-duration: 600ms;
+}
+
+/* ----    animation trait soulignement menu ---*/
+.souligne p {
+  cursor: pointer;
+  background: linear-gradient(to top, #589d87 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne p:hover {
+  background-size: 100% 100%;
+}
+
+/* --- boutons prochainement   ---*/
+@keyframes bouton-prochainement {
+  0% {
+    opacity: 1;
+    content: "";
+  }
+  60% {
+    opacity: 1;
+    content: " .";
+  }
+  80% {
+    opacity: 1;
+    content: " ..";
+  }
+  90% {
+    opacity: 1;
+    content: " ..";
+  }
+  100% {
+    opacity: 1;
+    content: " ...";
+  }
+}
+/* -- boutons mention et contact  --*/
+@keyframes bouton-footer {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(-2px, -2px);
+  }
+}
+* {
+  margin: 0;
+}
+
 h1 {
   font-family: "Montserrat-Bold";
   font-size: 1.3rem;
@@ -23,87 +184,7 @@ h1 {
   text-align: left;
 }
 
-/*   --------------------------------- */
-/* -----       media query          ----
---------------------------------------- */
-/* -------------       h1         ---------------
------------------------------------------------------*/
-@font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../../public/font/Montserrat-Bold.ttf") format("truetype"), url("../../public/font/Montserrat-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-/* -------------Menu la note enchantée ---------------
------------------------------------------------------*/
-@font-face {
-  font-family: "Devonshire-Regular";
-  src: url("../../public/font/Devonshire-Regular.ttf") format("truetype"), url("../../public/font/Devonshire-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Itim-Regular";
-  src: url("../../public/font/Itim-Regular.ttf") format("truetype"), url("../../public/font/Itim-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* -------------Menu  Le chic à la française----------
------------------------------------------------------*/
-@font-face {
-  font-family: "CroissantOne-Regular";
-  src: url("../../public/font/CroissantOne-Regular.ttf") format("truetype"), url("../../public/font/CroissantOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "notomono-regular-webfont";
-  src: url("../../public/font/notomono-regular-webfont.woff2") format("woff2"), url("../../public/font/notomono-regular-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-/* -------------Menu le délice des papilles ----------
------------------------------------------------------*/
-@font-face {
-  font-family: "DancingScript-VariableFont_wght";
-  src: url("../../public/font/DancingScript-VariableFont_wght.ttf") format("truetype"), url("../../public/font/DancingScript-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Caveat-Regular";
-  src: url("../../public/font/Caveat-Regular.ttf") format("truetype"), url("../../public/font/Caveat-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* -------------Menu la palette du goût ----------
------------------------------------------------------*/
-@font-face {
-  font-family: "KaushanScript-Regular";
-  src: url("../../public/font/KaushanScript-Regular.ttf") format("truetype"), url("../../public/font/KaushanScript-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSerifText-Regular";
-  src: url("../../public/font/NanumPenScript-Regular.ttf") format("truetype"), url("../../public/font/NanumPenScript-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* -------------      footer         ---------------
------------------------------------------------------*/
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../../public/font/Montserrat-regular.ttf") format("truetype"), url("../../public/font/Montserrat-regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-}
-
-/* ----    Table du menu La note         -----
------------------------------------------------*/
+/* ----    Table du menu La note         ----- */
 .titre-lanote {
   table-layout: fixed;
   margin: 0 12vw;
@@ -138,8 +219,7 @@ h1 {
   width: 15%;
 }
 
-/* -Table du menu Le chic        ---
------------------------------------------------*/
+/* -----Table du menu Le chic        --- */
 .titre-appetit,
 .appetit {
   color: #c7750c;
@@ -210,8 +290,7 @@ h1 {
   width: 15%;
 }
 
-/* ---     Table du menu Le délice         ---
------------------------------------------------*/
+/* ---     Table du menu Le délice         ---*/
 .titre-ledelice {
   table-layout: fixed;
   margin: 0 3vw;
@@ -243,8 +322,7 @@ h1 {
   width: 15%;
 }
 
-/* -Table du menu  la palette         ---
------------------------------------------------*/
+/* -Table du menu  la palette         ---*/
 .titre-lapalette {
   table-layout: fixed;
   margin: 0 7vw;
@@ -280,104 +358,7 @@ h1 {
   width: 15%;
 }
 
-/*  --------- animation menu page d'index ---------
----------------------------------------------*/
-.li-lanote:hover a {
-  text-decoration: none;
-}
-.li-lanote:hover .lanote {
-  transform: scale(1.3);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-.li-lechic:hover a {
-  text-decoration: none;
-}
-.li-lechic:hover .lechic {
-  transform: scale(1.3);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-.li-ledelice:hover a {
-  text-decoration: none;
-}
-.li-ledelice:hover .ledelice {
-  transform: scale(1.4);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-.li-lapalette:hover a {
-  text-decoration: none;
-}
-.li-lapalette:hover .lapalette {
-  transform: scale(1.2);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-/* ----    animation trait soulignement menu ---
------------------------------------------------*/
-.souligne p {
-  cursor: pointer;
-  background: linear-gradient(to top, #589d87 10%, #589d87 10%, transparent 10%) no-repeat left bottom/0 100%;
-  transition: background-size 1s;
-}
-
-.souligne p:hover {
-  background-size: 100% 100%;
-}
-
-/* --- boutons prochainement    ---
----------------------------------*/
-@keyframes buttonprochainement {
-  0% {
-    opacity: 1;
-    content: "";
-  }
-  60% {
-    opacity: 1;
-    content: " .";
-  }
-  80% {
-    opacity: 1;
-    content: " ..";
-  }
-  90% {
-    opacity: 1;
-    content: " ..";
-  }
-  100% {
-    opacity: 1;
-    content: " ...";
-  }
-}
-/* -- boutons mention et contact  --
-----------------------------------*/
-@keyframes buttonfooter {
-  0% {
-    transform: translate(2px, 2px);
-  }
-  20% {
-    transform: translate(-2px, -2px);
-  }
-  40% {
-    transform: translate(2px, 2px);
-  }
-  60% {
-    transform: translate(-2px, -2px);
-  }
-  80% {
-    transform: translate(2px, 2px);
-  }
-  100% {
-    transform: translate(-2px, -2px);
-  }
-}
-/* ----      bouton prochainement        ------
-----------------------------------------------*/
+/* ----      bouton prochainement        ------*/
 .pro {
   font-family: "Montserrat-Regular";
   text-transform: capitalize;
@@ -397,11 +378,10 @@ h1 {
   opacity: 0;
 }
 .pro:hover::after {
-  animation: buttonprochainement 1.5s infinite;
+  animation: bouton-prochainement 1.5s infinite;
 }
 
-/* ---- bouton  mention et contact ------
-----------------------------------------*/
+/* ---- bouton  mention et contact ------*/
 footer a {
   background: #589d87;
   color: #fdcb42;
@@ -413,7 +393,7 @@ footer a::first-letter {
   text-transform: capitalize;
 }
 footer a:hover {
-  animation: buttonfooter 400ms infinite;
+  animation: bouton-footer 400ms infinite;
 }
 
 header {
@@ -453,8 +433,7 @@ nav ul li {
   border: solid #DCC;
 }
 
-/*  ----- barre de recherche ---------
----------------------------------------*/
+/*  ----- barre de recherche ---------*/
 aside {
   background: #EDEDED;
   margin: auto;
@@ -464,14 +443,14 @@ aside input {
   width: 90%;
 }
 
-/* ---Titre et background des cartes  ---
-----------------------------------------*/
+/* ---Titre et background la note  ---*/
 .li-lanote {
   background-color: #FDE0DC;
 }
 .li-lanote .lanote {
   position: relative;
   bottom: 2.5vh;
+  padding: 15vh 5vw;
 }
 .li-lanote section i {
   font-size: 2.3rem;
@@ -492,8 +471,14 @@ aside input {
   font-size: 2rem;
 }
 
+/* ---Titre et background la chic  ---*/
 .li-lechic {
   background-color: #FFF5FE;
+}
+.li-lechic .lechic {
+  position: relative;
+  bottom: 2.5vh;
+  padding: 10vh 5vw;
 }
 .li-lechic section h2 {
   font-family: "CroissantOne-Regular";
@@ -510,8 +495,14 @@ aside input {
   font-size: 2rem;
 }
 
+/* ---Titre et background le delice  ---*/
 .li-ledelice {
   background-color: #F9F9F9;
+}
+.li-ledelice .ledelice {
+  position: relative;
+  bottom: 2.5vh;
+  padding: 10vh 5vw;
 }
 .li-ledelice section h2 {
   font-family: "DancingScript-VariableFont_wght";
@@ -528,8 +519,14 @@ aside input {
   font-size: 2.5rem;
 }
 
+/* ---Titre et background la palette  ---*/
 .li-lapalette {
   background-color: #FDFFFD;
+}
+.li-lapalette .lapalette {
+  position: relative;
+  bottom: 2.5vh;
+  padding: 10vh 5vw;
 }
 .li-lapalette section h2 {
   font-family: "KaushanScript-Regular";
@@ -628,8 +625,7 @@ footer a {
   font-size: 1.1rem;
 }
 
-/* -----            media query             ----
----------------------------------------------- */
+/* -----            media query        ----*/
 @media screen and (min-width: 500px) {
   body footer a {
     font-size: 1.3rem;
@@ -684,8 +680,7 @@ span i {
   font-size: 1.3rem;
 }
 
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query -----------------*/
 body {
   width: 100%;
   text-align: center;
@@ -730,9 +725,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  body {
-    margin: auto;
-  }
   body .menu-lanote h3 {
     font-size: 2rem;
     padding-top: 3vh;
@@ -836,8 +828,7 @@ body {
   padding-bottom: 7vh;
 }
 
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query -----------------*/
 body {
   width: 100%;
   text-align: center;
@@ -964,8 +955,7 @@ body {
   padding-bottom: 6vh;
 }
 
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query ----------------- */
 body {
   width: 100%;
   text-align: center;
@@ -1122,8 +1112,7 @@ body .gourmandise p {
   padding-bottom: 7vh;
 }
 
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query -----------------*/
 body {
   width: 100%;
   text-align: center;
@@ -1239,8 +1228,7 @@ body .mention {
   padding: 3vh 8vw 6vh 8vw;
 }
 
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query -----------------*/
 @media screen and (min-width: 768px) {
   body .mention {
     font-size: 1rem;

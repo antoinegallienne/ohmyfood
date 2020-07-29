@@ -1,24 +1,25 @@
 
-  .menu-ledelice h3 {
-    font-family: 'DancingScript-VariableFont_wght';
-    font-size: 1.9rem;
-    background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 4vh;
-    padding-bottom: 3vh;
-  }
-  .page-ledelice {
-    font-family: 'Caveat-Regular';
-    background: $ledelice;
-    margin: auto;
-    padding-bottom: 7vh ;
-  }
+.menu-ledelice h3 {
+  font-family: 'DancingScript-VariableFont_wght';
+  font-size: 1.9rem;
+  background: -webkit-linear-gradient(0deg , #0025df, #1e9dfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+}
+
+.page-ledelice {
+  font-family: 'Caveat-Regular';
+  background: $ledelice;
+  margin: auto;
+  padding-bottom: 7vh ;
+}
 
 
 
-/* --------------- media query -----------------
------------------------------------------------- */
+/* --------------- media query -----------------*/
+// -----------------------------------------------
 
 body {
   width: 100%;
@@ -32,14 +33,14 @@ body {
       padding-top: 6vh;
       padding-bottom: 4vh;
     }
-    .titre-ledelice{
+    .titre-ledelice {
 
       table-layout: fixed;
       margin: 0.5vh 0 0.5vh 1vw;
-      img{
+      img {
         width: 31vw;
       }
-      p{
+      p {
         font-size: 1.2rem;
         padding: 1vh 0;
       }
@@ -70,10 +71,10 @@ body {
       padding: 5vh 4vw;
       border: solid $contour;
     }
-    .titre-ledelice{
+    .titre-ledelice {
       table-layout: fixed;
       margin: 1.5vh 0 1.5vh 1vw;
-      img{
+      img {
         width: 20vw;
       }
       p{
@@ -107,13 +108,13 @@ body {
       margin-bottom: 10vh;
       padding-bottom: 20vh;
     }
-    .titre-ledelice{
+    .titre-ledelice {
       table-layout: fixed;
       margin: 0 0vw;
-      img{
+      img {
         width: 23vw;
       }
-      p{
+      p {
         font-size: 1.9rem;
       }
     }
@@ -125,7 +126,6 @@ body {
       text-align: left;
       margin: 0 5vw;
       font-size: 1.4rem;
-
     }
   }
 }

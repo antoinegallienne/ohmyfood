@@ -1,14 +1,17 @@
 
 nav {
+
   width: 90%;
   background: $fond--page;
   margin: auto;
+
   ul {
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
     padding: 0;
+
     li {
       display: flex;
       flex-direction:column;
@@ -26,25 +29,30 @@ nav {
   }
 }
 
-/*  ----- barre de recherche ---------
----------------------------------------*/
+/*  ----- barre de recherche ---------*/
+//--------------------------------------
 
-aside{
+aside {
   background: $recherche;
   margin: auto;
   padding: 2vh 0;
-  input{
+
+  input {
     width: 90%;
   }
 }
 
-/* ---Titre et background des cartes  ---
-----------------------------------------*/
+// ---Titre et background des cartes  ---
+//----------------------------------------
+
+/* ---Titre et background la note  ---*/
 
 .li-lanote {
-  .lanote{
+
+  .lanote {
     position: relative;
     bottom: 2.5vh;
+    padding: 15vh 5vw;
   }
   section i {
     font-size: 2.3rem;
@@ -52,23 +60,29 @@ aside{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-    h2{
-      font-family: 'Devonshire-Regular';
-      font-size: 1.5rem;
-      font-weight: normal;
-      margin-bottom: 2vh;
-    }
-  a{
+  h2 {
+    font-family: 'Devonshire-Regular';
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 2vh;
+  }
+  a {
     font-family: 'Itim-Regular';
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
   background-color: $lanote;
-
 }
 
+/* ---Titre et background la chic  ---*/
+
 .li-lechic {
+  .lechic {
+    position: relative;
+    bottom: 2.5vh;
+    padding: 10vh 5vw;
+  }
   section h2 {
     font-family: 'CroissantOne-Regular';
     font-size: 1.1rem;
@@ -77,7 +91,7 @@ aside{
     -webkit-text-fill-color: transparent;
     margin-bottom: 4vh;
   }
-  a{
+  a {
     font-family: 'quintessential-regular-webfont.woff2';
     text-decoration: none;
     color: $deg1--lechic;
@@ -86,7 +100,14 @@ aside{
   background-color: $lechic;
 }
 
+/* ---Titre et background le delice  ---*/
+
 .li-ledelice {
+  .ledelice {
+    position: relative;
+    bottom: 2.5vh;
+    padding: 10vh 5vw;
+  }
   section h2 {
     font-family: 'DancingScript-VariableFont_wght';
     font-size: 1.5rem;
@@ -95,7 +116,7 @@ aside{
     -webkit-text-fill-color: transparent;
     margin-bottom: 4vh;
   }
-  a{
+  a {
     font-family: 'Caveat-Regular';
     text-decoration: none;
     color: $deg2--ledelice;
@@ -104,7 +125,14 @@ aside{
   background-color: $ledelice;
 }
 
-.li-lapalette{
+/* ---Titre et background la palette  ---*/
+
+.li-lapalette {
+  .lapalette {
+    position: relative;
+    bottom: 2.5vh;
+    padding: 10vh 5vw;
+  }
   section h2 {
     font-family: 'KaushanScript-Regular';
     font-size: 1.5rem;
@@ -113,8 +141,7 @@ aside{
     -webkit-text-fill-color: transparent;
     margin-bottom: 4vh;
   }
-
-  a{
+  a {
     font-family: 'Caveat-Regular';
     text-decoration: none;
     color: $deg1--lapalette;
@@ -123,12 +150,10 @@ aside{
   background-color: $lapalette;
 }
 
-
-.pro{
+.pro {
   width: 28%;
   font-size: 1rem;
 }
-
 
 /* -----            media query             ----
 ---------------------------------------------- */
@@ -193,7 +218,7 @@ body {
         width: 20vw;
         height: 30vh;
         font-size: 5rem;
-        h2{
+        h2 {
           font-size: 1.8rem;
         }
       }

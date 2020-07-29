@@ -12,8 +12,8 @@ footer {
   }
 }
 
-/* -----            media query             ----
----------------------------------------------- */
+/* -----            media query        ----*/
+// ------------------------------------------
 
 body {
 
@@ -21,21 +21,20 @@ body {
 
     footer a {
       font-size: 1.3rem;
-
     }
   }
 
-    @include media-min(768px) {
+  @include media-min(768px) {
 
-      footer a {
-        font-size: 1.4rem;
-      }
-    }
-
-    @include media-min(1024px) {
-
-      footer a {
-        font-size: 1.6rem;
-      }
+    footer a {
+      font-size: 1.4rem;
     }
   }
+
+  @include media-min(1024px) {
+
+    footer a {
+      font-size: 1.6rem;
+    }
+  }
+}

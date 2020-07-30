@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* -------------       h1         -------------*/
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../../public/font/Montserrat-Bold.ttf") format("truetype"), url("../../public/font/Montserrat-Bold.ttf") format("truetype");
@@ -104,14 +105,45 @@
   transition-duration: 600ms;
 }
 
-/* ----    animation trait soulignement menu ---*/
+/* ----  animation trait soulignement menu   ---*/
 .souligne p {
   cursor: pointer;
-  background: linear-gradient(to top, #589d87 10%, transparent 10%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #000 10%, transparent 10%) no-repeat left bottom/0 100%;
   transition: background-size 1s;
 }
 
 .souligne p:hover {
+  background-size: 100% 100%;
+}
+
+/* ---- trait soulignement menu le chic ---*/
+.souligne-lechic1 p {
+  cursor: pointer;
+  background: linear-gradient(to top, #c7750c 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne-lechic1 p:hover {
+  background-size: 100% 100%;
+}
+
+.souligne-lechic2 p {
+  cursor: pointer;
+  background: linear-gradient(to top, #a6679a 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne-lechic2 p:hover {
+  background-size: 100% 100%;
+}
+
+.souligne-lechic3 p {
+  cursor: pointer;
+  background: linear-gradient(to top, #6d4acc 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne-lechic3 p:hover {
   background-size: 100% 100%;
 }
 
@@ -195,13 +227,13 @@ h1 {
 .titre-lanote p {
   font-size: 0.8rem;
 }
-.titre-lanote th:nth-child(1) {
+.titre-lanote th:first-child {
   width: 15%;
 }
-.titre-lanote th:nth-child(2) {
+.titre-lanote th:first-child + th {
   width: 50%;
 }
-.titre-lanote th:nth-child(3) {
+.titre-lanote th:last-child {
   width: 15%;
 }
 
@@ -252,19 +284,19 @@ h1 {
   font-size: 0.6rem;
   margin: 2vh 0;
 }
-.titre-appetit th:nth-child(1),
-.titre-plaisir th:nth-child(1),
-.titre-gourmandise th:nth-child(1) {
+.titre-appetit th:first-child,
+.titre-plaisir th:first-child,
+.titre-gourmandise th:first-child {
   width: 15%;
 }
-.titre-appetit th:nth-child(2),
-.titre-plaisir th:nth-child(2),
-.titre-gourmandise th:nth-child(2) {
+.titre-appetit th:first-child + th,
+.titre-plaisir th:first-child + th,
+.titre-gourmandise th:first-child + th {
   width: 50%;
 }
-.titre-appetit th:nth-child(3),
-.titre-plaisir th:nth-child(3),
-.titre-gourmandise th:nth-child(3) {
+.titre-appetit th:last-child,
+.titre-plaisir th:last-child,
+.titre-gourmandise th:last-child {
   width: 15%;
 }
 
@@ -301,13 +333,13 @@ h1 {
 .titre-ledelice p {
   font-size: 1.1rem;
 }
-.titre-ledelice th:nth-child(1) {
+.titre-ledelice th:first-child {
   width: 15%;
 }
-.titre-ledelice th:nth-child(2) {
+.titre-ledelice th:first-child + th {
   width: 50%;
 }
-.titre-ledelice th:nth-child(3) {
+.titre-ledelice th:last-child {
   width: 15%;
 }
 
@@ -334,13 +366,13 @@ h1 {
   font-size: 0.8rem;
   margin: 2vh 0;
 }
-.titre-lapalette th:nth-child(1) {
+.titre-lapalette th:first-child {
   width: 15%;
 }
-.titre-lapalette th:nth-child(2) {
+.titre-lapalette th:first-child + th {
   width: 50%;
 }
-.titre-lapalette th:nth-child(3) {
+.titre-lapalette th:last-child {
   width: 15%;
 }
 
@@ -1004,9 +1036,6 @@ body .gourmandise p {
     margin: 0 auto;
   }
   body .menu-lechic h3 {
-    font-size: 1.7rem;
-  }
-  body .menu-lechic h3 .menu-lechic h3 {
     font-size: 1.9rem;
     padding-top: 7vh;
     padding-bottom: 5vh;
@@ -1196,7 +1225,7 @@ body {
   }
   body .titre-ledelice {
     table-layout: fixed;
-    margin: 0 0vw;
+    margin: 0;
   }
   body .titre-ledelice img {
     width: 23vw;

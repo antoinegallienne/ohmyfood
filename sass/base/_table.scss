@@ -46,9 +46,11 @@ h1 {
 .table-lanote {
   margin: 0 12vw;
   font-size: 0.6rem;
+
   p{
     margin: 0.8vh 0;
   }
+
   @include table;
 }
 
@@ -75,13 +77,16 @@ h1 {
 .titre-gourmandise {
   table-layout: fixed;
   margin: 0 5vw;
+
   img{
     width: 22vw;
   }
+
   p {
     font-size: 0.6rem;
     margin: 2vh 0;
   }
+
   @include titre-table;
 }
 
@@ -90,9 +95,11 @@ h1 {
 .gourmandise {
   margin: 0 11vw;
   font-size: 0.55rem;
+
   p {
     margin: 0.8vh 0;
   }
+
   @include table;
 }
 
@@ -102,12 +109,15 @@ h1 {
 .titre-ledelice{
   table-layout: fixed;
   margin: 0 3vw;
+
   img{
     width: 28vw;
   }
+
   p {
     font-size: 1.1rem;
   }
+
   @include titre-table;
 }
 
@@ -124,21 +134,26 @@ h1 {
 .titre-lapalette {
   table-layout: fixed;
   margin: 0 7vw;
+
   img{
     width: 25vw;
   }
+
   p {
     font-size: 0.8rem;
     margin: 2vh 0;
   }
+
   @include titre-table;
 }
 
 .table-lapalette {
   margin: 0 11vw;
   font-size: 0.7rem;
+
   p {
     margin: 0.5vh 0;
   }
+
   @include table;
 }

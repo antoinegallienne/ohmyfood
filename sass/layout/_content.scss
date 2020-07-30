@@ -54,24 +54,28 @@ aside {
     bottom: 2.5vh;
     padding: 15vh 5vw;
   }
+
   section i {
     font-size: 2.3rem;
     background: -webkit-linear-gradient(0deg, $deg1--lanote, $deg2--lanote);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   h2 {
     font-family: 'Devonshire-Regular';
     font-size: 1.5rem;
     font-weight: normal;
     margin-bottom: 2vh;
   }
+
   a {
     font-family: 'Itim-Regular';
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
+
   background-color: $lanote;
 }
 
@@ -83,6 +87,7 @@ aside {
     bottom: 2.5vh;
     padding: 10vh 5vw;
   }
+
   section h2 {
     font-family: 'CroissantOne-Regular';
     font-size: 1.1rem;
@@ -91,23 +96,27 @@ aside {
     -webkit-text-fill-color: transparent;
     margin-bottom: 4vh;
   }
+
   a {
     font-family: 'quintessential-regular-webfont.woff2';
     text-decoration: none;
     color: $deg1--lechic;
     font-size: 2rem;
   }
+
   background-color: $lechic;
 }
 
 /* ---Titre et background le delice  ---*/
 
 .li-ledelice {
+
   .ledelice {
     position: relative;
     bottom: 2.5vh;
     padding: 10vh 5vw;
   }
+
   section h2 {
     font-family: 'DancingScript-VariableFont_wght';
     font-size: 1.5rem;
@@ -116,23 +125,27 @@ aside {
     -webkit-text-fill-color: transparent;
     margin-bottom: 4vh;
   }
+
   a {
     font-family: 'Caveat-Regular';
     text-decoration: none;
     color: $deg2--ledelice;
     font-size: 2.5rem;
   }
+
   background-color: $ledelice;
 }
 
 /* ---Titre et background la palette  ---*/
 
 .li-lapalette {
+
   .lapalette {
     position: relative;
     bottom: 2.5vh;
     padding: 10vh 5vw;
   }
+
   section h2 {
     font-family: 'KaushanScript-Regular';
     font-size: 1.5rem;
@@ -141,12 +154,14 @@ aside {
     -webkit-text-fill-color: transparent;
     margin-bottom: 4vh;
   }
+
   a {
     font-family: 'Caveat-Regular';
     text-decoration: none;
     color: $deg1--lapalette;
     font-size: 2.5rem;
   }
+
   background-color: $lapalette;
 }
 
@@ -166,10 +181,13 @@ body {
       padding: 3vh 0;
       font-size: 1.6rem;
     }
+
     nav {
       width: 100%;
       margin: auto;
+
       ul {
+
         li {
           width: 30vw;
           height: 20vh;
@@ -177,6 +195,7 @@ body {
         }
       }
     }
+
     .pro {
       width: 35%;
       font-size: 1.3rem;
@@ -188,18 +207,21 @@ body {
     h1 {
       font-size: 1.9rem;
     }
+
     nav ul {
       width: 80%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin: auto;
+
       li {
         width: 20vw;
         height: 22vh;
         margin: 3vh auto;
       }
     }
+
     .pro {
       width: 30%;
       font-size: 1.4rem;
@@ -214,15 +236,18 @@ body {
 
     nav ul {
       justify-content: center;
+
       li {
         width: 20vw;
         height: 30vh;
         font-size: 5rem;
+
         h2 {
           font-size: 1.8rem;
         }
       }
     }
+
     .pro {
       width: 25%;
       font-size: 1.6rem;

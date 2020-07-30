@@ -8,15 +8,18 @@
   }
 }
 
+// -----       Tables          ---------
+// -------------------------------------
+
 @mixin titre-table{
 
-  th:nth-child(1) {
+  th:first-child {
     width:15%;
   }
-  th:nth-child(2) {
+  th:first-child +th {
     width: 50%;
   }
-  th:nth-child(3) {
+  th:last-child {
     width:15%;
   }
 }

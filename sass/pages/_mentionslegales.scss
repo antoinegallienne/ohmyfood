@@ -6,6 +6,7 @@ body {
   h1 {
     padding-top: 5vh;
   }
+
   .mention {
     text-align: left;
     font-family: 'Montserrat-Regular';
@@ -20,14 +21,12 @@ body {
 body {
 
   @include media-min(768px) {
-
     .mention {
       font-size: 1rem;
     }
   }
 
   @include media-min(1024px) {
-
     .mention {
       font-size: 1.2rem;
     }

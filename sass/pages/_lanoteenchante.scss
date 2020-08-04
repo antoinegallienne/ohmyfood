@@ -14,11 +14,13 @@
 }
 
 article i {
+  display:inline-block;
   font-size: 3rem;
   padding:5vh 2vw 3vh 0;
-  background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+  background: -webkit-linear-gradient(0deg, $deg1--lanote, $deg2--lanote);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: auto;
 }
 
 span i {
@@ -27,7 +29,7 @@ span i {
   top: 4vh;
   padding: 0;
   font-size: 1.5rem;
-  background: -webkit-linear-gradient(0deg , #f60d0d, #f9aa5d);
+  background: -webkit-linear-gradient(0deg, $deg1--lanote, $deg2--lanote);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

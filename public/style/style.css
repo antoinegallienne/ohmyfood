@@ -61,58 +61,28 @@
 /* -------------      footer         ----------------*/
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("../../public/font/Montserrat-regular.ttf") format("truetype"), url("../../public/font/Montserrat-regular.ttf") format("truetype");
+  src: url("../../public/font/Montserrat-Regular.ttf") format("truetype"), url("../../public/font/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-/*  ------ animation menu page la note -------*/
-.li-lanote:hover a {
-  text-decoration: none;
-}
-.li-lanote:hover .lanote {
-  transform: scale(1.3);
+/* ------ animation menu page d'index -----*/
+li:hover .lanote,
+li:hover .lechic,
+li:hover .ledelice,
+li:hover .lapalette {
+  transform: scale(1.15);
   opacity: 0.5;
   transition-duration: 600ms;
 }
 
-/*  ------ animation menu page le chic -------*/
-.li-lechic:hover a {
-  text-decoration: none;
-}
-.li-lechic:hover .lechic {
-  transform: scale(1.3);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-/*  ------ animation menu page le delice -------*/
-.li-ledelice:hover a {
-  text-decoration: none;
-}
-.li-ledelice:hover .ledelice {
-  transform: scale(1.4);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-/*  ------ animation menu page la palette -------*/
-.li-lapalette:hover a {
-  text-decoration: none;
-}
-.li-lapalette:hover .lapalette {
-  transform: scale(1.2);
-  opacity: 0.5;
-  transition-duration: 600ms;
-}
-
-/* ----  animation trait soulignement menu   ---*/
-.souligne p {
+/* ---- trait soulignement menu la note ---*/
+.souligne-lanote p {
   cursor: pointer;
   background: linear-gradient(to top, #000 10%, transparent 10%) no-repeat left bottom/0 100%;
   transition: background-size 1s;
 }
 
-.souligne p:hover {
+.souligne-lanote p:hover {
   background-size: 100% 100%;
 }
 
@@ -144,6 +114,48 @@
 }
 
 .souligne-lechic3 p:hover {
+  background-size: 100% 100%;
+}
+
+/* ---- trait soulignement menu le delice ---*/
+.souligne1-ledelice p {
+  cursor: pointer;
+  background: linear-gradient(to top, #0025df 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne1-ledelice p:hover {
+  background-size: 100% 100%;
+}
+
+.souligne2-ledelice p {
+  cursor: pointer;
+  background: linear-gradient(to top, #0070f7 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne2-ledelice p:hover {
+  background-size: 100% 100%;
+}
+
+.souligne3-ledelice p {
+  cursor: pointer;
+  background: linear-gradient(to top, #1e9dfb 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne3-ledelice p:hover {
+  background-size: 100% 100%;
+}
+
+/* ---- trait soulignement menu la palette ---*/
+.souligne-lapalette p {
+  cursor: pointer;
+  background: linear-gradient(to top, #3f9338 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 1s;
+}
+
+.souligne-lapalette p:hover {
   background-size: 100% 100%;
 }
 
@@ -446,23 +458,15 @@ nav {
 nav ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 0;
 }
 nav ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40vw;
-  height: 10vh;
-  font-size: 1.2rem;
-  margin: 3vh auto;
-  padding: 22vh 5vw;
   list-style-type: none;
   border-radius: 0.5rem;
   border: solid #DCC;
+  width: 60vw;
+  height: 50vh;
+  margin: 3vh auto;
 }
 
 /*  ----- barre de recherche ---------*/
@@ -475,14 +479,21 @@ aside input {
   width: 90%;
 }
 
+/* ---Titre et background des cartes  ---*/
+.lanote,
+.lechic,
+.ledelice,
+.lapalette {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 /* ---Titre et background la note  ---*/
 .li-lanote {
   background-color: #FDE0DC;
-}
-.li-lanote .lanote {
-  position: relative;
-  bottom: 2.5vh;
-  padding: 15vh 5vw;
 }
 .li-lanote section i {
   font-size: 2.3rem;
@@ -507,11 +518,6 @@ aside input {
 .li-lechic {
   background-color: #FFF5FE;
 }
-.li-lechic .lechic {
-  position: relative;
-  bottom: 2.5vh;
-  padding: 10vh 5vw;
-}
 .li-lechic section h2 {
   font-family: "CroissantOne-Regular";
   font-size: 1.1rem;
@@ -531,15 +537,10 @@ aside input {
 .li-ledelice {
   background-color: #F9F9F9;
 }
-.li-ledelice .ledelice {
-  position: relative;
-  bottom: 2.5vh;
-  padding: 10vh 5vw;
-}
 .li-ledelice section h2 {
   font-family: "DancingScript-VariableFont_wght";
   font-size: 1.5rem;
-  background: -webkit-linear-gradient(0deg, #0025df, #1e9dfb);
+  background: -webkit-linear-gradient(0deg, #0025df, #0070f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 4vh;
@@ -547,18 +548,13 @@ aside input {
 .li-ledelice a {
   font-family: "Caveat-Regular";
   text-decoration: none;
-  color: #1e9dfb;
+  color: #0070f7;
   font-size: 2.5rem;
 }
 
 /* ---Titre et background la palette  ---*/
 .li-lapalette {
   background-color: #FDFFFD;
-}
-.li-lapalette .lapalette {
-  position: relative;
-  bottom: 2.5vh;
-  padding: 10vh 5vw;
 }
 .li-lapalette section h2 {
   font-family: "KaushanScript-Regular";
@@ -592,8 +588,8 @@ aside input {
     margin: auto;
   }
   body nav ul li {
-    width: 30vw;
-    height: 20vh;
+    width: 50vw;
+    height: 60vh;
     margin: 3vh auto;
   }
   body .pro {
@@ -607,14 +603,14 @@ aside input {
   }
   body nav ul {
     width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
   }
   body nav ul li {
-    width: 20vw;
-    height: 22vh;
+    width: 32vw;
+    height: 53vh;
     margin: 3vh auto;
   }
   body .pro {
@@ -630,16 +626,21 @@ aside input {
     justify-content: center;
   }
   body nav ul li {
-    width: 20vw;
-    height: 30vh;
-    font-size: 5rem;
+    width: 28vw;
+    height: 65vh;
+    margin: 3vh auto;
   }
-  body nav ul li h2 {
-    font-size: 1.8rem;
+  body .li-lanote h2,
+body .li-ledelice h2,
+body .li-lapalette h2 {
+    font-size: 1.9rem;
+  }
+  body .li-lechic h2 {
+    font-size: 1.4rem;
   }
   body .pro {
     width: 25%;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -689,11 +690,13 @@ footer a {
 }
 
 article i {
+  display: inline-block;
   font-size: 3rem;
   padding: 5vh 2vw 3vh 0;
   background: -webkit-linear-gradient(0deg, #f60d0d, #f9aa5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: auto;
 }
 
 span i {
@@ -895,9 +898,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  body {
-    margin: auto;
-  }
   body .menu-lapalette h3 {
     font-size: 2.3rem;
     padding-top: 7vh;
@@ -933,9 +933,6 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
-    margin: 0 auto;
-  }
   body .menu-lapalette h3 {
     font-size: 3.5rem;
     padding-top: 10vh;
@@ -1032,9 +1029,6 @@ body .gourmandise p {
   }
 }
 @media screen and (min-width: 768px) {
-  body {
-    margin: 0 auto;
-  }
   body .menu-lechic h3 {
     font-size: 1.9rem;
     padding-top: 7vh;
@@ -1174,9 +1168,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  body {
-    margin: auto;
-  }
   body .menu-ledelice h3 {
     font-size: 2.5rem;
     padding-top: 7vh;

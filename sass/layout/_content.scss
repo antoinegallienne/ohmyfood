@@ -1,6 +1,5 @@
 
 nav {
-
   width: 90%;
   background: $fond--page;
   margin: auto;
@@ -8,23 +7,15 @@ nav {
   ul {
     display: flex;
     flex-direction:column;
-    align-items: center;
-    justify-content: center;
     padding: 0;
 
     li {
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-      justify-content: center;
-      width: 40vw;
-      height: 10vh;
-      font-size: 1.2rem;
-      margin: 3vh auto;
-      padding: 22vh 5vw;
       list-style-type: none;
       border-radius: 0.5rem;
       border: solid $contour;
+      width: 60vw;
+      height: 50vh;
+      margin: 3vh auto;
     }
   }
 }
@@ -41,19 +32,22 @@ aside {
     width: 90%;
   }
 }
+/* ---Titre et background des cartes  ---*/
 
-// ---Titre et background des cartes  ---
-//----------------------------------------
+.lanote,
+.lechic,
+.ledelice,
+.lapalette {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 
 /* ---Titre et background la note  ---*/
 
 .li-lanote {
-
-  .lanote {
-    position: relative;
-    bottom: 2.5vh;
-    padding: 15vh 5vw;
-  }
 
   section i {
     font-size: 2.3rem;
@@ -82,11 +76,6 @@ aside {
 /* ---Titre et background la chic  ---*/
 
 .li-lechic {
-  .lechic {
-    position: relative;
-    bottom: 2.5vh;
-    padding: 10vh 5vw;
-  }
 
   section h2 {
     font-family: 'CroissantOne-Regular';
@@ -111,12 +100,6 @@ aside {
 
 .li-ledelice {
 
-  .ledelice {
-    position: relative;
-    bottom: 2.5vh;
-    padding: 10vh 5vw;
-  }
-
   section h2 {
     font-family: 'DancingScript-VariableFont_wght';
     font-size: 1.5rem;
@@ -139,12 +122,6 @@ aside {
 /* ---Titre et background la palette  ---*/
 
 .li-lapalette {
-
-  .lapalette {
-    position: relative;
-    bottom: 2.5vh;
-    padding: 10vh 5vw;
-  }
 
   section h2 {
     font-family: 'KaushanScript-Regular';
@@ -188,9 +165,9 @@ body {
 
       ul {
 
-        li {
-          width: 30vw;
-          height: 20vh;
+       li {
+          width: 50vw;
+          height: 60vh;
           margin: 3vh auto;
         }
       }
@@ -210,14 +187,14 @@ body {
 
     nav ul {
       width: 80%;
+      margin: auto;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      margin: auto;
 
-      li {
-        width: 20vw;
-        height: 22vh;
+     li {
+        width: 32vw;
+        height: 53vh;
         margin: 3vh auto;
       }
     }
@@ -238,19 +215,25 @@ body {
       justify-content: center;
 
       li {
-        width: 20vw;
-        height: 30vh;
-        font-size: 5rem;
-
-        h2 {
-          font-size: 1.8rem;
-        }
+        width: 28vw;
+        height: 65vh;
+        margin: 3vh auto;
       }
+    }
+
+    .li-lanote h2,
+    .li-ledelice h2,
+    .li-lapalette h2 {
+      font-size: 1.9rem;
+    }
+
+    .li-lechic h2{
+      font-size: 1.4rem;
     }
 
     .pro {
       width: 25%;
-      font-size: 1.6rem;
+      font-size: 1.7rem;
     }
   }
 }

@@ -2,7 +2,7 @@
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "projet ohmyfood openclassrooms",
-  "main": "index.htlm",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/style/style.css"
   },
